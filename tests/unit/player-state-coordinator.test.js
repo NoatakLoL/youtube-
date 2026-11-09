@@ -86,7 +86,6 @@ test('the state coordinator loads before the legacy player metadata initializer'
 		.toBeLessThan(orderedFiles.indexOf('/js&css/web-accessible/www.youtube.com/player.js'));
 });
 
-
 test('yt-navigate-start aborts stale work immediately', () => {
 	const fixture = setup();
 	const routeSignal = fixture.coordinator.routeSignal;

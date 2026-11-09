@@ -14,7 +14,6 @@ test('all advertised equalizer presets are exported', () => {
 	expect(audio.presets).toEqual(['flat', 'voice', 'bass', 'treble', 'night']);
 });
 
-
 test('disabling equalizer restores a neutral, audible graph without suspending its context', async () => {
 	const param = () => ({ setTargetAtTime: jest.fn() });
 	const graph = {
