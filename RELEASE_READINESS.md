@@ -23,15 +23,14 @@ New ytplus_* settings are opt-in. Existing settings keys and cross-context messa
 
 ## Verification evidence
 
-The previous completed GitHub Actions run on the branch reported:
+The latest completed GitHub Actions run on commit 482468dab17871b3f82da31952b216098aa8f78c reported:
 
 - **46 Jest suites passed**
-- **256 Jest tests passed**
+- **257 Jest tests passed**
 - Strict ESLint passed for the newly refactored modules.
+- The loader-order regression test passed, verifying that PlayerStateCoordinator loads before the legacy player script.
 
-A subsequent commit moved PlayerStateCoordinator before the legacy player script to ensure early metadata work receives its abort signal. Its CI run must also pass before treating the current head as verified.
-
-The full-repository lint audit remains a substantial baseline issue: the last completed audit reported **3,698 errors and 488 warnings**. That audit is advisory in the workflow; it is not a clean lint result.
+The full-repository lint audit remains a substantial baseline issue: the same run reported **3,698 errors and 488 warnings**. That audit is advisory in the workflow; it is not a clean lint result.
 
 No manual browser validation has been completed in Chrome, Firefox, or Safari. Unit tests do not establish runtime compatibility.
 
