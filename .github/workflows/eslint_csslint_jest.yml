@@ -47,6 +47,7 @@ jobs:
           "tests/unit/feature-scope.test.js"
           "tests/unit/audio-processing.test.js"
           "tests/unit/core-queue-storage.test.js"
+          "tests/unit/get-locale.test.js"
           "tests/unit/core-queue-storage.test.js"
 
       - name: Run Jest regression suite
