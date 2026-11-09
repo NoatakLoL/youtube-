@@ -30,6 +30,7 @@ satus.storage.import(function (items) {
 
 			extension.attributes();
 			satus.events.on('storage-set', extension.attributes);
+			window.extension?.studio?.mount?.();
 		}
 
 		// Shows login page if password exists and is required

@@ -274,7 +274,7 @@ document.addEventListener('it-message-from-youtube', function () {
 			chrome.storage.local.set({
 				watched: extension.storage.data.watched
 			});
-		} else if (message.action === 'set') {
+		} else if (message.action === 'set' || message.action === 'storage-set') {
 			if (message.value) {
 				chrome.storage.local.set({ [message.key]: message.value });
 			} else {

@@ -1,6 +1,9 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
 <title>ImprovedTube</title>
-<style> body { margin: 0; width: 320px; max-width: 320px; min-height: 522px !important; height: 584px; max-height: 584px; } </style>
+<style>
+body { margin:0; width:min(360px,100vw); max-width:100vw; min-height:522px; height:auto; max-height:100vh; }
+@media (min-width:640px) { body[tab] { width:100%; max-width:none; min-height:100vh; } }
+</style>
 <script src="satus.js"></script>
 <script src="skeleton.js"></script>
 <script src="functions.js"></script>
@@ -20,6 +23,7 @@
 <script src="skeleton-parts/analyzer.js"></script>
 <script src="skeleton-parts/dark-light-switch.js"></script>
 <script src="skeleton-parts/refresh-categories.js"></script>
+<script defer src="studio.js"></script>
 <script defer src="index.js"></script>
 <link rel="stylesheet" href="satus.css">
 <link rel="stylesheet" href="styles/home.css">
@@ -33,5 +37,6 @@
 <link rel="stylesheet" href="styles/mixer.css">
 <link rel="stylesheet" href="styles/settings.css">
 <link rel="stylesheet" href="styles/themes.css">
+<link rel="stylesheet" href="studio.css">
 </head><body><div id="loading" style="animation: 3s linear 0s 1 normal none running fadeIn; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 3px solid rgb(182, 233, 255); border-radius: 80px; padding: 37px; color: rgb(120, 147, 161);">...asking your browser what settings you made here before...</div>
 </body></html>

@@ -1,0 +1,91 @@
+/* youtube+ Studio design tokens and player feature components. */
+:root {
+	--ytplus-bg: #ffffff; --ytplus-panel: #f7f8fa; --ytplus-text: #202124;
+	--ytplus-muted: #5f6368; --ytplus-border: #e3e6ea; --ytplus-accent: #065fd4;
+	--ytplus-accent-soft: rgba(6,95,212,.10); --ytplus-shadow: 0 8px 28px rgba(20,32,48,.10);
+	--ytplus-radius: 14px;
+}
+:root[dark], html[dark], body[dark], body[theme="dark"] {
+	--ytplus-bg: #181818; --ytplus-panel: #242424; --ytplus-text: #f1f1f1;
+	--ytplus-muted: #aaa; --ytplus-border: #383838; --ytplus-accent: #3ea6ff;
+	--ytplus-accent-soft: rgba(62,166,255,.14); --ytplus-shadow: 0 8px 28px rgba(0,0,0,.35);
+}
+.ytplus-studio {
+	box-sizing: border-box; width: 100%; padding: 16px; margin: 0 auto 16px;
+	color: var(--ytplus-text); background: var(--ytplus-bg); font: 13px/1.45 Roboto, Arial, sans-serif;
+	border-bottom: 1px solid var(--ytplus-border);
+}
+.ytplus-studio *, .ytplus-studio *::before, .ytplus-studio *::after { box-sizing: border-box; }
+.ytplus-studio-header, .ytplus-brand, .ytplus-tabs, .ytplus-setting-row, .ytplus-bookmark-item { display: flex; align-items: center; }
+.ytplus-studio-header { justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.ytplus-brand { gap: 11px; }
+.ytplus-brand-mark { display:grid; place-items:center; width:34px; height:34px; border-radius:11px; color:#fff; background:var(--ytplus-accent); font-size:23px; font-weight:700; }
+.ytplus-brand strong, .ytplus-brand small { display:block; }
+.ytplus-brand strong { font-size:16px; letter-spacing:-.2px; }
+.ytplus-brand small { color:var(--ytplus-muted); font-size:11px; }
+.ytplus-version { color:var(--ytplus-muted); font-size:10px; font-weight:700; letter-spacing:1px; }
+.ytplus-tabs { gap:4px; border-bottom:1px solid var(--ytplus-border); margin-bottom:12px; }
+.ytplus-tabs button { border:0; border-bottom:2px solid transparent; color:var(--ytplus-muted); background:transparent; padding:9px 13px; cursor:pointer; font:inherit; }
+.ytplus-tabs button[aria-selected="true"] { border-color:var(--ytplus-accent); color:var(--ytplus-accent); font-weight:700; }
+.ytplus-search-wrap { display:flex; align-items:center; gap:9px; background:var(--ytplus-panel); border:1px solid var(--ytplus-border); border-radius:9px; padding:0 11px; margin:12px 0; color:var(--ytplus-muted); }
+.ytplus-search-wrap input { min-width:0; width:100%; height:38px; border:0; outline:0; background:transparent; color:var(--ytplus-text); font:inherit; }
+.ytplus-group-label { color:var(--ytplus-muted); font-size:10px; font-weight:700; letter-spacing:1.3px; margin:18px 2px 7px; }
+.ytplus-accordion { border:1px solid var(--ytplus-border); background:var(--ytplus-bg); border-radius:var(--ytplus-radius); margin:8px 0; overflow:hidden; }
+.ytplus-accordion-title { display:flex; justify-content:space-between; align-items:center; min-height:56px; padding:10px 13px; cursor:pointer; list-style:none; }
+.ytplus-accordion-title::-webkit-details-marker { display:none; }
+.ytplus-section-copy strong, .ytplus-section-copy small { display:block; }
+.ytplus-section-copy strong { font-size:13px; }
+.ytplus-section-copy small { color:var(--ytplus-muted); font-size:11px; margin-top:2px; }
+.ytplus-chevron { color:var(--ytplus-muted); transition:transform .16s ease; }
+.ytplus-accordion[open] .ytplus-chevron { transform:rotate(180deg); }
+.ytplus-section-content { padding:0 13px 9px; border-top:1px solid var(--ytplus-border); }
+.ytplus-setting-row { justify-content:space-between; gap:14px; min-height:55px; padding:8px 0; border-bottom:1px solid var(--ytplus-border); }
+.ytplus-setting-row:last-child { border-bottom:0; }
+.ytplus-setting-copy { min-width:0; }
+.ytplus-setting-copy strong, .ytplus-setting-copy small { display:block; }
+.ytplus-setting-copy strong { font-size:12px; font-weight:600; }
+.ytplus-setting-copy small { color:var(--ytplus-muted); font-size:10px; line-height:1.35; margin-top:3px; max-width:440px; }
+.ytplus-toggle { position:relative; display:inline-flex; flex:none; align-items:center; cursor:pointer; }
+.ytplus-toggle-input { position:absolute; opacity:0; width:1px; height:1px; }
+.ytplus-toggle-track { width:36px; height:20px; border-radius:30px; background:#858b93; transition:background .16s ease; position:relative; }
+.ytplus-toggle-track::after { content:""; position:absolute; top:3px; left:3px; width:14px; height:14px; background:#fff; border-radius:50%; transition:transform .16s ease; box-shadow:0 1px 2px rgba(0,0,0,.18); }
+.ytplus-toggle-input:checked + .ytplus-toggle-track { background:var(--ytplus-accent); }
+.ytplus-toggle-input:checked + .ytplus-toggle-track::after { transform:translateX(16px); }
+.ytplus-toggle-input:focus-visible + .ytplus-toggle-track, .ytplus-studio button:focus-visible, .ytplus-studio input:focus-visible, .ytplus-studio select:focus-visible { outline:2px solid var(--ytplus-accent); outline-offset:2px; }
+.ytplus-number, .ytplus-select, .ytplus-keybind { width:104px; max-width:42%; border:1px solid var(--ytplus-border); border-radius:8px; padding:7px 9px; background:var(--ytplus-panel); color:var(--ytplus-text); font:inherit; }
+.ytplus-keybind { cursor:pointer; text-align:center; }
+.ytplus-primary-button, .ytplus-file-button { display:inline-flex; align-items:center; gap:8px; border:0; border-radius:8px; background:var(--ytplus-accent); color:#fff; padding:9px 12px; font:inherit; cursor:pointer; margin:7px 7px 2px 0; }
+.ytplus-file-button input { position:absolute; width:1px; height:1px; overflow:hidden; opacity:0; }
+.ytplus-inline-status, .ytplus-empty { color:var(--ytplus-muted); font-size:11px; padding:5px 0; }
+.ytplus-empty { text-align:center; padding:20px; }
+.ytplus-bookmarks-view footer { display:flex; gap:8px; padding-top:10px; }
+.ytplus-bookmarks-view footer button { border:1px solid var(--ytplus-border); border-radius:8px; padding:8px 10px; background:var(--ytplus-panel); color:var(--ytplus-text); cursor:pointer; }
+.ytplus-bookmark-card { border:1px solid var(--ytplus-border); border-radius:9px; padding:10px; margin:8px 0; }
+.ytplus-bookmark-card p { margin:5px 0 0; color:var(--ytplus-muted); }
+.ytplus-bookmark-open { background:transparent; border:0; padding:0; color:var(--ytplus-accent); font:inherit; cursor:pointer; text-align:left; }
+.ytplus-toast { position:fixed; z-index:2147483647; left:50%; bottom:32px; transform:translate(-50%,12px); opacity:0; pointer-events:none; background:#202124; color:white; border-radius:8px; padding:10px 15px; box-shadow:var(--ytplus-shadow); transition:opacity .16s ease,transform .16s ease; font:13px Roboto,Arial,sans-serif; }
+.ytplus-toast.is-visible { opacity:1; transform:translate(-50%,0); }
+.ytplus-toast[data-kind="error"] { background:#a50e0e; }
+.ytplus-toast[data-kind="success"] { background:#137333; }
+.ytplus-player-button, .ytplus-speed-controls button { border:0; border-radius:7px; background:rgba(0,0,0,.55); color:#fff; padding:5px 8px; cursor:pointer; font:13px Roboto,Arial,sans-serif; margin:0 2px; }
+.ytplus-speed-controls { display:inline-flex; align-items:center; gap:2px; margin:0 4px; }
+.ytplus-speed-value { min-width:42px; text-align:center; color:#fff; font-size:11px; }
+.ytplus-bookmark-panel { position:absolute; z-index:100; right:12px; bottom:48px; width:min(360px,calc(100% - 24px)); max-height:min(68%,480px); overflow:auto; padding:12px; border-radius:12px; color:var(--ytplus-text); background:var(--ytplus-bg); box-shadow:var(--ytplus-shadow); font:12px Roboto,Arial,sans-serif; }
+.ytplus-bookmark-panel[hidden] { display:none !important; }
+.ytplus-bookmark-panel header, .ytplus-bookmark-panel footer, .ytplus-bookmark-item { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.ytplus-bookmark-panel header { margin-bottom:10px; }
+.ytplus-bookmark-panel button { cursor:pointer; border:1px solid var(--ytplus-border); border-radius:7px; padding:6px 8px; color:var(--ytplus-text); background:var(--ytplus-panel); }
+.ytplus-bookmark-panel form label { display:block; }
+.ytplus-bookmark-panel input { width:100%; box-sizing:border-box; border:1px solid var(--ytplus-border); border-radius:7px; padding:8px; margin:5px 0; color:var(--ytplus-text); background:var(--ytplus-panel); }
+.ytplus-bookmark-panel form button { width:100%; }
+.ytplus-bookmark-item { margin:5px 0; }
+.ytplus-bookmark-item .ytplus-bookmark-jump { flex:1; min-width:0; text-align:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.ytplus-floating-controls { position:absolute; z-index:80; display:flex; align-items:center; gap:5px; right:16px; bottom:54px; padding:7px; border-radius:10px; background:rgba(0,0,0,.64); backdrop-filter:blur(8px); }
+.ytplus-floating-controls[hidden] { display:none !important; }
+.ytplus-floating-controls button { color:#fff; border:1px solid rgba(255,255,255,.22); border-radius:7px; background:rgba(30,30,30,.75); padding:6px 9px; cursor:pointer; }
+.ytplus-floating-controls[data-dock="bottom-left"] { right:auto; left:16px; }
+.ytplus-floating-controls[data-dock="top-right"] { bottom:auto; top:54px; }
+.ytplus-floating-controls[data-dock="top-left"] { bottom:auto; top:54px; right:auto; left:16px; }
+@media (min-width:600px) { .ytplus-studio { max-width:900px; padding:24px 28px; } .ytplus-setting-copy small { font-size:11px; } }
+@media (max-width:360px) { .ytplus-studio { padding:12px; } .ytplus-setting-row { gap:7px; } .ytplus-number,.ytplus-select { width:88px; } }
+@media (prefers-reduced-motion:reduce) { .ytplus-studio *, .ytplus-toast { transition:none !important; } }

@@ -1,7 +1,7 @@
 const PlayerStateCoordinator = require('../../js&css/web-accessible/state/player-state-coordinator');
 function videoFixture() {
 	const listeners = {};
-	return { paused: false, ended: false, pause: jest.fn(function () { this.paused = true; }), play: jest.fn(function () { this.paused = false; return Promise.resolve(); }),
+	return { paused: false, ended: false, src: 'blob:video-initial', currentSrc: 'blob:video-initial', pause: jest.fn(function () { this.paused = true; }), play: jest.fn(function () { this.paused = false; return Promise.resolve(); }),
 		addEventListener: jest.fn((type, fn) => { (listeners[type] ||= []).push(fn); }),
 		removeEventListener: jest.fn((type, fn) => { listeners[type] = (listeners[type] || []).filter(x => x !== fn); }),
 		emit(type) { (listeners[type] || []).forEach(fn => fn()); } };
@@ -45,4 +45,15 @@ test('video replacement aborts the previous video signal', () => {
 test('initialization and disposal are idempotent', () => {
 	const fixture = setup(); fixture.coordinator.start(); fixture.coordinator.dispose(); fixture.coordinator.dispose();
 	expect(fixture.document.removeEventListener).toHaveBeenCalledTimes(5);
+});
+
+test('a reused video element with a new source aborts stale video work', () => {
+	const fixture = setup();
+	const oldSignal = fixture.coordinator.videoSignal;
+	fixture.video.src = 'blob:video-next';
+	fixture.video.currentSrc = 'blob:video-next';
+	fixture.video.emit('loadstart');
+	expect(oldSignal.aborted).toBe(true);
+	expect(fixture.coordinator.videoSignal.aborted).toBe(false);
+	fixture.coordinator.dispose();
 });

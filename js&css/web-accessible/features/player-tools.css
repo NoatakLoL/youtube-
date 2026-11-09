@@ -1,0 +1,22 @@
+/* youtube+ player feature controls */
+.ytplus-player-button { border:0; border-radius:7px; background:rgba(0,0,0,.55); color:#fff; padding:5px 8px; cursor:pointer; font:13px Roboto,Arial,sans-serif; margin:0 2px; }
+.ytplus-speed-controls { display:inline-flex; align-items:center; gap:2px; margin:0 4px; }
+.ytplus-speed-controls button { border:0; border-radius:7px; background:rgba(0,0,0,.55); color:#fff; padding:5px 8px; cursor:pointer; font:13px Roboto,Arial,sans-serif; }
+.ytplus-speed-value { min-width:42px; text-align:center; color:#fff; font-size:11px; }
+.ytplus-bookmark-panel { position:absolute; z-index:100; right:12px; bottom:48px; width:min(360px,calc(100% - 24px)); max-height:min(68%,480px); overflow:auto; padding:12px; border-radius:12px; color:var(--ytplus-text,#202124); background:var(--ytplus-bg,#fff); box-shadow:0 8px 28px rgba(0,0,0,.25); font:12px Roboto,Arial,sans-serif; }
+.ytplus-bookmark-panel[hidden] { display:none !important; }
+.ytplus-bookmark-panel header, .ytplus-bookmark-panel footer, .ytplus-bookmark-item { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.ytplus-bookmark-panel header { margin-bottom:10px; }
+.ytplus-bookmark-panel button { cursor:pointer; border:1px solid #aaa6; border-radius:7px; padding:6px 8px; color:inherit; background:#8882; }
+.ytplus-bookmark-panel form label { display:block; }
+.ytplus-bookmark-panel input { width:100%; box-sizing:border-box; border:1px solid #8888; border-radius:7px; padding:8px; margin:5px 0; color:inherit; background:transparent; }
+.ytplus-bookmark-panel form button { width:100%; }
+.ytplus-bookmark-item { margin:5px 0; }
+.ytplus-bookmark-item .ytplus-bookmark-jump { flex:1; min-width:0; text-align:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.ytplus-floating-controls { position:absolute; z-index:80; display:flex; align-items:center; gap:5px; right:16px; bottom:54px; padding:7px; border-radius:10px; background:rgba(0,0,0,.64); backdrop-filter:blur(8px); }
+.ytplus-floating-controls[hidden] { display:none !important; }
+.ytplus-floating-controls button { color:#fff; border:1px solid rgba(255,255,255,.22); border-radius:7px; background:rgba(30,30,30,.75); padding:6px 9px; cursor:pointer; }
+.ytplus-floating-controls[data-dock="bottom-left"] { right:auto; left:16px; }
+.ytplus-floating-controls[data-dock="top-right"] { bottom:auto; top:54px; }
+.ytplus-floating-controls[data-dock="top-left"] { bottom:auto; top:54px; right:auto; left:16px; }
+.ytplus-floating-controls[hidden], .ytplus-bookmark-panel[hidden] { display:none !important; }
