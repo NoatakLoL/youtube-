@@ -131,7 +131,7 @@ test('storage-change notifications update only the changed top-level key and ret
 	expect(document.documentElement.setAttribute).toHaveBeenCalledWith('it-player-caption-x', 62);
 });
 
-test('extension storage.set persists zero values and removes explicit empty values', () => {
+test('extension storage.set persists zero and false values and removes nullish values', () => {
 	const set = jest.fn();
 	const remove = jest.fn();
 	const chrome = {
@@ -148,5 +148,9 @@ test('extension storage.set persists zero values and removes explicit empty valu
 	expect(remove).not.toHaveBeenCalled();
 
 	storage.set('ytplus_enabled', false);
-	expect(remove).toHaveBeenCalledWith(['ytplus_enabled']);
+	expect(set).toHaveBeenCalledWith({ ytplus_enabled: false });
+	expect(remove).not.toHaveBeenCalled();
+
+	storage.set('ytplus_optional', null);
+	expect(remove).toHaveBeenCalledWith(['ytplus_optional']);
 });
