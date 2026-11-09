@@ -85,7 +85,7 @@
 	}
 	function save(app, key, value) {
 		if (!app || !app.storage) return;
-		if (value === undefined || value === null || value === false || value === '') delete app.storage[key];
+		if (value === undefined || value === null || value === '') delete app.storage[key];
 		else app.storage[key] = value;
 		if (app.messages && app.messages.send) app.messages.send({ action: 'set', key, value });
 	}

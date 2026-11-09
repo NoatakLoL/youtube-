@@ -60,6 +60,7 @@
 		start() {
 			if (this.started || this.disposed) return this;
 			this.started = true;
+			this.document.addEventListener('yt-navigate-start', this._boundRoute);
 			this.document.addEventListener('yt-navigate-finish', this._boundRoute);
 			this.document.addEventListener('spf:navigate', this._boundRoute);
 			this.document.addEventListener('visibilitychange', this._boundVisibility);
@@ -95,7 +96,7 @@
 		_onRoute(event) {
 			if (this.disposed) return;
 			const next = this._routeKey();
-			if (event?.type === 'spf:navigate') {
+			if (event?.type === 'spf:navigate' || event?.type === 'yt-navigate-start') {
 				if (!this.routePending) this._beginRoute('spf:navigate');
 				this.routePending = true;
 				return;
@@ -282,6 +283,7 @@
 			this.videoController?.abort('disposed');
 			this._detachVideo(false);
 			this.observer?.disconnect();
+			this.document.removeEventListener('yt-navigate-start', this._boundRoute);
 			this.document.removeEventListener('yt-navigate-finish', this._boundRoute);
 			this.document.removeEventListener('spf:navigate', this._boundRoute);
 			this.document.removeEventListener('visibilitychange', this._boundVisibility);

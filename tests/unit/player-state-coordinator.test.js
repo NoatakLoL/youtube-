@@ -85,3 +85,15 @@ test('the state coordinator loads before the legacy player metadata initializer'
 	expect(orderedFiles.indexOf('/js&css/web-accessible/state/player-state-coordinator.js'))
 		.toBeLessThan(orderedFiles.indexOf('/js&css/web-accessible/www.youtube.com/player.js'));
 });
+
+
+test('yt-navigate-start aborts stale work immediately', () => {
+	const fixture = setup();
+	const routeSignal = fixture.coordinator.routeSignal;
+	const videoSignal = fixture.coordinator.videoSignal;
+	fixture.document.dispatchEvent({ type: 'yt-navigate-start' });
+	expect(routeSignal.aborted).toBe(true);
+	expect(videoSignal.aborted).toBe(true);
+	expect(fixture.coordinator.routeSignal.aborted).toBe(false);
+	fixture.coordinator.dispose();
+});
