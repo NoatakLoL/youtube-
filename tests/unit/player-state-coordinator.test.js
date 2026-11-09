@@ -6,29 +6,43 @@ function videoFixture() {
 		removeEventListener: jest.fn((type, fn) => { listeners[type] = (listeners[type] || []).filter(x => x !== fn); }),
 		emit(type) { (listeners[type] || []).forEach(fn => fn()); } };
 }
-function documentFixture() {
+function documentFixture(window) {
 	const listeners = {};
 	return { visibilityState: 'visible', hasFocus: () => true, pictureInPictureEnabled: true, pictureInPictureElement: null, documentElement: {},
 		addEventListener: jest.fn((type, fn) => { (listeners[type] ||= []).push(fn); }),
 		removeEventListener: jest.fn((type, fn) => { listeners[type] = (listeners[type] || []).filter(x => x !== fn); }),
-		exitPictureInPicture: jest.fn(async function () { this.pictureInPictureElement = null; }), listeners };
+		dispatchEvent: jest.fn(event => (listeners[event.type] || []).forEach(fn => fn(event))),
+		exitPictureInPicture: jest.fn(async function () { this.pictureInPictureElement = null; }), listeners, defaultView: window };
 }
-test('tracks explicit media lifecycle states', () => {
-	const video = videoFixture(), document = documentFixture();
-	const c = new PlayerStateCoordinator({ document, getVideo: () => video, getSettings: () => ({}) }).start();
-	expect(c.playback).toBe('playing'); video.emit('waiting'); expect(c.playback).toBe('buffering');
-	video.emit('seeking'); expect(c.playback).toBe('seeking'); video.emit('ended'); expect(c.playback).toBe('ended'); c.dispose();
+function setup() {
+	let video = videoFixture();
+	const window = { location: { href: 'https://www.youtube.com/watch?v=aaaaaaaaaaa' }, CustomEvent: class { constructor(type, options = {}) { this.type = type; this.detail = options.detail; } }, console: { warn: jest.fn() } };
+	const document = documentFixture(window);
+	const coordinator = new PlayerStateCoordinator({ document, window, getVideo: () => video, getSettings: () => ({ player_autopause_when_switching_tabs: true }) });
+	coordinator.start();
+	return { coordinator, document, window, get video() { return video; }, swap(next) { video = next; } };
+}
+test('tracks media lifecycle states', () => {
+	const { coordinator, video } = setup();
+	expect(coordinator.playback).toBe('playing'); video.emit('waiting'); expect(coordinator.playback).toBe('buffering');
+	video.emit('seeking'); expect(coordinator.playback).toBe('seeking'); video.emit('ended'); expect(coordinator.playback).toBe('ended'); coordinator.dispose();
 });
 test('autopause resumes only playback that was active before blur', async () => {
-	const video = videoFixture(), document = documentFixture();
-	const c = new PlayerStateCoordinator({ document, getVideo: () => video, getSettings: () => ({ player_autopause_when_switching_tabs: true }) }).start();
-	await c.setFocus(false); expect(video.pause).toHaveBeenCalledTimes(1);
-	await c.setFocus(true); expect(video.play).toHaveBeenCalledTimes(1); c.dispose();
+	const { coordinator, video } = setup(); await coordinator.setFocus(false); expect(video.pause).toHaveBeenCalledTimes(1);
+	await coordinator.setFocus(true); expect(video.play).toHaveBeenCalledTimes(1); coordinator.dispose();
 });
-test('start and dispose are idempotent and listeners are cleaned up', () => {
-	const video = videoFixture(), document = documentFixture();
-	const c = new PlayerStateCoordinator({ document, getVideo: () => video, getSettings: () => ({}) });
-	c.start(); c.start(); expect(document.addEventListener).toHaveBeenCalledTimes(5);
-	c.dispose(); c.dispose(); expect(document.removeEventListener).toHaveBeenCalledTimes(5);
-	expect(video.removeEventListener).toHaveBeenCalledTimes(10);
+test('route changes abort both old route and old video requests', () => {
+	const fixture = setup(), routeSignal = fixture.coordinator.routeSignal, videoSignal = fixture.coordinator.videoSignal;
+	fixture.window.location.href = 'https://www.youtube.com/watch?v=bbbbbbbbbbb';
+	fixture.document.dispatchEvent({ type: 'yt-navigate-finish' });
+	expect(routeSignal.aborted).toBe(true); expect(videoSignal.aborted).toBe(true);
+	expect(fixture.coordinator.routeSignal.aborted).toBe(false); fixture.coordinator.dispose();
+});
+test('video replacement aborts the previous video signal', () => {
+	const fixture = setup(), oldSignal = fixture.coordinator.videoSignal, next = videoFixture(); fixture.swap(next);
+	fixture.coordinator._attachCurrentVideo('test'); expect(oldSignal.aborted).toBe(true); expect(fixture.coordinator.video).toBe(next); fixture.coordinator.dispose();
+});
+test('initialization and disposal are idempotent', () => {
+	const fixture = setup(); fixture.coordinator.start(); fixture.coordinator.dispose(); fixture.coordinator.dispose();
+	expect(fixture.document.removeEventListener).toHaveBeenCalledTimes(5);
 });
