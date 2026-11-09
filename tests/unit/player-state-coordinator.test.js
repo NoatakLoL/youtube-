@@ -73,3 +73,15 @@ test('uses WebKit presentation mode when standard PiP APIs are unavailable', asy
 	expect(fixture.coordinator.pip).toBe('inactive');
 	fixture.coordinator.dispose();
 });
+test('the state coordinator loads before the legacy player metadata initializer', () => {
+	const fs = require('fs');
+	const path = require('path');
+	const initSource = fs.readFileSync(path.join(__dirname, '../../js&css/extension/init.js'), 'utf8');
+	const listStart = initSource.indexOf('const pageWorldFiles = [');
+	const listEnd = initSource.indexOf('\n];', listStart);
+	expect(listStart).toBeGreaterThanOrEqual(0);
+	expect(listEnd).toBeGreaterThan(listStart);
+	const orderedFiles = initSource.slice(listStart, listEnd);
+	expect(orderedFiles.indexOf('/js&css/web-accessible/state/player-state-coordinator.js'))
+		.toBeLessThan(orderedFiles.indexOf('/js&css/web-accessible/www.youtube.com/player.js'));
+});
