@@ -7,7 +7,7 @@
 })(typeof window !== 'undefined' ? window : null, function () {
 	'use strict';
 	function safeFilename(value) {
-		return String(value || 'youtube-video').replace(/[\\/:*?"<>|]+/g, '_').replace(/\s+/g, ' ').trim().slice(0, 100) || 'youtube-video';
+		return String(value || 'youtube-video').replace(/[\\/:*?"<>|]+/g, '_').replace(/\s+/g, ' ').replace(/^_+|_+$/g, '').trim().slice(0, 100) || 'youtube-video';
 	}
 	async function captureFrame(video, title, download = true) {
 		if (!video || !video.videoWidth || !video.videoHeight) throw new Error('Video frame is not ready yet.');

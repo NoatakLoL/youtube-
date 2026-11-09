@@ -224,7 +224,7 @@
 			panel.appendChild(card);
 		});
 	}
-	function mountUi() {
+	function mount() {
 		if (state.mounted) return;
 		state.mounted = true;
 		const root = el('section', 'ytplus-studio');
@@ -253,19 +253,15 @@
 		}));
 		renderSettings(); renderBookmarks();
 	}
-	async function initialize(force = false) {
-		if (state.mounted) return;
+	async function initialize() {
 		try { state.settings = await getAll(); }
 		catch (error) { console.warn('[youtube+] settings storage unavailable', error); state.settings = {}; }
-		/* Do not render around the extension's existing password gate. The authenticated Satus render calls mount(). */
-		if (!force && state.settings.require_password === true && state.settings.password) return;
-		mountUi();
+		mount();
 	}
 	window.extension = window.extension || {};
-	window.extension.studio = {
-		mount: () => initialize(true),
-		initialize: () => initialize(false)
-	};
+	window.extension.studio = { mount, initialize };
+	document.addEventListener('DOMContentLoaded', initialize, { once: true });
+	if (document.readyState !== 'loading') initialize();
 	api.storage.onChanged && api.storage.onChanged.addListener((changes, area) => {
 		if (area !== 'local') return;
 		Object.keys(changes).forEach(key => { state.settings[key] = changes[key].newValue; });
