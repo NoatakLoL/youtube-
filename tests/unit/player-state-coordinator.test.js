@@ -73,17 +73,37 @@ test('uses WebKit presentation mode when standard PiP APIs are unavailable', asy
 	expect(fixture.coordinator.pip).toBe('inactive');
 	fixture.coordinator.dispose();
 });
-test('the state coordinator loads before the legacy player metadata initializer', () => {
+test('page-world modules are declared, web-accessible, and injected in dependency order', () => {
 	const fs = require('fs');
 	const path = require('path');
 	const initSource = fs.readFileSync(path.join(__dirname, '../../js&css/extension/init.js'), 'utf8');
+	const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, '../../manifest.json'), 'utf8'));
 	const listStart = initSource.indexOf('const pageWorldFiles = [');
 	const listEnd = initSource.indexOf('\n];', listStart);
 	expect(listStart).toBeGreaterThanOrEqual(0);
 	expect(listEnd).toBeGreaterThan(listStart);
 	const orderedFiles = initSource.slice(listStart, listEnd);
-	expect(orderedFiles.indexOf('/js&css/web-accessible/state/player-state-coordinator.js'))
-		.toBeLessThan(orderedFiles.indexOf('/js&css/web-accessible/www.youtube.com/player.js'));
+	const modules = [
+		'/js&css/web-accessible/state/player-state-coordinator.js',
+		'/js&css/web-accessible/features/runtime.js',
+		'/js&css/web-accessible/features/bookmarks.js',
+		'/js&css/web-accessible/features/capture.js',
+		'/js&css/web-accessible/features/playback.js',
+		'/js&css/web-accessible/features/audio.js',
+		'/js&css/web-accessible/features/overlay.js',
+		'/js&css/web-accessible/features/keybinds.js',
+		'/js&css/web-accessible/features/lifecycle.js',
+		'/js&css/web-accessible/features/player-tools.css',
+		'/js&css/web-accessible/www.youtube.com/player.js'
+	];
+	let previousIndex = -1;
+	const resources = manifest.web_accessible_resources.flatMap(entry => entry.resources);
+	modules.forEach(resource => {
+		const index = orderedFiles.indexOf("'" + resource + "'");
+		expect(index).toBeGreaterThan(previousIndex);
+		expect(resources).toContain(resource.slice(1));
+		previousIndex = index;
+	});
 });
 
 test('yt-navigate-start aborts stale work immediately', () => {
