@@ -13,7 +13,7 @@
 		const url = new URL(location.href);
 		return url.pathname.startsWith('/shorts/') ? url.pathname.split('/')[2] : url.searchParams.get('v');
 	}
-	function init({ app, helpers, scope }) {
+	function init({ app, helpers }) {
 		if (app.storage.ytplus_bookmarks_enabled !== true) return;
 		const video = helpers.getVideo(app);
 		const player = helpers.getPlayer(app);

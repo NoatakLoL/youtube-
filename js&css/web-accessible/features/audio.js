@@ -17,8 +17,9 @@
 		if (!AudioContextClass) throw new Error('Web Audio is not available in this browser.');
 		const context = new AudioContextClass();
 		let source;
-		try { source = context.createMediaElementSource(video); }
-		catch (error) {
+		try {
+			source = context.createMediaElementSource(video);
+		} catch (error) {
 			context.close().catch(() => {});
 			throw new Error('YouTube or another extension already owns this video audio route. The equalizer cannot safely take control.');
 		}
@@ -44,8 +45,13 @@
 	}
 	function attach({ app, helpers, video }) {
 		let graph;
-		try { graph = setup(video); apply(graph, app.storage); }
-		catch (error) { helpers.notify(error.message, 'error'); return undefined; }
+		try {
+			graph = setup(video);
+			apply(graph, app.storage);
+		} catch (error) {
+			helpers.notify(error.message, 'error');
+			return undefined;
+		}
 		const resume = () => graph.context.resume().catch(() => {});
 		video.addEventListener('play', resume);
 		video.addEventListener('playing', resume);

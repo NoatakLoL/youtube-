@@ -14,8 +14,11 @@
 		let disposed = false;
 		function addCleanup(fn) {
 			if (typeof fn !== 'function') return fn;
-			if (disposed) { try { fn(); } catch (_) { } }
-			else cleanups.push(fn);
+			if (disposed) {
+				try { fn(); } catch (_) { }
+			} else {
+				cleanups.push(fn);
+			}
 			return fn;
 		}
 		function listen(target, type, listener, options) {

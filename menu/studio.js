@@ -176,8 +176,12 @@
 		const importInput = el('input'); importInput.type = 'file'; importInput.accept = 'application/json,.json';
 		importInput.addEventListener('change', async () => {
 			if (!importInput.files || !importInput.files[0]) return;
-			try { await importConfiguration(importInput.files[0]); notify('Settings imported. Reload YouTube tabs to apply all legacy settings.', 'success'); }
-			catch (error) { notify(error.message || 'Could not import settings.', 'error'); }
+			try {
+				await importConfiguration(importInput.files[0]);
+				notify('Settings imported. Reload YouTube tabs to apply all legacy settings.', 'success');
+			} catch (error) {
+				notify(error.message || 'Could not import settings.', 'error');
+			}
 			importInput.value = '';
 		});
 		importLabel.appendChild(importInput);
@@ -255,8 +259,12 @@
 	}
 	async function initialize(force = false) {
 		if (state.mounted) return;
-		try { state.settings = await getAll(); }
-		catch (error) { console.warn('[youtube+] settings storage unavailable', error); state.settings = {}; }
+		try {
+			state.settings = await getAll();
+		} catch (error) {
+			console.warn('[youtube+] settings storage unavailable', error);
+			state.settings = {};
+		}
 		/* Keep the existing extension password gate authoritative. */
 		if (!force && state.settings.require_password === true && state.settings.password) return;
 		mountUi();

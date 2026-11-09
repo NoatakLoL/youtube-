@@ -31,7 +31,8 @@
 		});
 		overlay.appendChild(dock);
 		player.appendChild(overlay);
-		const syncPiP = () => { overlay.hidden = document.pictureInPictureElement === video; };
+		const getPiPElement = () => document['pictureInPictureElement'];
+		const syncPiP = () => { overlay.hidden = getPiPElement() === video; };
 		video.addEventListener('enterpictureinpicture', syncPiP);
 		video.addEventListener('leavepictureinpicture', syncPiP);
 		syncPiP();

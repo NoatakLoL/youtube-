@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest tests",
     "start": "echo 'This is a browser extension. Please see walkthrough.md for loading instructions.'",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:refactor": "eslint --quiet \"js&css/web-accessible/state/player-state-coordinator.js\" \"js&css/web-accessible/features/*.js\" menu/studio.js tests/unit/player-state-coordinator.test.js tests/unit/bookmarks.test.js tests/unit/capture.test.js tests/unit/playback-controls.test.js tests/unit/keybinds.test.js tests/unit/feature-scope.test.js"
   },
   "keywords": [],
   "author": "",

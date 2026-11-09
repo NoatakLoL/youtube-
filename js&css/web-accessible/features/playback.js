@@ -10,7 +10,7 @@
 		if (!video) return false;
 		const property = 'preservesPitch' in video ? 'preservesPitch'
 			: 'mozPreservesPitch' in video ? 'mozPreservesPitch'
-			: 'webkitPreservesPitch' in video ? 'webkitPreservesPitch' : null;
+				: 'webkitPreservesPitch' in video ? 'webkitPreservesPitch' : null;
 		if (!property) return false;
 		video[property] = Boolean(enabled);
 		return true;
