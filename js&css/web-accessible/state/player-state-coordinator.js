@@ -37,6 +37,7 @@
 			this.pip = document.pictureInPictureElement ? 'active' : 'inactive';
 			this.transition = 'idle';
 			this.video = null;
+			this.videoSource = '';
 			this.wasPlayingBeforeBlur = false;
 			this.routeKey = this._routeKey();
 			this.routeEpoch = 0;
@@ -121,9 +122,11 @@
 			if (this.disposed) return;
 			let next = null;
 			try { next = this.getVideo(); } catch (error) { this._report(error); }
-			if (next === this.video) return;
-			this._detachVideo(true);
+			const nextSource = this._sourceKey(next);
+			if (next === this.video && nextSource === this.videoSource) return;
+			const previousVideo = this._detachVideo(true);
 			this.video = next || null;
+			this.videoSource = nextSource;
 			this.videoController = makeController();
 			if (this.video) {
 				this.playback = this.video.ended ? 'ended' : this.video.paused ? 'paused' : 'playing';
@@ -135,17 +138,27 @@
 					emptied: 'unstarted'
 				};
 				Object.entries(events).forEach(([type, state]) => {
-					const listener = () => this._setPlayback(typeof state === 'function' ? state() : state);
+					const listener = () => {
+						if ((type === 'loadstart' || type === 'emptied') && this._sourceKey(attachedVideo) !== this.videoSource) {
+							this._attachCurrentVideo('video-source-change');
+							return;
+						}
+						this._setPlayback(typeof state === 'function' ? state() : state);
+					};
 					try { attachedVideo.addEventListener(type, listener, this.videoController ? { signal: this.videoController.signal } : false); }
 					catch (_) { attachedVideo.addEventListener(type, listener); }
 					this.videoCleanup.push(() => attachedVideo.removeEventListener(type, listener));
 				});
 			}
 			this._emit('ytplus:videochange', {
-				video: this.video, previousVideo: null, reason,
+				video: this.video, previousVideo, reason,
 				routeSignal: this.routeSignal, signal: this.videoSignal,
 				routeEpoch: this.routeEpoch
 			});
+		}
+		_sourceKey(video) {
+			if (!video) return '';
+			return video.currentSrc || (video.getAttribute && video.getAttribute('src')) || video.src || '';
 		}
 		_detachVideo(abortController = true) {
 			const previousVideo = this.video;
@@ -154,6 +167,7 @@
 				try { cleanup(); } catch (error) { this._report(error); }
 			});
 			this.video = null;
+			this.videoSource = '';
 			return previousVideo;
 		}
 		_setPlayback(state) { if (PLAYBACK_STATES.has(state)) this.playback = state; }

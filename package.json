@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest tests",
     "start": "echo 'This is a browser extension. Please see walkthrough.md for loading instructions.'",
-    "lint": "eslint --ignore-path tests/.gitignore"
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
