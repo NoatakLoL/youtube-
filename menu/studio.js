@@ -224,7 +224,7 @@
 			panel.appendChild(card);
 		});
 	}
-	function mount() {
+	function mountUi() {
 		if (state.mounted) return;
 		state.mounted = true;
 		const root = el('section', 'ytplus-studio');
@@ -253,15 +253,19 @@
 		}));
 		renderSettings(); renderBookmarks();
 	}
-	async function initialize() {
+	async function initialize(force = false) {
+		if (state.mounted) return;
 		try { state.settings = await getAll(); }
 		catch (error) { console.warn('[youtube+] settings storage unavailable', error); state.settings = {}; }
-		mount();
+		/* Keep the existing extension password gate authoritative. */
+		if (!force && state.settings.require_password === true && state.settings.password) return;
+		mountUi();
 	}
 	window.extension = window.extension || {};
-	window.extension.studio = { mount, initialize };
-	document.addEventListener('DOMContentLoaded', initialize, { once: true });
-	if (document.readyState !== 'loading') initialize();
+	window.extension.studio = {
+		mount: () => initialize(true),
+		initialize: () => initialize(false)
+	};
 	api.storage.onChanged && api.storage.onChanged.addListener((changes, area) => {
 		if (area !== 'local') return;
 		Object.keys(changes).forEach(key => { state.settings[key] = changes[key].newValue; });
