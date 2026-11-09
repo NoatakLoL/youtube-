@@ -634,15 +634,14 @@ document.addEventListener('it-message-from-extension', function () {
 			if (ImprovedTube[camelized_key]) {
 				try { ImprovedTube[camelized_key]() } catch { };
 			}
-		} else if (message.focus === true && ImprovedTube.elements.player) {
+		} else if (message.focus === true) {
+			ImprovedTube.stateCoordinator?.setFocus(true);
 			ImprovedTube.focus = true;
-
-			ImprovedTube.pageOnFocus();
-		} else if (message.blur === true && ImprovedTube.elements.player) {
+			if (ImprovedTube.elements.player) ImprovedTube.pageOnFocus();
+		} else if (message.blur === true) {
+			ImprovedTube.stateCoordinator?.setFocus(false);
 			ImprovedTube.focus = false;
-
-			ImprovedTube.pageOnFocus();
-
+			if (ImprovedTube.elements.player) ImprovedTube.pageOnFocus();
 			document.dispatchEvent(new CustomEvent('improvedtube-blur'));
 		} else if (message.pause === true) {
 			if (ImprovedTube.elements.player) {

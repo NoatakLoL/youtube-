@@ -52,6 +52,7 @@ ImprovedTube.forcedPlayVideoFromTheBeginning = function () {
 AUTOPAUSE WHEN SWITCHING TABS
 ------------------------------------------------------------------------------*/
 ImprovedTube.playerAutopauseWhenSwitchingTabs = function () {
+	if (this.stateCoordinator) return;
 	const player = this.elements.player,
 		video = this.elements.video,
 		isVisibleTab = document.visibilityState === 'visible' && document.hasFocus();
@@ -94,6 +95,7 @@ ImprovedTube.enterPip = function (disable) {
 AUTO PIP WHEN SWITCHING TABS
 ------------------------------------------------------------------------------*/
 ImprovedTube.playerAutoPip = function () {
+	if (this.stateCoordinator) return;
 	const video = this.elements.video;
 
 	if (this.storage.player_autoPip && this.storage.player_autoPip_outside && this.focus) {
