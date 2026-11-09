@@ -28,13 +28,30 @@
 			node.type = index === 0 ? 'lowshelf' : index === 4 ? 'highshelf' : 'peaking';
 			node.frequency.value = frequency; node.Q.value = 0.8; return node;
 		});
-		const gain = context.createGain(); gain.gain.value = 1;
+		const gain = context.createGain();
+		gain.gain.value = 1;
+		const compressor = context.createDynamicsCompressor();
+		compressor.threshold.value = -26;
+		compressor.knee.value = 24;
+		compressor.ratio.value = 1;
+		compressor.attack.value = 0.003;
+		compressor.release.value = 0.25;
 		let previous = source;
 		filters.forEach(filter => { previous.connect(filter); previous = filter; });
-		previous.connect(gain); gain.connect(context.destination);
-		const graph = { context, source, filters, gain };
+		previous.connect(gain);
+		gain.connect(compressor);
+		compressor.connect(context.destination);
+		const graph = { context, source, filters, gain, compressor };
 		routing.set(video, graph);
 		return graph;
+	}
+	function compressorProfile(settings) {
+		const active = settings.ytplus_audio_enabled === true && settings.ytplus_audio_preset === 'night';
+		return {
+			threshold: active ? -26 : 0,
+			knee: active ? 24 : 0,
+			ratio: active ? 4 : 1
+		};
 	}
 	function apply(graph, settings) {
 		const enabled = settings.ytplus_audio_enabled === true;
@@ -42,6 +59,10 @@
 		graph.filters.forEach((filter, index) => filter.gain.setTargetAtTime(values[index], graph.context.currentTime, 0.04));
 		const gain = enabled ? Number(settings.ytplus_audio_gain) || 1 : 1;
 		graph.gain.gain.setTargetAtTime(Math.max(0, Math.min(3, gain)), graph.context.currentTime, 0.05);
+		const compression = compressorProfile(settings);
+		graph.compressor.threshold.setTargetAtTime(compression.threshold, graph.context.currentTime, 0.05);
+		graph.compressor.knee.setTargetAtTime(compression.knee, graph.context.currentTime, 0.05);
+		graph.compressor.ratio.setTargetAtTime(compression.ratio, graph.context.currentTime, 0.05);
 	}
 	function attach({ app, helpers, video }) {
 		let graph;
@@ -89,5 +110,5 @@
 		Object.assign(app.storage, values);
 		Object.entries(values).forEach(([key, value]) => app.messages && app.messages.send({ action: 'set', key, value }));
 	}
-	return { init, onSettingsChange, presets: Object.keys(PRESETS), apply, toggle };
+	return { init, onSettingsChange, presets: Object.keys(PRESETS), compressorProfile, apply, toggle };
 });

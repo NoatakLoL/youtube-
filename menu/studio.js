@@ -155,7 +155,7 @@
 		toggle('Enable equalizer', 'Opt in to Web Audio processing for this video.', 'ytplus_audio_enabled', audio);
 		selectField('Audio preset', 'Choose the equalizer curve.', 'ytplus_audio_preset', [
 			['flat', 'Flat'], ['voice', 'Voice clarity'], ['bass', 'Bass boost'],
-			['treble', 'Treble boost'], ['night', 'Night mode']
+			['treble', 'Treble boost'], ['night', 'Night mode compression']
 		], 'flat', audio);
 		numberField('Master gain (×)', 'Linear gain multiplier. 3.0 is 300%; high levels may distort.', 'ytplus_audio_gain', 0, 3, 0.05, 1, audio);
 
