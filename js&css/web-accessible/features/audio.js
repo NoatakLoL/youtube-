@@ -41,7 +41,12 @@
 		previous.connect(gain);
 		gain.connect(compressor);
 		compressor.connect(context.destination);
-		const graph = { context, source, filters, gain, compressor };
+		const resume = () => context.resume().catch(() => {});
+		/* MediaElementSource replaces direct media output; keep an unlock handler
+		 * for the lifetime of this source so later play/resume events restore audio. */
+		video.addEventListener('play', resume);
+		video.addEventListener('playing', resume);
+		const graph = { context, source, filters, gain, compressor, resume };
 		routing.set(video, graph);
 		return graph;
 	}
@@ -57,12 +62,19 @@
 		const enabled = settings.ytplus_audio_enabled === true;
 		const values = enabled ? (PRESETS[settings.ytplus_audio_preset] || PRESETS.flat) : PRESETS.flat;
 		graph.filters.forEach((filter, index) => filter.gain.setTargetAtTime(values[index], graph.context.currentTime, 0.04));
-		const gain = enabled ? Number(settings.ytplus_audio_gain) || 1 : 1;
+		const configuredGain = Number(settings.ytplus_audio_gain);
+		const gain = enabled && Number.isFinite(configuredGain) ? configuredGain : 1;
 		graph.gain.gain.setTargetAtTime(Math.max(0, Math.min(3, gain)), graph.context.currentTime, 0.05);
 		const compression = compressorProfile(settings);
 		graph.compressor.threshold.setTargetAtTime(compression.threshold, graph.context.currentTime, 0.05);
 		graph.compressor.knee.setTargetAtTime(compression.knee, graph.context.currentTime, 0.05);
 		graph.compressor.ratio.setTargetAtTime(compression.ratio, graph.context.currentTime, 0.05);
+	}
+	function deactivate(graph) {
+		apply(graph, { ytplus_audio_enabled: false, ytplus_audio_gain: 1, ytplus_audio_preset: 'flat' });
+		/* Do not suspend: this MediaElementSource has replaced the element's
+		 * native output path. A suspended context would mute YouTube playback. */
+		return graph.context.resume().catch(() => {});
 	}
 	function attach({ app, helpers, video }) {
 		let graph;
@@ -73,16 +85,10 @@
 			helpers.notify(error.message, 'error');
 			return undefined;
 		}
-		const resume = () => graph.context.resume().catch(() => {});
-		video.addEventListener('play', resume);
-		video.addEventListener('playing', resume);
-		if (app.storage.ytplus_audio_enabled === true) resume();
+		if (app.storage.ytplus_audio_enabled === true) graph.resume();
 		return () => {
-			video.removeEventListener('play', resume);
-			video.removeEventListener('playing', resume);
-			apply(graph, { ytplus_audio_enabled: false });
-			/* Keep the one-to-one MediaElementSource mapping for a reused YouTube video node. */
-			graph.context.suspend().catch(() => {});
+			deactivate(graph);
+			/* The source graph is intentionally retained for this media element. */
 		};
 	}
 	function init(context) {
@@ -98,8 +104,8 @@
 		const graph = routing.get(video);
 		if (graph) {
 			apply(graph, context.app.storage);
-			if (context.app.storage.ytplus_audio_enabled === true) graph.context.resume().catch(() => {});
-			else graph.context.suspend().catch(() => {});
+			if (context.app.storage.ytplus_audio_enabled === true) graph.resume();
+			else deactivate(graph);
 			return;
 		}
 		if (context.app.storage.ytplus_audio_enabled === true) return attach(Object.assign({}, context, { video }));
@@ -110,5 +116,5 @@
 		Object.assign(app.storage, values);
 		Object.entries(values).forEach(([key, value]) => app.messages && app.messages.send({ action: 'set', key, value }));
 	}
-	return { init, onSettingsChange, presets: Object.keys(PRESETS), compressorProfile, apply, toggle };
+	return { init, onSettingsChange, presets: Object.keys(PRESETS), compressorProfile, apply, deactivate, toggle };
 });
