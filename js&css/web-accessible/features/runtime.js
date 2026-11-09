@@ -63,7 +63,10 @@
 			: [m, String(s).padStart(2, '0')].join(':');
 	}
 	function escapeMarkdown(value) {
-		return String(value === undefined || value === null ? '' : value).replace(/[\\*_{}\x5B\x5D()#+\-.!|>]/g, '\\return String(value === undefined || value === null ? '' : value).replace(/[\\*_{}\[\]()#+\-.!|>]/g, '\\$&').replace(/\r?\n/g, ' ');').replace(/\r?\n/g, ' ');
+		const escapable = new Set(['\\', String.fromCharCode(96), '*', '_', '{', '}', '[', ']', '(', ')', '#', '+', '-', '.', '!', '|', '>']);
+		return Array.from(String(value === undefined || value === null ? '' : value), character => {
+			return escapable.has(character) ? '\\' + character : character;
+		}).join('').replace(/\r?\n/g, ' ');
 	}
 	function notify(message, kind = 'info') {
 		if (typeof document === 'undefined') return;
