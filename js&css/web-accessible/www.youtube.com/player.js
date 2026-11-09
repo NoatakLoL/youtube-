@@ -265,9 +265,17 @@ if (title && title !== 'YouTube') {
 			 DATA.videoID = ImprovedTube.videoId() || false;     // console.log("SPEED: TITLE:" + ImprovedTube.videoTitle() + DATA.title);
 			 if ( DATA.title && (DATA.title === ImprovedTube.videoTitle() || DATA.title.replace(/\s{2,}/g, ' ') === ImprovedTube.videoTitle()) )
 				{ keywords = document.querySelector('meta[name="keywords"]')?.content || ''; ImprovedTube.speedException(); }
-				else { keywords = ''; (async function () { try { const response = await fetch(`https://www.youtube.com/watch?v=${DATA.videoID}`);
-					console.log("loading the html source:" + `https://www.youtube.com/watch?v=${DATA.videoID}`);
-					const htmlContent = await response.text();
+				else {
+					const requestedVideoId = DATA.videoID;
+				const requestSignal = ImprovedTube.stateCoordinator?.videoSignal;
+				keywords = '';
+				(async function () {
+					try {
+						const response = await fetch(`https://www.youtube.com/watch?v=${requestedVideoId}`, { signal: requestSignal });
+						if (requestSignal?.aborted || ImprovedTube.videoId() !== requestedVideoId) return;
+						console.log("loading the html source:" + `https://www.youtube.com/watch?v=${requestedVideoId}`);
+						const htmlContent = await response.text();
+						if (requestSignal?.aborted || ImprovedTube.videoId() !== requestedVideoId) return;
 					const metaRegex = /<meta[^>]+(?:name|itemprop)=["'](keywords|genre|duration|title)["'][^>]+content=["']([^"']+)["'][^>]*>/gi;
 					let match; while ((match = metaRegex.exec(htmlContent)) !== null) { // console.log(match);
 						const [, property, value] = match;
@@ -275,7 +283,11 @@ if (title && title !== 'YouTube') {
 					}
 					amountOfSongs = (htmlContent.slice(-80000).match(/},"subtitle":{"simpleText":"(\d*)\s/) || [])[1] || false;
 					if (keywords) { ImprovedTube.speedException(); }
-				} catch (error) { console.error('Error: fetching from https://Youtube.com/watch?v=${DATA.videoID}', error); keywords = ''; }
+				} catch (error) {
+						if (error?.name === 'AbortError' || requestSignal?.aborted || ImprovedTube.videoId() !== requestedVideoId) return;
+						console.error('Error: fetching from https://Youtube.com/watch?v=' + requestedVideoId, error);
+						keywords = '';
+					}
 				})();
 				}
 }
@@ -3257,17 +3269,26 @@ if (title && title !== 'YouTube') {
 			 if ( (DATA.title === ImprovedTube.videoTitle() || DATA.title.replace(/\s{2,}/g, ' ') === ImprovedTube.videoTitle())
 				   && ((history && history.length === 1) || !history?.state?.endpoint?.watchEndpoint))
 				   { ImprovedTube.mostReplayed(); }
-				else { keywords = ''; (async function () { try { const response = await fetch(`https://www.youtube.com/watch?v=${DATA.videoID}`);
-					console.log("loading the html source:" + `https://www.youtube.com/watch?v=${DATA.videoID}`);
-					const htmlContent = await response.text();
+				else {
+					const requestedVideoId = DATA.videoID;
+					const requestSignal = ImprovedTube.stateCoordinator?.videoSignal;
+					keywords = '';
+					(async function () {
+						try {
+							const response = await fetch(`https://www.youtube.com/watch?v=${requestedVideoId}`, { signal: requestSignal });
+							if (requestSignal?.aborted || ImprovedTube.videoId() !== requestedVideoId) return;
+							console.log("loading the html source:" + `https://www.youtube.com/watch?v=${requestedVideoId}`);
+							const htmlContent = await response.text();
+							if (requestSignal?.aborted || ImprovedTube.videoId() !== requestedVideoId) return;
 					DATA.ytInitialData = htmlContent.match(/var ytInitialData = ({.*?});/s);
 					if (DATA.ytInitialData) { ImprovedTube.mostReplayed(); }
 				} catch (error) {
+					if (error?.name === 'AbortError' || requestSignal?.aborted || ImprovedTube.videoId() !== requestedVideoId) return;
 const o = Object.assign(document.createElement('div'), { innerText: 'too few views' });
 const keySceneButton = document.querySelector('button[data-tooltip="Key Scene"]');
 		if (keySceneButton) {  keySceneButton.style.transition = 'opacity 0.4s';  keySceneButton.style.opacity = '0.3';
 		setTimeout(() => {    keySceneButton.style.opacity = '0.8';    }, 5000);}
-		console.error(`Error: fetching from https://Youtube.com/watch?v=${DATA.videoID}`, error);  }
+		console.error(`Error: fetching from https://Youtube.com/watch?v=${requestedVideoId}`, error);  }
 				})();
 				}
 }
@@ -3485,6 +3506,7 @@ SMART SPEED ENGINE
     /** fetch() with a timeout, plus an optional external AbortSignal
      *  (e.g. to cancel when the user navigates away from a video). */
     async function fetchWithTimeout(url, { timeoutMs = 5000, signal, ...opts } = {}) {
+        signal = signal || ImprovedTube.stateCoordinator?.videoSignal;
         const ctrl = new AbortController();
         const onExternalAbort = () => ctrl.abort();
         if (signal) {
