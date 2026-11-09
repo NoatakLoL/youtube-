@@ -85,7 +85,10 @@
 		}));
 		render();
 		app.YTPlus.actions = app.YTPlus.actions || {};
-		app.YTPlus.actions.bookmark = () => add(window.prompt('Bookmark note (optional):') || '');
+		app.YTPlus.actions.bookmark = () => {
+			panel.hidden = false;
+			panel.querySelector('input[name="note"]').focus();
+		};
 		return () => { panel.remove(); button.remove(); };
 	}
 	return { init, toMarkdown };

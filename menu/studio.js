@@ -150,7 +150,8 @@
 		const capture = section('Frame capture', 'Save native-resolution video frames', panel);
 		toggle('Enable frame capture', 'Add a one-click PNG frame capture button.', 'ytplus_capture_enabled', capture);
 
-		panel.appendChild(el('div', 'ytplus-group-label', 'ADVANCED'));
+		const advanced = el('div', 'ytplus-group-label', 'ADVANCED');
+		panel.appendChild(advanced);
 		const audio = section('Audio & equalizer', 'Optional Web Audio processing; may be unavailable when another player pipeline owns the media element.', panel);
 		toggle('Enable equalizer', 'Opt in to Web Audio processing for this video.', 'ytplus_audio_enabled', audio);
 		selectField('Audio preset', 'Choose the equalizer curve.', 'ytplus_audio_preset', [
@@ -195,7 +196,10 @@
 			group.hidden = Boolean(search && !visible);
 			if (search && visible) group.open = true;
 		});
-		basic.hidden = Boolean(search && !Array.from(panel.querySelectorAll('.ytplus-accordion')).some(node => !node.hidden && node.parentElement === panel && node.previousElementSibling === basic));
+		const basicGroups = [playback, layout, bookmarks, capture].map(content => content.parentElement);
+		const advancedGroups = [audio, keys, config].map(content => content.parentElement);
+		basic.hidden = Boolean(search && !basicGroups.some(group => !group.hidden));
+		advanced.hidden = Boolean(search && !advancedGroups.some(group => !group.hidden));
 	}
 	function notify(message, kind) {
 		const note = el('div', 'ytplus-inline-status', message);
@@ -215,7 +219,9 @@
 			go.type = 'button';
 			go.addEventListener('click', () => {
 				const targetUrl = item.url || ('https://www.youtube.com/watch?v=' + item.videoId);
-				if (item.videoId && item.videoId === (new URL(location.href).searchParams.get('v'))) {
+				const currentUrl = new URL(location.href);
+				const currentId = currentUrl.pathname.startsWith('/shorts/') ? currentUrl.pathname.split('/')[2] : currentUrl.searchParams.get('v');
+				if (item.videoId && item.videoId === currentId) {
 					const video = document.querySelector('#movie_player video');
 					if (video) video.currentTime = Number(item.seconds) || 0;
 				} else {

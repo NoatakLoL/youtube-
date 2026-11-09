@@ -262,6 +262,16 @@ extension.storage.get = function (key) {
 };
 
 /*--------------------------------------------------------------
+# SET
+--------------------------------------------------------------*/
+extension.storage.set = function (key, value) {
+	if (value === undefined || value === null || value === false || value === '') {
+		return chrome.storage.local.remove([key]);
+	}
+	return chrome.storage.local.set({ [key]: value });
+};
+
+/*--------------------------------------------------------------
 # LISTENER
 --------------------------------------------------------------*/
 

@@ -275,11 +275,7 @@ document.addEventListener('it-message-from-youtube', function () {
 				watched: extension.storage.data.watched
 			});
 		} else if (message.action === 'set' || message.action === 'storage-set') {
-			if (message.value) {
-				chrome.storage.local.set({ [message.key]: message.value });
-			} else {
-				chrome.storage.local.remove([message.key]);
-			}
+			extension.storage.set(message.key, message.value);
 		}
 	}
 });

@@ -130,3 +130,23 @@ test('storage-change notifications update only the changed top-level key and ret
 	});
 	expect(document.documentElement.setAttribute).toHaveBeenCalledWith('it-player-caption-x', 62);
 });
+
+test('extension storage.set persists zero values and removes explicit empty values', () => {
+	const set = jest.fn();
+	const remove = jest.fn();
+	const chrome = {
+		storage: {
+			onChanged: { addListener: jest.fn() },
+			local: { get: jest.fn(), set, remove }
+		}
+	};
+	const { sandbox } = loadScript('../../js&css/extension/core.js', { chrome });
+	const storage = sandbox.extension.storage;
+
+	storage.set('ytplus_audio_gain', 0);
+	expect(set).toHaveBeenCalledWith({ ytplus_audio_gain: 0 });
+	expect(remove).not.toHaveBeenCalled();
+
+	storage.set('ytplus_enabled', false);
+	expect(remove).toHaveBeenCalledWith(['ytplus_enabled']);
+});
