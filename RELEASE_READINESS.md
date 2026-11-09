@@ -1,69 +1,83 @@
 # youtube+ Version 1.0 Release Readiness
 
-**Status: HOLD — not a Version 1.0 release candidate yet.**
+**Status: HOLD — this branch is not a Version 1.0 release candidate.**
 
-This branch contains a substantial compatibility-first refactor tranche, but it does not meet the complete P0/P1/P2 roadmap or the release verification requested. Keep PR #1 in draft and do not tag or publish Version 1.0 until the gates below are closed.
+PR #1 contains a verified incremental reliability and feature tranche, but the requested P0/P1/P2 roadmap is not complete and supported-browser runtime verification has not been performed. Keep PR #1 in draft. Do not merge or create a Version 1.0 tag until the release gates below are satisfied.
 
 ## Delivered in this branch
 
-- Corrected FIFO acknowledgement in both DOM message queues.
-- Corrected slash-delimited nested storage lookup and added a shared storage setter that preserves numeric zero values.
-- Reworked locale fallback so English is requested once and the callback is settled once.
-- Added a tab-activation generation guard.
-- Added PlayerStateCoordinator for playback states, focus, PiP transitions, route/video cancellation signals, source changes on a reused video element, and listener disposal.
-- Moved the coordinator ahead of the legacy player script so its route/video cancellation signal is available to early metadata work.
-- Wired active legacy metadata fetches and the smart-speed timeout fetch wrapper to the coordinator's video signal, with requested-video identity checks after awaits.
-- Added player-relative video centering and caption positioning controls.
-- Added separate classic-script-compatible feature modules for bookmarks, frame capture, precision playback/pitch correction, audio EQ/gain/compression, in-player floating controls, and keyboard shortcuts.
-- Added youtube+ Studio settings UI with search, collapsible Basic/Advanced groups, numeric validation, theme tokens, bookmarks view, and JSON import/export.
-- Added Safari WebKit presentation-mode PiP fallback while retaining standard PiP behavior.
-- Added regression tests for queues, nested storage, locale fallback, coordinator transitions/cancellation, audio presets, feature cleanup, bookmarks, capture filenames, playback pitch handling, and hotkey normalization.
+### Core reliability and cancellation
 
-New ytplus_* settings are opt-in. Existing settings keys and cross-context message shapes are retained.
+- Corrected FIFO acknowledgement/dispatch in both extension-world and page-world DOM message queues.
+- Corrected slash-delimited nested storage reads. The extension storage setter now preserves explicit `false` and numeric zero values; only nullish/empty values are treated as removals.
+- Reworked locale fallback to request English once and settle the callback once.
+- Added a generation guard to asynchronous tab-activation handling.
+- Added `PlayerStateCoordinator` for playback states, focus changes, standard PiP and Safari WebKit presentation mode, route/video AbortSignals, reused-video source changes, and explicit listener/observer disposal.
+- Route cancellation begins on `yt-navigate-start` (as well as the existing SPA navigation events), so outstanding route/video work is invalidated earlier.
+- The coordinator is loaded before the legacy player initializer. Inspected direct metadata requests and the smart-speed fetch wrapper use its video signal and verify requested-video identity after awaits.
+- New feature modules are included in the actual ordered classic-script page-world injection list, and their web-accessible resource declarations are checked by a regression test.
+
+### New feature layer and settings
+
+- Added classic-script-compatible feature modules for timestamp bookmarks/notes, native-resolution canvas capture, precision playback/pitch preservation, optional Web Audio EQ/gain/compression, floating in-player transport/docking controls, and configurable keyboard shortcuts.
+- Added a lifecycle scope/manager for the new feature modules, including disposal when the active video changes or the page is unloaded.
+- Added player-relative Force Center and caption positioning controls.
+- Added youtube+ Studio with searchable collapsible Basic/Advanced sections, theme tokens, numeric validation, keyboard mapping, bookmarks view, and JSON settings import/export.
+- Kept the legacy Satus settings/runtime in place to avoid removing existing controls before the complete settings migration is ready.
+
+### Additional safety fixes in the new tranche
+
+- The audio graph now returns to a neutral, audible configuration when disabled rather than suspending the only `MediaElementSource` output path. Explicit zero gain is preserved as silence instead of being silently coerced to unity gain.
+- The coordinator tracks user-initiated standard PiP enter/leave events on the active video element, in addition to WebKit presentation-mode changes.
+- The platform limitation is explicit: standard browser PiP surfaces are browser/OS-owned and cannot host arbitrary extension DOM controls. Floating controls are shown in the YouTube player, not inside the separate native PiP window.
+
+New `ytplus_*` settings are opt-in. Existing setting keys and cross-context message payload shapes remain compatibility requirements.
 
 ## Verification evidence
 
-The latest completed GitHub Actions run on commit 482468dab17871b3f82da31952b216098aa8f78c reported:
+Latest successful GitHub Actions run for PR #1:
 
-- **46 Jest suites passed**
-- **257 Jest tests passed**
-- Strict ESLint passed for the newly refactored modules.
-- The loader-order regression test passed, verifying that PlayerStateCoordinator loads before the legacy player script.
+- **Commit:** `c77e5636de6a9ff5be305ca96f5b5c7a88b05f1a`
+- **Run:** [GitHub Actions run #52](https://github.com/NoatakLoL/youtube-/actions/runs/42563728474)
+- **Jest:** **46 suites passed; 261 tests passed**
+- **Strict ESLint:** passed for the newly refactored modules and their listed tests.
+- **Loader regression:** passed; verifies each newly injected module is declared as a web-accessible resource and appears in dependency order before the legacy player initializer where required.
 
-The full-repository lint audit remains a substantial baseline issue: the same run reported **3,698 errors and 488 warnings**. That audit is advisory in the workflow; it is not a clean lint result.
+The full-repository lint audit is **not clean**. It reported **3,698 errors and 489 warnings**. The workflow currently marks that audit `continue-on-error`, so the overall green workflow must not be represented as a full-repository lint pass.
 
-No manual browser validation has been completed in Chrome, Firefox, or Safari. Unit tests do not establish runtime compatibility.
+Dependency installation also reported **10 npm audit findings (6 low, 1 moderate, 3 high)**. The run did not include a detailed audit report or remediation. Review the dependency tree and resolve or explicitly disposition those findings before release.
 
-## Release blockers
+No manual or automated browser-integration suite has verified behavior on Chrome, Firefox, macOS Safari, or iOS Safari. Passing unit tests do not establish compatibility with those engines.
 
-1. **Legacy lifecycle debt remains.** Existing feature scripts still contain route listeners, MutationObservers, timers, and DOM-node listeners that are not yet all owned by route-scoped lifecycle scopes. The new lifecycle manager covers only the new feature modules.
-2. **The monolithic player script remains.** The 242 KB player injection module has not been fully decomposed into the proposed playback/layout/caption/audio domains. Global mutable state and implicit globals remain in the legacy code.
-3. **Legacy settings dependencies remain.** menu/styles/sub-options.css still contains adjacent-sibling selectors. The Studio search covers the new Studio settings, not every legacy Satus setting.
-4. **Feature coverage is incremental.** Existing legacy UI and Satus architecture remain for backward compatibility; Studio does not yet replace every legacy control or provide a complete searchable index of all existing settings.
-5. **Thumbnail cancellation is not universal.** The active direct metadata requests and smart-speed fetch wrapper are signal-aware. No image-element fetch path was found in the inspected player script, but image/thumbnail URL requests across every legacy feature module have not been exhaustively migrated.
-6. **Browser integration is not proven.** Standard PiP and Safari's WebKit presentation mode have unit-level coverage, but no browser automation/manual runs have verified focus changes, tab switching, PiP permissions, playback recovery, theater/fullscreen, Shorts, audio routing, or downloads on all three engines.
-7. **Audio routing may be unavailable.** The equalizer fails closed if a MediaElementSource has already been created. The browser's audio graph, permission behavior, gain headroom, and latency still need real-device testing.
-8. **Canvas capture may be restricted.** Native-resolution capture depends on the source being canvas-readable. DRM/tainted media can reject capture and is reported to the user.
-9. **Migration/upgrade tests are missing.** A storage compatibility audit has not yet exercised real profiles upgraded from the current published extension.
-10. **Full lint cleanup is unfinished.** Thousands of existing errors/warnings remain outside the new modules.
+## Remaining release blockers
 
-## PiP platform limitation
-
-Standard browser PiP windows are controlled by the browser/operating system and do not allow an extension to insert arbitrary HTML controls into that separate PiP surface. This branch provides floating transport/docking controls inside the YouTube player and uses native PiP controls when the video enters PiP. It does not claim custom DOM controls inside the native PiP window.
+1. **Legacy lifecycle debt remains.** Existing legacy feature scripts still have route listeners, MutationObservers, timers, and DOM-node listeners that are not all owned by route-scoped lifecycle scopes. The new lifecycle manager covers only the new feature layer.
+2. **The monolithic player script remains.** The large legacy player injection file has not been fully extracted into playback/layout/captions/audio domains. Legacy globals, implicit globals, and shared mutable state remain.
+3. **Legacy settings CSS remains structurally coupled.** `menu/styles/sub-options.css` still contains adjacent-sibling and structure-dependent selectors. A complete declarative `data-ytplus-*` metadata migration has not been completed.
+4. **Studio search is not comprehensive.** It indexes the new Studio settings, not the entire legacy Satus settings catalogue. The two interfaces still coexist.
+5. **Cancellation coverage is incomplete.** The inspected metadata and smart-speed requests are signal-aware, but there has not been an exhaustive audit/migration of every legacy thumbnail, image, and asynchronous feature request.
+6. **Browser integration is unverified.** Real-browser checks are still required for tab focus/blur, PiP and autopause races, video swaps, playlist auto-advance, Shorts, theater/fullscreen, audio routing, frame capture, downloads, permission behavior, and Safari injection.
+7. **Audio ownership and lifecycle need runtime validation.** The feature fails closed when creating a second media source is rejected, but browser audio graph behavior, latency, gain headroom, source-node lifetime, and re-enable/disable cycles require real-device testing.
+8. **Canvas capture has platform/content limits.** Capture depends on the video frame being canvas-readable. DRM/tainted sources may reject capture and must continue to fail gracefully.
+9. **Upgrade compatibility is not proven.** Add migration/import/export tests using representative settings profiles from the currently published extension, including false/zero values and unknown legacy keys.
+10. **Dependency risk remains open.** Review the 10 npm audit findings reported at install time and update pinned/transitive dependencies as appropriate without destabilizing the supported browser matrix.
+11. **Full lint cleanup is unfinished.** Thousands of existing repository-level errors/warnings remain outside the strict linted tranche.
+12. **Release version metadata is inconsistent.** `package.json` is `1.0.0`, while `manifest.json` currently reports version `4`. Decide and apply the store-compatible extension version separately from the semantic project release label, then document the mapping.
 
 ## Release gate
 
-Before changing PR #1 to Ready for Review or tagging Version 1.0:
+Before converting PR #1 to Ready for Review or tagging Version 1.0:
 
-- Complete route-scoped cleanup for legacy features and audit timers/observers/listeners.
-- Finish modular extraction and eliminate implicit globals in migrated domains.
-- Replace the adjacent-sibling dependency system or complete a compatibility-preserving metadata migration.
-- Decide how Studio coexists with the full legacy settings catalogue and complete search coverage.
-- Add upgrade/import tests against representative existing settings profiles.
-- Run the full Jest suite and strict lint on all changed files.
-- Add browser-level smoke tests for Chromium, Firefox, and Safari (including iOS/macOS Safari where supported).
-- Verify focus/blur + autoplay + PiP races, video swaps, Shorts, theater/fullscreen, audio processing, and frame downloads.
-- Review permissions and MV3/Safari injection behavior on supported builds.
-- Only then set the manifest/package release version consistently, publish release notes, make PR #1 ready, and create the Version 1.0 tag.
+- Complete route-scoped cleanup and an event/timer/observer inventory for legacy features.
+- Finish the required player-domain extraction and remove implicit globals from migrated code.
+- Replace or compatibility-wrap adjacent-sibling setting dependencies and emit explicit dependency metadata.
+- Decide how Studio will cover the entire settings catalogue; verify search, labels, keyboard accessibility, reduced motion, and light/dark contrast.
+- Add representative legacy-profile upgrade, import, and export tests.
+- Add browser-level smoke/automation coverage for Chromium, Firefox, and supported Safari environments.
+- Verify focus/blur + autopause + PiP races, video reuse/navigation, Shorts, playlist transitions, theater/fullscreen, audio graph enable/disable, and frame downloads.
+- Review MV3 permissions, web-accessible resources, content-script injection ordering, Safari MAIN-world injection, and Firefox API shims.
+- Audit and disposition npm audit findings; establish strict lint policy for changed files and a separately tracked plan for the legacy baseline.
+- Reconcile manifest/package versioning, prepare final release notes, and verify the exact tagged commit.
+- Only after these gates pass, mark PR #1 Ready for Review and create the Version 1.0 tag.
 
-No release tag has been created by this branch.
+**No Version 1.0 tag has been created.**
