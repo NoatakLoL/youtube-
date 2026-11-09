@@ -46,6 +46,7 @@ jobs:
           "tests/unit/keybinds.test.js"
           "tests/unit/feature-scope.test.js"
           "tests/unit/audio-processing.test.js"
+          "tests/unit/core-queue-storage.test.js"
 
       - name: Run Jest regression suite
         run: npm test -- --runInBand
