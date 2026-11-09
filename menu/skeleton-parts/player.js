@@ -42,6 +42,42 @@ extension.skeleton.main.layers.section.player = {
 --------------------------------------------------------------*/
 
 extension.skeleton.main.layers.section.player.on.click = {
+	alignment_controls: {
+		component: 'section',
+		variant: 'card',
+		force_center_video: {
+			component: 'switch',
+			text: 'forceCenterVideo',
+			storage: 'player_force_center',
+			value: false
+		},
+		pin_subtitles: {
+			component: 'switch',
+			text: 'pinSubtitles',
+			storage: 'player_pin_subtitles',
+			value: false
+		},
+		subtitle_horizontal_position: {
+			component: 'slider',
+			variant: 'row',
+			text: 'subtitleHorizontalPosition',
+			storage: 'player_caption_x',
+			min: 5,
+			max: 95,
+			step: 1,
+			value: 50
+		},
+		subtitle_vertical_position: {
+			component: 'slider',
+			variant: 'row',
+			text: 'subtitleVerticalPosition',
+			storage: 'player_caption_y',
+			min: 5,
+			max: 95,
+			step: 1,
+			value: 82
+		}
+	},
 	section_1: {
 		component: 'section',
 		variant: 'card',

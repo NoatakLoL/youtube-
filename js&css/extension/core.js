@@ -205,7 +205,7 @@ extension.messages.listener = function () {
 		extension.messages.queue.pop();
 
 		if (extension.messages.queue.length > 0) {
-			extension.messages.element.textContent = message;
+			extension.messages.element.textContent = extension.messages.queue[0];
 
 			document.dispatchEvent(new CustomEvent('it-message-from-extension'));
 		}
@@ -247,15 +247,17 @@ extension.storage.get = function (key) {
 				return value != '';
 			});
 
-		for (var i = 0, l = key.length; i < l; i++) {
-			var part = key[i];
+		for (var i = 0, l = path.length; i < l; i++) {
+			var part = path[i];
 
-			if (target.hasOwnProperty(part)) {
+			if (target !== null && typeof target === 'object' && Object.prototype.hasOwnProperty.call(target, part)) {
 				target = target[part];
 			} else {
 				return undefined;
 			}
 		}
+
+		return target;
 	}
 };
 

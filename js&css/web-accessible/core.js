@@ -157,7 +157,7 @@ ImprovedTube.messages.listener = function () {
 		ImprovedTube.messages.queue.pop();
 
 		if (ImprovedTube.messages.queue.length > 0) {
-			ImprovedTube.messages.element.textContent = message;
+			ImprovedTube.messages.element.textContent = ImprovedTube.messages.queue[0];
 
 			document.dispatchEvent(new CustomEvent('it-message-from-youtube'));
 		}
