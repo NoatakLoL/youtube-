@@ -154,10 +154,10 @@ ImprovedTube.messages.create();
 
 ImprovedTube.messages.listener = function () {
 	document.addEventListener('it-message-from-youtube--readed', function () {
-		ImprovedTube.messages.queue.pop();
+		ImprovedTube.messages.queue.shift();
 
 		if (ImprovedTube.messages.queue.length > 0) {
-			ImprovedTube.messages.element.textContent = message;
+			ImprovedTube.messages.element.textContent = ImprovedTube.messages.queue[0];
 
 			document.dispatchEvent(new CustomEvent('it-message-from-youtube'));
 		}
@@ -224,6 +224,12 @@ document.addEventListener('it-message-from-extension', function () {
 			let camelized_key = message.camelizedKey;
 
 			ImprovedTube.storage[message.key] = message.value;
+			if (['player_force_center', 'player_pin_subtitles', 'player_caption_x', 'player_caption_y'].includes(message.key)) {
+				document.dispatchEvent(new CustomEvent('it-player-alignment-settings-changed', { detail: { key: message.key, value: message.value } }));
+			}
+			if (String(message.key).startsWith('ytplus_') || ['player_force_center', 'player_pin_subtitles', 'player_caption_x', 'player_caption_y'].includes(message.key)) {
+				document.dispatchEvent(new CustomEvent('ytplus:settingschange', { detail: { key: message.key, value: message.value } }));
+			}
 			if (['block_vp9', 'block_h264', 'block_av1', 'block_opus'].includes(message.key)) {
 				let atlas = { block_vp9: 'vp9|vp09', block_h264: 'avc1', block_av1: 'av01', block_opus: 'opus' }
 				localStorage['it-codec'] = Object.keys(atlas).reduce(function (all, key) {
@@ -634,15 +640,14 @@ document.addEventListener('it-message-from-extension', function () {
 			if (ImprovedTube[camelized_key]) {
 				try { ImprovedTube[camelized_key]() } catch { };
 			}
-		} else if (message.focus === true && ImprovedTube.elements.player) {
+		} else if (message.focus === true) {
+			ImprovedTube.stateCoordinator?.setFocus(true);
 			ImprovedTube.focus = true;
-
-			ImprovedTube.pageOnFocus();
-		} else if (message.blur === true && ImprovedTube.elements.player) {
+			if (ImprovedTube.elements.player) ImprovedTube.pageOnFocus();
+		} else if (message.blur === true) {
+			ImprovedTube.stateCoordinator?.setFocus(false);
 			ImprovedTube.focus = false;
-
-			ImprovedTube.pageOnFocus();
-
+			if (ImprovedTube.elements.player) ImprovedTube.pageOnFocus();
 			document.dispatchEvent(new CustomEvent('improvedtube-blur'));
 		} else if (message.pause === true) {
 			if (ImprovedTube.elements.player) {

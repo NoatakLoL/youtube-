@@ -122,23 +122,26 @@ chrome.runtime.onInstalled.addListener(function (installed) {
 /*--------------------------------------------------------------
 # LOCALE
 --------------------------------------------------------------*/
-function getLocale (language, callback) {
-	language = language.replace('-', '_');
-	fetch('_locales/' + language.substring(0, 2) + '/messages.json').then(function (response) {
-		if (response.ok) {
-			response.json().then(callback);
-		} else {
-			fetch('_locales/' + language.substring(0, 2) + '/messages.json').then(function (response) {
-				if (response.ok) {
-					response.json().then(callback);
-				} else {
-					getLocale('en', callback);
-				}
-			}).catch(function () { getLocale('en', callback); });
-			getLocale('en', callback);
+function getLocale(language, callback) {
+	const requestedLocale = String(language || 'en').replace('-', '_').substring(0, 2);
+	let settled = false;
+	const finish = function (messages) {
+		if (settled) return;
+		settled = true;
+		callback(messages);
+	};
+	const load = function (locale) {
+		return fetch('_locales/' + locale + '/messages.json').then(function (response) {
+			if (!response.ok) throw new Error('Locale request failed: ' + locale);
+			return response.json();
+		});
+	};
+	load(requestedLocale).then(finish).catch(function () {
+		if (requestedLocale === 'en') {
+			finish({});
+			return;
 		}
-	}).catch(function () {
-		getLocale('en', callback);
+		load('en').then(finish).catch(function () { finish({}); });
 	});
 }
 /*--------------------------------------------------------------
@@ -224,20 +227,18 @@ function tabPrune (callback) {
  commented out console.log left intentionally, to help understand
  https://issues.chromium.org/issues/41116352
 --------------------------------------------------------------*/
+let tabActivationGeneration = 0;
 chrome.tabs.onActivated.addListener(function (activeInfo) {
-	tabPrev = tab;
-	tab = activeInfo;
-	//console.log('activeInfo', windowId, tabPrev, tab);
+	const previous = tab;
+	const current = { tabId: activeInfo.tabId, windowId: activeInfo.windowId };
+	const generation = ++tabActivationGeneration;
+	tabPrev = previous;
+	tab = current;
 	tabPrune(function () {
-		if (windowId == tabPrev.windowId) {
-			if (tabConnected[tabPrev.tabId]) {
-				chrome.tabs.sendMessage(tabPrev.tabId, {action: 'blur'});
-				//console.log('tabIdPrev', tabPrev.tabId);
-			}
-			if (tabConnected[tab.tabId]) {
-				chrome.tabs.sendMessage(tab.tabId, {action: 'focus'});
-				//console.log('tabId', tab.tabId);
-			}
+		if (generation !== tabActivationGeneration) return;
+		if (windowId == previous.windowId) {
+			if (tabConnected[previous.tabId]) chrome.tabs.sendMessage(previous.tabId, { action: 'blur' });
+			if (tabConnected[current.tabId]) chrome.tabs.sendMessage(current.tabId, { action: 'focus' });
 		}
 	});
 });

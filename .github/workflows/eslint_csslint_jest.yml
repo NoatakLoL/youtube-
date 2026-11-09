@@ -1,4 +1,4 @@
-name: eslint, csslint, jest, npm test, jslint
+name: Refactor lint and regression tests
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - master
       - 'feature/*'
       - ESlint
+      - 'codex/**'
   pull_request:
     branches:
       - master
@@ -13,6 +14,8 @@ on:
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
+    env:
+      ESLINT_USE_FLAT_CONFIG: true
 
     steps:
       - name: Checkout code
@@ -25,26 +28,27 @@ jobs:
 
       - name: Install dependencies
         run: npm install --force
-      
-      - name: Run eslint
-        run: npx eslint --config=tests/eslint_rules.config.mjs
+
+      - name: Full repository lint audit
+        run: npm run lint
         continue-on-error: true
 
-      # - name: Run JSLint
-      #   run: npx jslint "**/*.js"
-      #   continue-on-error: true
+      - name: Lint newly refactored modules
+        run: >-
+          npx eslint --quiet
+          "js&css/web-accessible/state/player-state-coordinator.js"
+          "js&css/web-accessible/features/*.js"
+          "menu/studio.js"
+          "tests/unit/player-state-coordinator.test.js"
+          "tests/unit/bookmarks.test.js"
+          "tests/unit/capture.test.js"
+          "tests/unit/playback-controls.test.js"
+          "tests/unit/keybinds.test.js"
+          "tests/unit/feature-scope.test.js"
+          "tests/unit/audio-processing.test.js"
+          "tests/unit/core-queue-storage.test.js"
+          "tests/unit/get-locale.test.js"
+          "tests/unit/core-queue-storage.test.js"
 
-      - name: Run Jest
-        run: npx jest  # --config=tests/jest.config.js
-
-      - name: Run npm test
-        run: npm test
-
-      - name: Install csslint using npm
-        run: npm install -g csslint@1.0.5
-
-#      - name: Lint CSS files
-#        run: |
-#          for file in $(grep -rl --include='*.css' '' ./); do npx csslint --config tests/csslint_rules.json "$file"; done
-
-
+      - name: Run Jest regression suite
+        run: npm test -- --runInBand

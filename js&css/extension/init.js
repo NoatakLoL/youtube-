@@ -79,7 +79,18 @@ const pageWorldFiles = [
 	'/js&css/web-accessible/functions.js',
 	'/js&css/web-accessible/www.youtube.com/appearance.js',
 	'/js&css/web-accessible/www.youtube.com/themes.js',
+	'/js&css/web-accessible/state/player-state-coordinator.js',
+	'/js&css/web-accessible/features/runtime.js',
+	'/js&css/web-accessible/features/bookmarks.js',
+	'/js&css/web-accessible/features/capture.js',
+	'/js&css/web-accessible/features/playback.js',
+	'/js&css/web-accessible/features/audio.js',
+	'/js&css/web-accessible/features/overlay.js',
+	'/js&css/web-accessible/features/keybinds.js',
+	'/js&css/web-accessible/features/lifecycle.js',
+	'/js&css/web-accessible/features/player-tools.css',
 	'/js&css/web-accessible/www.youtube.com/player.js',
+	'/js&css/web-accessible/www.youtube.com/player-alignment.js',
 	'/js&css/web-accessible/www.youtube.com/playlist.js',
 	'/js&css/web-accessible/www.youtube.com/playlist-complete-playlist.js',
 	'/js&css/web-accessible/www.youtube.com/channel.js',
@@ -272,12 +283,8 @@ document.addEventListener('it-message-from-youtube', function () {
 			chrome.storage.local.set({
 				watched: extension.storage.data.watched
 			});
-		} else if (message.action === 'set') {
-			if (message.value) {
-				chrome.storage.local.set({ [message.key]: message.value });
-			} else {
-				chrome.storage.local.remove([message.key]);
-			}
+		} else if (message.action === 'set' || message.action === 'storage-set') {
+			extension.storage.set(message.key, message.value);
 		}
 	}
 });
