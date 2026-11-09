@@ -12,7 +12,7 @@
 	const clamp = (v, fallback) => Number.isFinite(Number(v)) ? Math.min(95, Math.max(5, Number(v))) : fallback;
 	function apply() {
 		const settings = getSettings();
-		const player = document.querySelector('#movie_player, ytd-player, .html5-video-player');
+		const player = document.querySelector('#movie_player') || document.querySelector('.html5-video-player');
 		if (!player) return;
 		const video = player.querySelector('.html5-main-video');
 		const captions = player.querySelector('.ytp-caption-window-container');
@@ -41,7 +41,7 @@
 	function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(() => { raf = 0; apply(); }); }
 	function onStorage(event) { const key = event.detail?.key; if (!key || keys.includes(key)) schedule(); }
 	observer = new MutationObserver(schedule);
-	observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'style'] });
+	observer.observe(document.documentElement, { childList: true, subtree: true });
 	if (typeof ResizeObserver === 'function') resizeObserver = new ResizeObserver(schedule);
 	document.addEventListener('yt-navigate-finish', schedule);
 	document.addEventListener('fullscreenchange', schedule);

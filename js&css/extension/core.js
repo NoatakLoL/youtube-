@@ -202,7 +202,7 @@ extension.messages.create = function () {
 
 extension.messages.listener = function () {
 	document.addEventListener('it-message-from-extension--readed', function () {
-		extension.messages.queue.pop();
+		extension.messages.queue.shift();
 
 		if (extension.messages.queue.length > 0) {
 			extension.messages.element.textContent = extension.messages.queue[0];
