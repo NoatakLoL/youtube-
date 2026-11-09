@@ -44,7 +44,7 @@ test('video replacement aborts the previous video signal', () => {
 });
 test('initialization and disposal are idempotent', () => {
 	const fixture = setup(); fixture.coordinator.start(); fixture.coordinator.dispose(); fixture.coordinator.dispose();
-	expect(fixture.document.removeEventListener).toHaveBeenCalledTimes(5);
+	expect(fixture.document.removeEventListener).toHaveBeenCalledTimes(6);
 });
 
 test('a reused video element with a new source aborts stale video work', () => {
