@@ -44,8 +44,8 @@ jobs:
           "tests/unit/capture.test.js"
           "tests/unit/playback-controls.test.js"
           "tests/unit/keybinds.test.js"
-          "tests/unit/feature-scope.test.js
-          tests/unit/audio-processing.test.js"
+          "tests/unit/feature-scope.test.js"
+          "tests/unit/audio-processing.test.js"
 
       - name: Run Jest regression suite
         run: npm test -- --runInBand
