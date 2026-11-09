@@ -1,0 +1,1718 @@
+{
+  "Left_Side_Menu": {
+    "message": "左サイドメニュー"
+  },
+  "hideSponsoredVideosOnHome": {
+    "message": "ホーム画面でスポンサー動画を非表示"
+  },
+  "ShortsForceTheStandardPlayer": {
+    "message": "ショート動画: 標準プレイヤーを強制使用"
+  },
+  "hideTopLoadingBar": {
+    "message": "トップローディングバーを非表示"
+  },
+  "withoutVideos": {
+    "message": "プレビューなし (空)"
+  },
+  "hideBannerAds": {
+    "message": "バナー広告を非表示（YouTubeの仕様により適用されない場合があります）"
+  },
+  "keyScene": {
+    "message": "⚡最も再生回数の多いシーンに直接ジャンプ"
+  },
+  "hideAISummary": {
+    "message": "AI要約を非表示"
+  },
+  "requirePassword": {
+    "message": "ImprovedTubeの設定を変更する際にパスワードを要求"
+  },
+  "passwordOptions": {
+    "message": "パスワードオプション"
+  },
+  "enterPassword": {
+    "message": "4桁のコードを入力してください"
+  },
+  "qualityWhenRunningOnBattery": {
+    "message": "バッテリー駆動時の画質"
+  },
+  "pauseWhileIUnplugTheCharger": {
+    "message": "充電器を抜いた際に一時停止"
+  },
+  "whenBatteryIslowDecreaseQuality": {
+    "message": "バッテリー残量低下時: 画質を低下"
+  },
+  "analytics": {
+    "message": "アナリティクス"
+  },
+  "purchase": {
+    "message": "購入"
+  },
+  "join": {
+    "message": "参加"
+  },
+  "improvedTubeSidePanel": {
+    "message": "ImprovedTube: ブラウザサイドパネル"
+  },
+  "cursorLighting": {
+    "message": "ホバーした要素以外の画面全体を暗く表示"
+  },
+  "youtubesLight": {
+    "message": "YouTubeライトモード"
+  },
+  "popupAd": {
+    "message": "ポップアップ広告を非表示"
+  },
+  "hideWatchedVideos": {
+    "message": "視聴済み動画を非表示"
+  },
+  "ambientLighting": {
+    "message": "シネマティックライティング"
+  },
+  "undoTheNewSidebar": {
+    "message": "新しいサイドバーを元に戻す"
+  },
+  "hideLogo": {
+    "message": "ロゴを非表示"
+  },
+  "about": {
+    "message": "概要"
+  },
+  "accept": {
+    "message": "承諾"
+  },
+  "activate": {
+    "message": "有効化"
+  },
+  "activateCaptions": {
+    "message": "字幕を有効化"
+  },
+  "activated": {
+    "message": "有効化済み"
+  },
+  "activatedFeatures": {
+    "message": "有効化された機能"
+  },
+  "activateFullscreen": {
+    "message": "フルスクリーン"
+  },
+  "activateFitToWindow": {
+    "message": "ウィンドウに合わせる"
+  },
+  "activeFeatures": {
+    "message": "現在有効化されている機能"
+  },
+  "addScrollToTop": {
+    "message": "「ページトップへスクロール」を追加"
+  },
+  "ads": {
+    "message": "動画広告"
+  },
+  "all": {
+    "message": "すべて"
+  },
+  "allow": {
+    "message": "許可"
+  },
+  "Allow_auto_generate": {
+    "message": "自動生成を許可"
+  },
+  "allow60fps": {
+    "message": "60fpsを許可"
+  },
+  "allYourSettingsWillBeErasedAndCanTBeRecovered": {
+    "message": "すべての設定が消去され、復元できなくなります"
+  },
+  "allYourShortcutsWillBeErasedAndCanTBeRecovered": {
+    "message": "すべてのショートカットが消去され、復元できなくなります"
+  },
+  "always": {
+    "message": "常に"
+  },
+  "alwaysActive": {
+    "message": "常に有効"
+  },
+  "alwaysShowProgressBar": {
+    "message": "常にプログレスバーを表示"
+  },
+  "amber": {
+    "message": "琥珀色"
+  },
+  "analyzer": {
+    "message": "アナライザー"
+  },
+  "animations": {
+    "message": "アニメーション"
+  },
+  "appearance": {
+    "message": "外観"
+  },
+  "areYouSureYouWantToExportTheData": {
+    "message": "データをエクスポートしてもよろしいですか？"
+  },
+  "areYouSureYouWantToImportTheData": {
+    "message": "このデータをインポートしてもよろしいですか？"
+  },
+  "areYouSureYouWantToSyncTheData": {
+    "message": "現在の設定を同期してもよろしいですか？"
+  },
+  "ARROWDOWN": {
+    "message": "⇩"
+  },
+  "ARROWLEFT": {
+    "message": "⇦"
+  },
+  "ARROWRIGHT": {
+    "message": "⇨"
+  },
+  "ARROWUP": {
+    "message": "⇧"
+  },
+  "ask": {
+    "message": "毎回確認"
+  },
+  "atHistory": {
+    "message": "履歴タブで"
+  },
+  "atSubscriptions": {
+    "message": "「登録チャンネル」タブで"
+  },
+  "atTrending": {
+    "message": "「急上昇」タブで"
+  },
+  "audio": {
+    "message": "音声"
+  },
+  "audioFormats": {
+    "message": "音声フォーマット"
+  },
+  "auto": {
+    "message": "自動"
+  },
+  "autoplay": {
+    "message": "自動再生"
+  },
+  "Auto_PiP_picture_in_picture": {
+    "message": "自動ピクチャー・イン・ピクチャー"
+  },
+  "playerAutoPipOutside": {
+    "message": "自動ピクチャー・イン・ピクチャーはソースタブ以外でのみ有効です"
+  },
+  "PipRequiresUserInteraction": {
+    "message": "PiP（ピクチャー・イン・ピクチャー）は、ソースページに対する直近のユーザー操作を必要とします。これはChromeのPiP APIの制限であり、回避する手段はありません。動作させるには、自動再生を無効にして手動再生を行うか、タブ切り替え操作の前にページ上をクリックする必要があります。"
+  },
+  "autoFullscreen": {
+    "message": "自動フルスクリーン表示"
+  },
+  "autopauseWhenSwitchingTabs": {
+    "message": "タブを切り替えている間は一時停止"
+  },
+  "autoPictureInPicture": {
+    "message": "自動ピクチャー・イン・ピクチャー"
+  },
+  "autoplayDisable": {
+    "message": "自動再生を強制無効化"
+  },
+  "preventShortVideoAutoloop": {
+    "message": "ショート動画の自動ループ再生を防止"
+  },
+  "avoidAv1": {
+    "message": "AV1の使用を回避"
+  },
+  "avoidAv1Vp8Vp9": {
+    "message": "AV1、VP8、VP9の使用を回避"
+  },
+  "avoidAv1Vp9": {
+    "message": "AV1とVP9の使用を回避"
+  },
+  "avoidCpuRenderingWhenPossible": {
+    "message": "可能な場合はCPUレンダリングを回避"
+  },
+  "backgroundColor": {
+    "message": "背景色"
+  },
+  "backgroundOpacity": {
+    "message": "背景の不透明度"
+  },
+  "backupAndReset": {
+    "message": "バックアップ＆リセット"
+  },
+  "baseOnSystemColorScheme": {
+    "message": "システムのカラースキームに準拠"
+  },
+  "belowPlayer": {
+    "message": "プレイヤー下部に表示"
+  },
+  "bitness": {
+    "message": "ビット数"
+  },
+  "black": {
+    "message": "黒"
+  },
+  "block_Codec_Alert_h264": {
+    "message": "YouTubeで動画を再生するには、H.264またはVP9のコーデックを有効にする必要があります"
+  },
+  "block_Codec_Alert_VP9": {
+    "message": "YouTubeで動画を再生するには、VP9またはH.264のコーデックを有効にする必要があります"
+  },
+  "blockAll": {
+    "message": "すべてブロック（スキップ / ブロック）"
+  },
+  "blockAv1": {
+    "message": "AV1をブロック"
+  },
+  "blockH264": {
+    "message": "H.264をブロック"
+  },
+  "blocklist": {
+    "message": "ブロックリスト"
+  },
+  "blockMusic": {
+    "message": "音楽再生中に広告をスキップ"
+  },
+  "blockVp8": {
+    "message": "VP8をブロック"
+  },
+  "blockVp9": {
+    "message": "VP9をブロック"
+  },
+  "blue": {
+    "message": "青"
+  },
+  "blueGray": {
+    "message": "青灰色"
+  },
+  "bluelight": {
+    "message": "ブルーライト軽減"
+  },
+  "brightness": {
+    "message": "明るさ"
+  },
+  "brown": {
+    "message": "茶色"
+  },
+  "browser": {
+    "message": "ブラウザ"
+  },
+  "browserAccountSync": {
+    "message": "同期（ブラウザの同期機能を利用）"
+  },
+  "browserVersion": {
+    "message": "ブラウザバージョン"
+  },
+  "bubbles": {
+    "message": "バブル"
+  },
+  "bug": {
+    "message": "バグ"
+  },
+  "buttons": {
+    "message": "ボタン"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "categories": {
+    "message": "カテゴリ"
+  },
+  "channel": {
+    "message": "チャンネル"
+  },
+  "channels": {
+    "message": "チャンネル"
+  },
+  "chapters": {
+    "message": "チャプター"
+  },
+  "chapterTitle": {
+    "message": "チャプタータイトル"
+  },
+  "characterEdgeStyle": {
+    "message": "文字エッジスタイル"
+  },
+  "cinemaMode": {
+    "message": "シネマモード"
+  },
+  "clip": {
+    "message": "クリップ"
+  },
+  "clipboard": {
+    "message": "クリップボード"
+  },
+  "codecH264": {
+    "message": "h.264の使用"
+  },
+  "codecs": {
+    "message": "コーデック"
+  },
+  "collapsed": {
+    "message": "折り畳まれた状態"
+  },
+  "collapseOfSubscriptionSections": {
+    "message": "登録チャンネルセクションを折り畳む"
+  },
+  "columns": {
+    "message": "サイドバーの追加列"
+  },
+  "comments": {
+    "message": "コメント"
+  },
+  "compact_spacing": {
+    "message": "コンパクトな間隔"
+  },
+  "compactTheme": {
+    "message": "コンパクトテーマ"
+  },
+  "confirmationBeforeClosing": {
+    "message": "閉じる前に確認"
+  },
+  "cookies": {
+    "message": "Cookies"
+  },
+  "cores": {
+    "message": "コア機能"
+  },
+  "copyVideoId": {
+    "message": "📋 動画IDをコピー"
+  },
+  "copyVideoUrl": {
+    "message": "動画のフルURLをコピー"
+  },
+  "quickDeleteShortcut": {
+    "message": "動画のクイック削除ボタン"
+  },
+  "bulkDeleteByProgress": {
+    "message": "視聴進捗に基づいて動画を一括削除"
+  },
+  "cropChapterTitles": {
+    "message": "チャプタータイトルのトリミング"
+  },
+  "Currently_requiring_a_YouTube_API_key": {
+    "message": "(現在 YouTube API キーが必要です)"
+  },
+  "custom": {
+    "message": "カスタム設定"
+  },
+  "customCss": {
+    "message": "カスタム CSS"
+  },
+  "customJs": {
+    "message": "カスタム JavaScript"
+  },
+  "customMiniPlayer": {
+    "message": "カスタムミニプレイヤー"
+  },
+  "cyan": {
+    "message": "シアン"
+  },
+  "dark": {
+    "message": "ダークモード"
+  },
+  "darkTheme": {
+    "message": "ダークテーマ"
+  },
+  "dateAndTime": {
+    "message": "日付と時刻"
+  },
+  "dawn": {
+    "message": "夜明け"
+  },
+  "decreasePlaybackSpeed": {
+    "message": "再生速度を低下"
+  },
+  "decreaseVolume": {
+    "message": "音量を低下"
+  },
+  "deepOrange": {
+    "message": "ディープオレンジ"
+  },
+  "deepPurple": {
+    "message": "ディープパープル"
+  },
+  "default": {
+    "message": "デフォルト"
+  },
+  "default_CC": {
+    "message": "デフォルト"
+  },
+  "default_theme": {
+    "message": "デフォルト"
+  },
+  "defaultChannelTab": {
+    "message": "デフォルトのチャンネル画面"
+  },
+  "defaultContentCountry": {
+    "message": "国設定（別の国を表示）"
+  },
+  "defaultPlaybackSpeed": {
+    "message": "デフォルト再生速度"
+  },
+  "deleteWatchedVideos": {
+    "message": "視聴済み動画を消去"
+  },
+  "deleteYoutubeCookies": {
+    "message": "YouTubeのCookieを削除"
+  },
+  "depressed": {
+    "message": "凹型 (押し込み)"
+  },
+  "description": {
+    "message": "説明"
+  },
+  "description_ext": {
+    "message": "YouTubeをもっと快適に？ 超パワーアップ！ 強力な機能を追加し、見たい動画だけをフィルタリングして、好みの表示スタイルにカスタマイズできます"
+  },
+  "desert": {
+    "message": "砂漠"
+  },
+  "details": {
+    "message": "詳細"
+  },
+  "developerOptions": {
+    "message": "開発者オプション"
+  },
+  "device": {
+    "message": "デバイス"
+  },
+  "dim": {
+    "message": "暗くする"
+  },
+  "disabled": {
+    "message": "無効"
+  },
+  "disableThumbnailPlayback": {
+    "message": "マウスオーバー時の動画再生を無効化"
+  },
+  "dislike": {
+    "message": "低評価"
+  },
+  "dislikingAVideoAddsItToBlocklist": {
+    "message": "動画に低評価をつけたとき、ブロックリストに追加"
+  },
+  "displayDayOfTheWeak": {
+    "message": "曜日を表示"
+  },
+  "donate": {
+    "message": "寄付"
+  },
+  "doNotChange": {
+    "message": "変更しない"
+  },
+  "download": {
+    "message": "ダウンロード"
+  },
+  "draggable": {
+    "message": "ドラッグ可能"
+  },
+  "dropShadow": {
+    "message": "ドロップシャドウ"
+  },
+  "durationWithSpeed": {
+    "message": "再生速度を考慮した残り時間を表示"
+  },
+  "email": {
+    "message": "メールアドレス"
+  },
+  "embedded_Hide_Share": {
+    "message": "埋め込み動画の共有ボタンを非表示"
+  },
+  "Embedded_YouTube": {
+    "message": "埋め込み YouTube"
+  },
+  "empty": {
+    "message": "空"
+  },
+  "enabled": {
+    "message": "有効"
+  },
+  "enabledForced": {
+    "message": "強制有効"
+  },
+  "expanded": {
+    "message": "展開済み"
+  },
+  "exportSettings": {
+    "message": "設定のエクスポート"
+  },
+  "extension": {
+    "message": "拡張機能"
+  },
+  "ExtraButtons": {
+    "message": "拡張ボタン"
+  },
+  "extraButtonsBelowThePlayer": {
+    "message": "プレイヤー下部の拡張ボタン"
+  },
+  "extraRightControlButtons": {
+    "message": "プレイヤー内右側の拡張ボタン"
+  },
+  "Feature_not_yet_available": {
+    "message": "機能はまだ利用できません"
+  },
+  "file": {
+    "message": "ファイル"
+  },
+  "filters": {
+    "message": "フィルタ"
+  },
+  "fitToWindow": {
+    "message": "ウィンドウサイズに合わせる"
+  },
+  "flash": {
+    "message": "Flash"
+  },
+  "font": {
+    "message": "フォント"
+  },
+  "fontColor": {
+    "message": "フォントカラー"
+  },
+  "fontFamily": {
+    "message": "フォントファミリー"
+  },
+  "fontOpacity": {
+    "message": "フォント透過率"
+  },
+  "fontSize": {
+    "message": "フォントサイズ"
+  },
+  "footer": {
+    "message": "フッター"
+  },
+  "forcedPlaybackSpeed": {
+    "message": "再生速度を固定"
+  },
+  "forcedPlaybackSpeedMusic": {
+    "message": "音楽再生時も再生速度を固定"
+  },
+  "forcedPlayVideoFromTheBeginning": {
+    "message": "動画を必ず最初から再生"
+  },
+  "forcedTheaterMode": {
+    "message": "シアターモードを強制適用"
+  },
+  "forcedVolume": {
+    "message": "音量を設定"
+  },
+  "forceSDR": {
+    "message": "HDRを使用せず、SDRを使用"
+  },
+  "foundABug": {
+    "message": "バグを発見しましたか？"
+  },
+  "fullWindow": {
+    "message": "フルスクリーン表示"
+  },
+  "general": {
+    "message": "全般設定"
+  },
+  "geoPreference": {
+    "message": "地域設定"
+  },
+  "github": {
+    "message": "GitHub"
+  },
+  "googleApiKey": {
+    "message": "Google APIキー"
+  },
+  "goToSearchBox": {
+    "message": "検索ボックスに移動"
+  },
+  "gpu": {
+    "message": "GPU"
+  },
+  "GPUnotindatabase": {
+    "message": "GPUがデータベースに登録されていません"
+  },
+  "Optimal": {
+    "message": "最適設定"
+  },
+  "green": {
+    "message": "緑色"
+  },
+  "grey": {
+    "message": "灰色"
+  },
+  "halfTransparent": {
+    "message": "半透明（薄い）"
+  },
+  "Hamburger_Menu": {
+    "message": "ハンバーガーメニュー"
+  },
+  "hardwareInformation": {
+    "message": "ハードウェア情報"
+  },
+  "hd": {
+    "message": "HD"
+  },
+  "hdThumbnail": {
+    "message": "HDサムネイル"
+  },
+  "header": {
+    "message": "ヘッダー"
+  },
+  "hidden": {
+    "message": "非表示"
+  },
+  "hiddenOnVideoPage": {
+    "message": "動画ページでは非表示"
+  },
+  "hide_author_avatars": {
+    "message": "著者のアバターを非表示"
+  },
+  "hide_labels": {
+    "message": "名前を非表示"
+  },
+  "Hide_Pause_Overlay": {
+    "message": "一時停止時のオーバーレイを非表示"
+  },
+  "Hide_Shorts_remixing_this_video": {
+    "message": "この動画のリミックスショート動画を非表示"
+  },
+  "Hide_sidebar": {
+    "message": "サイドバーを非表示"
+  },
+  "stickyNavigation": {
+    "message": "固定ナビゲーション"
+  },
+  "Hide_the_tabs_only": {
+    "message": "タブのみ非表示"
+  },
+  "Hide_YouTube_Logo": {
+    "message": "YouTubeロゴを非表示"
+  },
+  "hideAnimatedThumbnails": {
+    "message": "アニメーション付きサムネイルを非表示"
+  },
+  "hideAnnotations": {
+    "message": "注釈を非表示"
+  },
+  "hideCards": {
+    "message": "カード要素を非表示"
+  },
+  "hideCategories": {
+    "message": "カテゴリを非表示"
+  },
+  "hideCommentsCount": {
+    "message": "コメント数の表示を非表示"
+  },
+  "hideCountryCode": {
+    "message": "国コードを非表示"
+  },
+  "hideDate": {
+    "message": "日付の表示を非表示"
+  },
+  "hideDetailButton": {
+    "message": "詳細ボタンを非表示（プレイヤー下部）"
+  },
+  "hideDetails": {
+    "message": "詳細情報を非表示"
+  },
+  "hideEndscreen": {
+    "message": "エンドスクリーンを非表示"
+  },
+  "hideFeaturedContent": {
+    "message": "特集コンテンツを非表示"
+  },
+  "hideFooter": {
+    "message": "フッターを非表示"
+  },
+  "hideGradientBottom": {
+    "message": "プレイヤーバー周辺の影を非表示"
+  },
+  "hideHomePageShorts": {
+    "message": "ホームページ上のショート動画を非表示"
+  },
+  "hideIncludesPaidPromotion": {
+    "message": "「有料プロモーションを含む」の表示を非表示"
+  },
+  "hideMore": {
+    "message": "「...」の表示を非表示"
+  },
+  "hidePlayerControlsBar": {
+    "message": "プレイヤーコントロールバーを非表示"
+  },
+  "hidePlayerControlsBarButtons": {
+    "message": "プレイヤーコントロールボタンを非表示"
+  },
+  "hidePlayerControlsBarOptions": {
+    "message": "プレイヤーコントロールオプションを非表示"
+  },
+  "hidePlaylist": {
+    "message": "プレイリストを非表示"
+  },
+  "hideReport": {
+    "message": "「報告」ボタンを非表示"
+  },
+  "hideRightButtons": {
+    "message": "右端のボタンを非表示"
+  },
+  "hideScrollForDetails": {
+    "message": "「詳細を表示するためにスクロール」の表示を非表示"
+  },
+  "hideSkipOverlay": {
+    "message": "5秒スキップアニメーションを非表示"
+  },
+  "hideThumbnailOverlay": {
+    "message": "サムネイル上のボタンを非表示"
+  },
+  "hideThumbnailDots": {
+    "message": "サムネイル上の「⫶」アイコンを非表示"
+  },
+  "hideThumbnails": {
+    "message": "サムネイルを非表示"
+  },
+  "hideVideoTitleFullScreen": {
+    "message": "フルスクリーン時の動画タイトルを非表示"
+  },
+  "hideThumbnailIcon": {
+    "message": "サムネイルアイコンを非表示"
+  },
+  "hideViewsCount": {
+    "message": "視聴回数カウントを非表示"
+  },
+  "hideVoiceSearchButton": {
+    "message": "音声検索ボタンを非表示"
+  },
+  "high": {
+    "message": "高"
+  },
+  "history": {
+    "message": "履歴"
+  },
+  "home": {
+    "message": "ホーム"
+  },
+  "homeScreen": {
+    "message": "ホーム画面"
+  },
+  "hover": {
+    "message": "ホバー"
+  },
+  "hoverOnVideoPage": {
+    "message": "動画ページ上でのホバー"
+  },
+  "howLongAgoTheVideoWasUploaded": {
+    "message": "動画のアップロード時期を表示（いつアップロードされたか）"
+  },
+  "icons": {
+    "message": "アイコン"
+  },
+  "iconsOnly": {
+    "message": "アイコンのみ"
+  },
+  "importSettings": {
+    "message": "設定のインポート"
+  },
+  "ImprovedTube": {
+    "message": "ImprovedTube"
+  },
+  "improvedtubeButtons": {
+    "message": "ImprovedTubeボタン"
+  },
+  "improvedtubeIconOnYoutube": {
+    "message": "YouTube上のImprovedTubeアイコン"
+  },
+  "improvedtubeLanguage": {
+    "message": "ImprovedTube"
+  },
+  "improvedtubeVersion": {
+    "message": "ImprovedTubeバージョン"
+  },
+  "improveLogo": {
+    "message": "ロゴ：モノクロ版"
+  },
+  "increasePlaybackSpeed": {
+    "message": "再生速度を高速化"
+  },
+  "increaseVolume": {
+    "message": "音量を増加"
+  },
+  "indigo": {
+    "message": "インディゴ"
+  },
+  "items": {
+    "message": "項目"
+  },
+  "language": {
+    "message": "言語"
+  },
+  "language_closed_caption": {
+    "message": "言語デフォルト - 字幕"
+  },
+  "languages": {
+    "message": "言語"
+  },
+  "layerAnimationScale": {
+    "message": "レイヤーアニメーションのスケール"
+  },
+  "layout": {
+    "message": "レイアウト"
+  },
+  "legacyYoutube": {
+    "message": "レガシー YouTube"
+  },
+  "library": {
+    "message": "ライブラリ"
+  },
+  "light": {
+    "message": "ライト"
+  },
+  "lightBlue": {
+    "message": "ライトブルー"
+  },
+  "lightGreen": {
+    "message": "ライトグリーン"
+  },
+  "like": {
+    "message": "いいね"
+  },
+  "liked": {
+    "message": "いいね済み"
+  },
+  "likes": {
+    "message": "いいね数"
+  },
+  "lime": {
+    "message": "ライム"
+  },
+  "limitPageWidth": {
+    "message": "ページ幅を制限"
+  },
+  "list": {
+    "message": "リスト"
+  },
+  "liveChat": {
+    "message": "ライブチャット"
+  },
+  "liveChatType": {
+    "message": "ライブチャットタイプ"
+  },
+  "location": {
+    "message": "場所"
+  },
+  "loop": {
+    "message": "🔁 ループ再生"
+  },
+  "loudnessNormalization": {
+    "message": "一定音量"
+  },
+  "low": {
+    "message": "低"
+  },
+  "markWatchedVideos": {
+    "message": "視聴済み動画にマーク"
+  },
+  "medium": {
+    "message": "中"
+  },
+  "mixer": {
+    "message": "ミキサー"
+  },
+  "more": {
+    "message": "その他"
+  },
+  "mostViewedChannels": {
+    "message": "最も視聴回数の多いチャンネル"
+  },
+  "moveSidebarLeft": {
+    "message": "左に移動"
+  },
+  "moveThumbnailsRight": {
+    "message": "サムネイルを右に配置"
+  },
+  "My_specs": {
+    "message": "拡張機能の情報"
+  },
+  "myColors": {
+    "message": "私のカラー設定"
+  },
+  "name": {
+    "message": "名前"
+  },
+  "nativeMiniPlayer": {
+    "message": "ネイティブミニプレイヤー"
+  },
+  "new": {
+    "message": "新規"
+  },
+  "nextVideo": {
+    "message": "次の動画"
+  },
+  "night": {
+    "message": "夜間"
+  },
+  "nightMode": {
+    "message": "ナイトモード"
+  },
+  "noActiveFeatures": {
+    "message": "アクティブな機能はありません"
+  },
+  "none": {
+    "message": "なし"
+  },
+  "noOpenVideoTabs": {
+    "message": "開いている動画タブはありません"
+  },
+  "normal": {
+    "message": "通常"
+  },
+  "Not_optimal": {
+    "message": "最適ではありません"
+  },
+  "off": {
+    "message": "オフ"
+  },
+  "ok": {
+    "message": "OK"
+  },
+  "old": {
+    "message": "古い"
+  },
+  "onAllVideos": {
+    "message": "すべての動画で有効"
+  },
+  "onlyActiveOnYoutube": {
+    "message": "YouTubeのみで有効"
+  },
+  "onlyOnePlayerInstancePlaying": {
+    "message": "別のタブで動画を見ている間は一時停止"
+  },
+  "onSmallCreators": {
+    "message": "オフ（小規模チャンネルを除く）"
+  },
+  "onSubscribedChannels": {
+    "message": "オフ（登録チャンネルのみ有効）"
+  },
+  "openNewTab": {
+    "message": "新しいタブで開く"
+  },
+  "openPopupPlayer": {
+    "message": "動画/プレイリストを新規ウィンドウで開く"
+  },
+  "optimizeCodecForHardwareAcceleration": {
+    "message": "ハードウェアアクセラレーション用にコーデックを最適化"
+  },
+  "orange": {
+    "message": "オレンジ"
+  },
+  "os": {
+    "message": "OS"
+  },
+  "other": {
+    "message": "その他"
+  },
+  "outline": {
+    "message": "アウトライン"
+  },
+  "overlay": {
+    "message": "オーバーレイ"
+  },
+  "permissions": {
+    "message": "権限"
+  },
+  "pictureInPicture": {
+    "message": "ピクチャーインピクチャー"
+  },
+  "pink": {
+    "message": "ピンク"
+  },
+  "plain": {
+    "message": "プレーン"
+  },
+  "platform": {
+    "message": "プラットフォーム"
+  },
+  "playAllButton": {
+    "message": "「すべて再生」ボタン"
+  },
+  "playbackSpeed": {
+    "message": "再生速度"
+  },
+  "playbackSpeedHotkey": {
+    "message": "再生速度の一発切り替え"
+  },
+  "player": {
+    "message": "プレイヤー"
+  },
+  "player_dont_speed_education": {
+    "message": "教育カテゴリの動画の再生速度を固定しない"
+  },
+  "player_fit_to_win_button": {
+    "message": "ウィンドウに合わせる"
+  },
+  "player_rewind_and_forward_buttons": {
+    "message": "巻き戻し/早送りボタン"
+  },
+  "playerIncreaseDecreaseSpeedButtons": {
+    "message": "再生速度増加/減少ボタン"
+  },
+  "playerPlaybackSpeedStep": {
+    "message": "再生速度ステップ"
+  },
+  "player_cinema_mode_button": {
+    "message": "シネマモード"
+  },
+  "player_auto_hide_cinema_mode_when_paused": {
+    "message": "一時停止時にシネマモードを無効化"
+  },
+  "player_auto_cinema_mode": {
+    "message": "自動的にシネマモードを有効化"
+  },
+  "player_rotate_button": {
+    "message": "動画を回転"
+  },
+  "playerColor": {
+    "message": "プログレスバーの色"
+  },
+  "playerSize": {
+    "message": "プレイヤーのサイズ"
+  },
+  "playlist": {
+    "message": "プレイリスト"
+  },
+  "playlists": {
+    "message": "プレイリスト"
+  },
+  "playPause": {
+    "message": "再生/一時停止"
+  },
+  "popupPlayer": {
+    "message": "ポップアッププレイヤー"
+  },
+  "popupWindowButtons": {
+    "message": "各サムネイルにポップアッププレイヤー用ボタンを追加"
+  },
+  "position": {
+    "message": "位置"
+  },
+  "pressAnyKeyOrScroll": {
+    "message": "任意のキーを押すか、マウスホイールを使用してください"
+  },
+  "pressAnyKeyOrUseMouseWheel": {
+    "message": "任意のキーを押すか、マウスホイールを使用してください"
+  },
+  "previousVideo": {
+    "message": "前の動画"
+  },
+  "primaryColor": {
+    "message": "メインカラー"
+  },
+  "pullSyncSettings": {
+    "message": "クラウドから取得"
+  },
+  "purple": {
+    "message": "パープル"
+  },
+  "pushSyncSettings": {
+    "message": "クラウドへ送信"
+  },
+  "quality": {
+    "message": "画質"
+  },
+  "qualityWithoutFocus": {
+    "message": "バックグラウンド時の画質"
+  },
+  "raised": {
+    "message": "浮き出し"
+  },
+  "ram": {
+    "message": "RAM"
+  },
+  "rateMe": {
+    "message": "評価をお願いします"
+  },
+  "rateUs": {
+    "message": "当社を評価してください"
+  },
+  "red": {
+    "message": "赤"
+  },
+  "redDislikeButton": {
+    "message": "不評の場合は赤表示"
+  },
+  "relatedVideos": {
+    "message": "関連動画"
+  },
+  "remote": {
+    "message": "テレビで再生"
+  },
+  "Remove": {
+    "message": "削除"
+  },
+  "removeBlackBars": {
+    "message": "フルスクリーン時に黒枠を削除"
+  },
+  "removeIcons": {
+    "message": "アイコンを削除"
+  },
+  "removeName": {
+    "message": "名前を削除"
+  },
+  "removeNames": {
+    "message": "名前をすべて削除"
+  },
+  "removePlaylistParam": {
+    "message": "新しいタブで動画を開く際にプレイリストをスキップ"
+  },
+  "removeRelatedSearchResults": {
+    "message": "関連検索結果を削除"
+  },
+  "removeShortsReelSearchResults": {
+    "message": "検索結果からショート動画を削除"
+  },
+  "repeat": {
+    "message": "リピート"
+  },
+  "report": {
+    "message": "報告"
+  },
+  "reset": {
+    "message": "リセット"
+  },
+  "resetAllSettings": {
+    "message": "すべての設定をリセット"
+  },
+  "resetAllShortcuts": {
+    "message": "すべてのショートカットをリセット"
+  },
+  "reverse": {
+    "message": "反転"
+  },
+  "rotate": {
+    "message": "回転"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "saveAs": {
+    "message": "名前を付けて保存"
+  },
+  "schedule": {
+    "message": "スケジュール設定"
+  },
+  "screen": {
+    "message": "画面"
+  },
+  "screenshot": {
+    "message": "🖼️ スクリーンショット"
+  },
+  "scrollBar": {
+    "message": "スクロールバー"
+  },
+  "sd": {
+    "message": "SD"
+  },
+  "search": {
+    "message": "検索"
+  },
+  "searchBarOnly": {
+    "message": "検索バーのみ"
+  },
+  "seekBackward10Seconds": {
+    "message": "10秒巻き戻し"
+  },
+  "seekForward10Seconds": {
+    "message": "10秒早送り"
+  },
+  "seekNextChapter": {
+    "message": "次のチャプターに移動"
+  },
+  "seekPreviousChapter": {
+    "message": "前のチャプターに移動"
+  },
+  "settings": {
+    "message": "設定"
+  },
+  "settingsSuccessfullyImported": {
+    "message": "設定が正常にインポートされました"
+  },
+  "share": {
+    "message": "共有"
+  },
+  "shortcut_chapters": {
+    "message": "サイドバーのチャプター表示・非表示"
+  },
+  "shortcut_screenshot": {
+    "message": "スクリーンショット"
+  },
+  "shortcut_transcript": {
+    "message": "サイドバーのトランスクリプト表示・非表示"
+  },
+  "shortcuts": {
+    "message": "ショートカット"
+  },
+  "showCardsOnMouseHover": {
+    "message": "マウスホバー時にカードを表示"
+  },
+  "showChannelVideosCount": {
+    "message": "チャンネル動画の総数を表示"
+  },
+  "showExactDate": {
+    "message": "正確な日付を表示"
+  },
+  "showLess": {
+    "message": "表示を減らす"
+  },
+  "showMore": {
+    "message": "表示を増やす"
+  },
+  "showRemainingDuration": {
+    "message": "動画の残り時間を表示"
+  },
+  "showVersion": {
+    "message": "バージョン情報を表示"
+  },
+  "shuffle": {
+    "message": "シャッフル"
+  },
+  "sidebar": {
+    "message": "サイドバー"
+  },
+  "Sidebar_simple_alternative": {
+    "message": "サイドバー（簡易版）"
+  },
+  "softwareInformation": {
+    "message": "ソフトウェア情報"
+  },
+  "spacebar": {
+    "message": "スペースキー"
+  },
+  "squaredUserImages": {
+    "message": "正方形のユーザー画像"
+  },
+  "static": {
+    "message": "静的"
+  },
+  "statsForNerds": {
+    "message": "統計情報を表示（開発者ユーザー向け）"
+  },
+  "step": {
+    "message": "ステップ"
+  },
+  "stop": {
+    "message": "停止"
+  },
+  "style": {
+    "message": "スタイル"
+  },
+  "styles": {
+    "message": "スタイル"
+  },
+  "subscribe": {
+    "message": "チャンネル登録"
+  },
+  "subscriptions": {
+    "message": "チャンネル登録一覧"
+  },
+  "Subtitle_Capture_including_the_current_words": {
+    "message": "字幕表示（現在の単語を含む）"
+  },
+  "subtitles": {
+    "message": "字幕"
+  },
+  "subtitleLine": {
+    "message": "字幕の赤い表示ラインを非表示"
+  },
+  "removeContextButtons": {
+    "message": "ショート動画のコンテキストボタンを削除"
+  },
+  "RemoveSubtitlesForLyrics": {
+    "message": "歌詞表示時に字幕を削除"
+  },
+  "removeMemberOnly": {
+    "message": "メンバー限定動画を削除"
+  },
+  "sunset": {
+    "message": "日没"
+  },
+  "sunsetToSunrise": {
+    "message": "日没から日の出まで"
+  },
+  "systemPeferenceDark": {
+    "message": "システム設定：ダークモード"
+  },
+  "systemPeferenceLight": {
+    "message": "システム設定：ライトモード"
+  },
+  "teal": {
+    "message": "ティール"
+  },
+  "textColor": {
+    "message": "テキストカラー"
+  },
+  "thanks": {
+    "message": "ありがとう"
+  },
+  "themes": {
+    "message": "テーマ"
+  },
+  "thisWillRemoveAllCookies": {
+    "message": "これによりすべてのクッキーが削除されます。"
+  },
+  "thisWillRemoveAllWatchedVideos": {
+    "message": "これによりすべての視聴済み動画が削除されます。"
+  },
+  "thisWillRemoveAllYouTubeCookies": {
+    "message": "これによりすべての YouTube クッキーが削除されます"
+  },
+  "thisWillResetAllSettings": {
+    "message": "これによりすべての設定がリセットされます。"
+  },
+  "thisWillResetAllShortcuts": {
+    "message": "これによりすべてのショートカットがリセットされます"
+  },
+  "thumbnails": {
+    "message": "サムネイル"
+  },
+  "thumbnailsQuality": {
+    "message": "サムネイル品質"
+  },
+  "thumbnailSize": {
+    "message": "サムネイルサイズ"
+  },
+  "timeFrom": {
+    "message": "開始時間"
+  },
+  "timeTo": {
+    "message": "終了時間"
+  },
+  "To_the_side_No_page_margin": {
+    "message": "横に配置！（ページ余白なし）"
+  },
+  "todayAt": {
+    "message": "本日の時刻"
+  },
+  "toggleAutoplay": {
+    "message": "自動再生の切り替え"
+  },
+  "toggleCards": {
+    "message": "カード表示の切り替え"
+  },
+  "toggleControls": {
+    "message": "プレイヤーコントロールの非表示切り替え"
+  },
+  "topChat": {
+    "message": "上部チャット"
+  },
+  "trackWatchedVideos": {
+    "message": "視聴済み動画の追跡"
+  },
+  "trailerAutoplay": {
+    "message": "トップ動画の自動再生"
+  },
+  "Transcript": {
+    "message": "字幕テキスト"
+  },
+  "translations": {
+    "message": "翻訳"
+  },
+  "transparentBackground": {
+    "message": "透過背景"
+  },
+  "transparentColor": {
+    "message": "透過"
+  },
+  "trending": {
+    "message": "急上昇"
+  },
+  "tryToReloadThePage": {
+    "message": "ページの再読み込みをお試しください"
+  },
+  "type": {
+    "message": "タイプ"
+  },
+  "upNextAutoplay": {
+    "message": "次の動画の自動再生"
+  },
+  "use24HourFormat": {
+    "message": "24時間形式を使用"
+  },
+  "version": {
+    "message": "バージョン"
+  },
+  "video": {
+    "message": "動画"
+  },
+  "videoDescriptionWillBeExpandedToGetNameOfCategory": {
+    "message": "動画の説明文が展開され、カテゴリ名が取得されます"
+  },
+  "videoFormats": {
+    "message": "動画形式"
+  },
+  "videos": {
+    "message": "動画"
+  },
+  "viewMode": {
+    "message": "表示モード"
+  },
+  "volume": {
+    "message": "音量"
+  },
+  "watchedVideos": {
+    "message": "視聴済み動画"
+  },
+  "watchLater": {
+    "message": "後で見る"
+  },
+  "watchTime": {
+    "message": "視聴時間"
+  },
+  "whenPaused": {
+    "message": "再生が一時停止された時"
+  },
+  "whenTabIsChanged": {
+    "message": "タブが変更された時"
+  },
+  "white": {
+    "message": "白"
+  },
+  "windowColor": {
+    "message": "ウィンドウの色"
+  },
+  "windowOpacity": {
+    "message": "ウィンドウの透明度"
+  },
+  "with_scrollbars": {
+    "message": "スクロールバーを表示しますか？"
+  },
+  "yellow": {
+    "message": "黄色"
+  },
+  "Youtube_Search": {
+    "message": "YouTube検索"
+  },
+  "youTubeButtons": {
+    "message": "YouTubeボタン"
+  },
+  "youtubeHeaderLeft": {
+    "message": "YouTubeヘッダー（左部分）"
+  },
+  "youtubeHeaderRight": {
+    "message": "YouTubeヘッダー（右部分）"
+  },
+  "youtubeHomePage": {
+    "message": "YouTubeのホームページ"
+  },
+  "youtubeLanguage": {
+    "message": "YouTubeの言語設定"
+  },
+  "youtubeLimitsVideoQualityTo1080pForH264Codec": {
+    "message": "YouTubeはh.264コーデック使用時の動画品質を1080pに制限しています"
+  },
+  "youtubesDark": {
+    "message": "YouTubeダークテーマ"
+  },
+  "pauseWhileIAmTypingOnYouTube": {
+    "message": "YouTube上でキーボード入力中は一時停止"
+  },
+  "clickableLinksInDescription": {
+    "message": "動画説明欄のリンクを右クリックでコピー"
+  },
+  "changeThumbnailsPerRow": {
+    "message": "サムネイルの表示列数"
+  },
+  "disableLikesAnimation": {
+    "message": "いいね！アニメーションを無効化"
+  },
+  "disableAutoDubbing": {
+    "message": "自動字幕吹き替えを無効化"
+  },
+  "showLastWatchedOverlay": {
+    "message": "サムネイルに「最後に視聴した」オーバーレイを表示"
+  },
+  "lastWatchedOverlayPosition": {
+    "message": "オーバーレイの表示位置"
+  },
+  "bottomRight": {
+    "message": "画面右下"
+  },
+  "bottomLeft": {
+    "message": "画面左下"
+  },
+  "topRight": {
+    "message": "画面右上"
+  },
+  "topLeft": {
+    "message": "画面左上"
+  },
+  "lastWatchedFormat": {
+    "message": "時間表示形式"
+  },
+  "relative": {
+    "message": "相対表示形式（例：5分前）"
+  },
+  "exact": {
+    "message": "正確な日時表示"
+  },
+  "excludeShortsInPlayAll": {
+    "message": "「すべて再生」機能使用時にショート動画を除く"
+  },
+  "categoryRefreshButton": {
+    "message": "カテゴリ更新ボタンを追加"
+  },
+  "refreshCategories": {
+    "message": "カテゴリを更新"
+  },
+  "fullScreenQuality": {
+    "message": "フルスクリーン時の画質"
+  },
+  "secondaryColor": {
+    "message": "補助色"
+  },
+  "transparentBackgroundAlternative": {
+    "message": "透明背景の代替設定"
+  },
+  "hideProgressBarPreview": {
+    "message": "シークバーのプレビューを非表示"
+  },
+  "revertTheaterModeButtonSizes": {
+    "message": "シアターモードボタンのサイズをデフォルトに戻す"
+  },
+  "playbackSpeedButton": {
+    "message": "再生速度変更ボタン"
+  },
+  "preferredSpeed": {
+    "message": "カスタム再生速度"
+  },
+  "playbackSpeedStep": {
+    "message": "速度変更の増減幅"
+  },
+  "fullscreenReturn": {
+    "message": "フルスクリーン解除ボタン"
+  },
+  "dontShortenTitles": {
+    "message": "動画タイトルを省略せずにフル表示"
+  },
+  "preferredDubbingLanguage": {
+    "message": "優先する吹き替え言語"
+  },
+  "hideSuggestedAction": {
+    "message": "おすすめの操作（商品を表示）を非表示"
+  },
+  "hideMerchShelf": {
+    "message": "公式グッズを非表示"
+  },
+  "removeSubscriptionsLiveStreams": {
+    "message": "「登録チャンネル」ページでライブ配信を非表示"
+  },
+  "autoContinueWatching": {
+    "message": "「視聴を継続しますか？」ダイアログを自動で承認"
+  },
+  "autoPlayNextShort": {
+    "message": "ショート動画で次の動画を自動再生"
+  },
+  "copyTranscript": {
+    "message": "📋 文字起こしをコピー"
+  },
+  "FetchingTranscript": {
+    "message": "取得中..."
+  },
+  "TranscriptError": {
+    "message": "エラー"
+  },
+  "disableSidebarScroll": {
+    "message": "サイドバーのスクロールを無効化"
+  },
+  "hideAutoDubbedOptions": {
+    "message": "メニューの音声トラックを非表示"
+  },
+  "muteThumbnailPreviews": {
+    "message": "サムネイルプレビューを消音"
+  },
+  "playlistQuality": {
+    "message": "プレイリスト再生時の画質"
+  },
+  "hidePauseOverlay": {
+    "message": "一時停止時のオーバーレイを非表示"
+  },
+  "watchLaterButtons": {
+    "message": "サムネイルに「後で見る」ボタンを追加"
+  },
+  "returnYoutubeDislike": {
+    "message": "低評価数を再表示 (Return YouTube Dislike)"
+  },
+  "returnYoutubeDislikeDescription": {
+    "message": "Return YouTube Dislike APIを使用して動画の低評価数を表示"
+  },
+  "removePlayables": {
+    "message": "Playables（ミニゲーム）を非表示"
+  },
+  "removeTopLiveGames": {
+    "message": "ホーム画面の「人気のライブゲーム」を非表示"
+  },
+  "removeSubscriptionsMostRelevant": {
+    "message": "「登録チャンネル」 ページの「関連度順」セクションを非表示"
+  },
+  "subscriptionsListLayout": {
+    "message": "「登録チャンネル」 ページをリストレイアウトで表示"
+  },
+  "shortsAlwaysShowButtons": {
+    "message": "ショート動画: コントロールボタンを常に表示"
+  },
+  "shortsAlwaysShowCaptions": {
+    "message": "字幕ボタン"
+  },
+  "shortsAlwaysShowFullscreen": {
+    "message": "フルスクリーン表示ボタン"
+  },
+  "ccIndicator": {
+    "message": "チャンネルの「動画」ページで字幕(CC)インジケーターを復元"
+  },
+  "sidePanels": {
+    "message": "サイドパネル（後で見る、この動画について など）"
+  },
+  "sidePanelsOnlyOneExpanded": {
+    "message": "一度に1つのパネルのみ展開"
+  },
+  "smartSpeed": {
+    "message": "無声・低関心セクションの再生速度を上げる"
+  },
+  "squaredThumbnails": {
+    "message": "正方形サムネイル"
+  },
+  "thumbnailGrayscale": {
+    "message": "サムネイルをグレースケール表示"
+  },
+  "largerThumbnailMetadata": {
+    "message": "サムネイルのメタデータを拡大表示（チャンネル、再生回数、投稿時期）"
+  },
+  "classicThumbnailMetadata": {
+    "message": "クラシックなサムネイル表示（X回視聴 · Yヶ月前）"
+  },
+  "smartSpeedEngine": {
+    "message": "Smart Speed Engine"
+  },
+  "smartSpeedEnable": {
+    "message": "Smart Speed Engineを有効化"
+  },
+  "smartSpeedIndicator": {
+    "message": "画面上にインジケーターを表示"
+  },
+  "smartSpeedMin": {
+    "message": "最小速度（通常区間）"
+  },
+  "smartSpeedMax": {
+    "message": "最大速度（無音・無会話区間）"
+  },
+  "smartSpeedSensitivity": {
+    "message": "感度"
+  },
+  "smartSpeedTargetToggle": {
+    "message": "目標再生時間を有効化"
+  },
+  "smartSpeedTargetMinutes": {
+    "message": "目標再生時間（分）"
+  },
+  "smartSpeedProfiles": {
+    "message": "カテゴリ＆チャンネル別プロファイル"
+  },
+  "smartSpeedAddProfile": {
+    "message": "チャンネルプロファイルを追加"
+  },
+  "smartSpeedWhitelisted": {
+    "message": "スマートスピードのホワイトリストにチャンネルが追加されました"
+  },
+  "autoVideoRecovery": {
+    "message": "動画の自動復旧"
+  }
+}

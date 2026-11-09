@@ -1,0 +1,1592 @@
+{
+  "about": {
+    "message": "बारेमा"
+  },
+  "shortsAlwaysShowButtons": {
+    "message": "सर्टले जहिले पनि नियन्त्रण बटनहरू देखाउँछ"
+  },
+  "shortsAlwaysShowCaptions": {
+    "message": "क्याप्सन बटन"
+  },
+  "shortsAlwaysShowFullscreen": {
+    "message": "पूरा पर्दा बटन"
+  },
+  "accept": {
+    "message": "स्वीकार गर्नुहोस्"
+  },
+  "activate": {
+    "message": "सक्रिय पार्नुहोस्"
+  },
+  "activateCaptions": {
+    "message": "क्याप्सन सक्रिय पार्नुहोस्"
+  },
+  "activated": {
+    "message": "सक्रिय पारिएको"
+  },
+  "activatedFeatures": {
+    "message": "सक्रिय गरिएका विशेषताहरू"
+  },
+  "activateFitToWindow": {
+    "message": "सञ्झ्यालमा मिलाउनुहोस्"
+  },
+  "activateFullscreen": {
+    "message": "पूरा पर्दा"
+  },
+  "activeFeatures": {
+    "message": "मेरो सक्रिय विशेषताहरू"
+  },
+  "addScrollToTop": {
+    "message": "«माथि स्क्रोल गर्नुहोस्» थप्नुहोस्"
+  },
+  "ads": {
+    "message": "भिडियो विज्ञापन[सम्पादन गर्ने]"
+  },
+  "all": {
+    "message": "सबै"
+  },
+  "allow": {
+    "message": "अनुमति दिनुहोस्"
+  },
+  "Allow_auto_generate": {
+    "message": "स्वत: उत्पादन अनुमति दिनुहोस्"
+  },
+  "allow60fps": {
+    "message": "६० एफपीएस अनुमति दिनुहोस्"
+  },
+  "allYourSettingsWillBeErasedAndCanTBeRecovered": {
+    "message": "तपाईँका सबै सेटिङहरू मेटिने छन् र पुन: प्राप्त गर्न सकिँदैन"
+  },
+  "allYourShortcutsWillBeErasedAndCanTBeRecovered": {
+    "message": "तपाईँका सबै सर्टकटहरू मेटिनेछन् र पुन: प्राप्त गर्न सकिँदैन"
+  },
+  "always": {
+    "message": "सधै"
+  },
+  "alwaysActive": {
+    "message": "सधै सक्रिय"
+  },
+  "alwaysShowProgressBar": {
+    "message": "सधै प्रगतिपट्टी देखाउनुहोस्"
+  },
+  "amber": {
+    "message": "एम्बर"
+  },
+  "ambientLighting": {
+    "message": "परिवेश प्रकाश"
+  },
+  "analytics": {
+    "message": "एनालिटिक्स"
+  },
+  "analyzer": {
+    "message": "विश्लेषक"
+  },
+  "animations": {
+    "message": "एनिमेसन"
+  },
+  "appearance": {
+    "message": "उपस्थिति"
+  },
+  "areYouSureYouWantToExportTheData": {
+    "message": "तपाईँ साँच्चिकै डेटा निर्यात गर्न चाहनुहुन्छ?"
+  },
+  "areYouSureYouWantToImportTheData": {
+    "message": "तपाईँ साँच्चिकै यो डेटा आयात गर्न चाहनुहुन्छ?"
+  },
+  "areYouSureYouWantToSyncTheData": {
+    "message": "तपाईँ हालको सेटिङ समक्रमण गर्न निश्चित हुनुहुन्छ?"
+  },
+  "ARROWDOWN": {
+    "message": "⇩"
+  },
+  "ARROWLEFT": {
+    "message": "⇦"
+  },
+  "ARROWRIGHT": {
+    "message": "⇨"
+  },
+  "ARROWUP": {
+    "message": "⇧"
+  },
+  "ask": {
+    "message": "सोध्नुहोस्"
+  },
+  "atHistory": {
+    "message": "'इतिहास' मा"
+  },
+  "atSubscriptions": {
+    "message": "'सदस्यता' मा"
+  },
+  "atTrending": {
+    "message": "'ट्रेन्डिङ' मा"
+  },
+  "audio": {
+    "message": "अडियो"
+  },
+  "audioFormats": {
+    "message": "अडियो ढाँचाहरू"
+  },
+  "auto": {
+    "message": "स्वत:"
+  },
+  "Auto_PiP_picture_in_picture": {
+    "message": "स्वत: पिप (तस्वीरमा तस्वीर)"
+  },
+  "autoFullscreen": {
+    "message": "स्वत: पूरा पर्दा"
+  },
+  "autopauseWhenSwitchingTabs": {
+    "message": "म ट्याबमा नभएको बेलासम्म स्वत: पज गर्नुहोस्"
+  },
+  "autoPictureInPicture": {
+    "message": "तस्वीरमा स्वत: तस्वीर"
+  },
+  "autoplay": {
+    "message": "स्वत: प्ले गर्नुहोस्"
+  },
+  "autoplayDisable": {
+    "message": "स्वत: प्ले बन्द गर्न बल गर्नुहोस्"
+  },
+  "autoPlayNextShort": {
+    "message": "पछिल्लो स्वत: प्ले छोटो पार्दछ"
+  },
+  "avoidAv1": {
+    "message": "AV1 बाट बच्नुहोस्"
+  },
+  "avoidAv1Vp8Vp9": {
+    "message": "AV1, VP8, VP9 बाट बच्नुहोस्"
+  },
+  "avoidAv1Vp9": {
+    "message": "AV1, VP9 बाट बच्नुहोस्"
+  },
+  "avoidCpuRenderingWhenPossible": {
+    "message": "सम्भव भएसम्म सीपीयू रेन्डरिङ त्याग्नुहोस्"
+  },
+  "backgroundColor": {
+    "message": "पृष्ठभूमि रङ"
+  },
+  "backgroundOpacity": {
+    "message": "पृष्ठभूमि अस्पष्टता"
+  },
+  "backupAndReset": {
+    "message": "जगेडा र रिसेट गर्नुहोस्"
+  },
+  "baseOnSystemColorScheme": {
+    "message": "प्रणाली रङ योजनामा आधार"
+  },
+  "belowPlayer": {
+    "message": "खेलाडी तलको"
+  },
+  "bitness": {
+    "message": "बिटनेस"
+  },
+  "black": {
+    "message": "कालो"
+  },
+  "block_Codec_Alert_h264": {
+    "message": "भिडियो प्ले गर्न युट्युबको लागि तपाईंलाई H.264 वा VP9 सक्षम चाहिन्छ।"
+  },
+  "block_Codec_Alert_VP9": {
+    "message": "भिडियो प्ले गर्नका लागि युट्युबको लागि तपाईंले VP9 वा H.264 सक्षम हुनु आवश्यक छ।"
+  },
+  "blockAll": {
+    "message": "बन्द (ब्लक वा फड्काउनुहोस्)"
+  },
+  "blockAv1": {
+    "message": "AV1 रोक्नुहोस्"
+  },
+  "blockH264": {
+    "message": "ब्लक H.264"
+  },
+  "blocklist": {
+    "message": "ब्लक सूची"
+  },
+  "blockMusic": {
+    "message": "मैले सङ्गीत प्ले गर्दा विज्ञापनहरू छोड्नुहोस्"
+  },
+  "blockVp8": {
+    "message": "VP8 बन्द गर्नुहोस्"
+  },
+  "blockVp9": {
+    "message": "VP9 बन्द गर्नुहोस्"
+  },
+  "blue": {
+    "message": "निलो"
+  },
+  "blueGray": {
+    "message": "निलो खैरो"
+  },
+  "bluelight": {
+    "message": "नीलो बत्ती"
+  },
+  "bottomLeft": {
+    "message": "तल बायाँ"
+  },
+  "bottomRight": {
+    "message": "तल दायाँ"
+  },
+  "brightness": {
+    "message": "चम्किलोपन"
+  },
+  "brown": {
+    "message": "खैरो"
+  },
+  "browser": {
+    "message": "ब्राउजर"
+  },
+  "browserAccountSync": {
+    "message": "समक्रमण (ब्राउजर खाता)"
+  },
+  "browserVersion": {
+    "message": "ब्राउजर संस्करण"
+  },
+  "bubbles": {
+    "message": "फोकाहरू"
+  },
+  "bug": {
+    "message": "बग"
+  },
+  "bulkDeleteByProgress": {
+    "message": "अवलोकन प्रगति द्वारा बल्क भिडियो मेट्नुहोस्"
+  },
+  "buttons": {
+    "message": "बटनहरू"
+  },
+  "cancel": {
+    "message": "रद्द गर्नुहोस्"
+  },
+  "categories": {
+    "message": "कोटीहरू"
+  },
+  "categoryRefreshButton": {
+    "message": "कोटी ताजा पार्ने बटन थप्नुहोस्"
+  },
+  "changeThumbnailsPerRow": {
+    "message": "प्रति पङ्क्ति थम्बनेलहरू"
+  },
+  "channel": {
+    "message": "च्यानल"
+  },
+  "channels": {
+    "message": "च्यानलहरू"
+  },
+  "chapters": {
+    "message": "अध्यायहरू"
+  },
+  "chapterTitle": {
+    "message": "अध्यायको शिर्षक"
+  },
+  "characterEdgeStyle": {
+    "message": "क्यारेक्टर किनारा शैली"
+  },
+  "cinemaMode": {
+    "message": "सिनेमा मोड"
+  },
+  "clickableLinksInDescription": {
+    "message": "भिडियो विवरणमा लिङ्कहरू प्रतिलिपि गर्न दायाँ क्लिक गर्नुहोस्"
+  },
+  "clip": {
+    "message": "क्लिप गर्नुहोस्"
+  },
+  "clipboard": {
+    "message": "क्लिपबोर्ड"
+  },
+  "codecH264": {
+    "message": "कोडेक h.264"
+  },
+  "codecs": {
+    "message": "कोडेक्स"
+  },
+  "collapsed": {
+    "message": "संक्षिप्त भयो"
+  },
+  "collapseOfSubscriptionSections": {
+    "message": "सदस्यताको सेक्सन फोल्ड गर्नुहोस् (संक्षिप्त गरिएको अकॉर्डियन)"
+  },
+  "columns": {
+    "message": "अतिरिक्त किनारापट्टी स्तम्भ (सञ्झ्याल पर्याप्त फराकिलो भएमा, सम्बन्धित भिडियो नसारिकन)"
+  },
+  "comments": {
+    "message": "टिप्पणीहरू"
+  },
+  "compact_spacing": {
+    "message": "कम्प्याक्ट खालीस्थान"
+  },
+  "compactTheme": {
+    "message": "विषयवस्तु सङ्कुचन गर्नुहोस्"
+  },
+  "confirmationBeforeClosing": {
+    "message": "बन्द गर्नु अघि यकिन गर्नुहोस्"
+  },
+  "cookies": {
+    "message": "कुकीहरू"
+  },
+  "copyVideoId": {
+    "message": "📋 भिडियो आईडी प्रतिलिपि गर्नुहोस्"
+  },
+  "copyVideoUrl": {
+    "message": "भिडियो पूरा यूआरएल प्रतिलिपि गर्नुहोस्"
+  },
+  "cores": {
+    "message": "कोरहरू"
+  },
+  "cropChapterTitles": {
+    "message": "काँटछाँट अध्याय शीर्षकहरू"
+  },
+  "Currently_requiring_a_YouTube_API_key": {
+    "message": "(हाल यूट्यूब-एपीआई-कुञ्जी आवश्यक छ:)"
+  },
+  "cursorLighting": {
+    "message": "युट्युबको पृष्ठहरू मधुरो पार्छु, मैले माउस-ओभर गर्ने बाहेक के बाहेक!"
+  },
+  "custom": {
+    "message": "अनुकूलन गर्नुहोस्"
+  },
+  "customCss": {
+    "message": "सीएसएस अनुकूलन गर्नुहोस्"
+  },
+  "customJs": {
+    "message": "अनुकूल JS"
+  },
+  "customMiniPlayer": {
+    "message": "मिनी- खेलाडी अनुकूल गर्नुहोस्"
+  },
+  "cyan": {
+    "message": "सायन"
+  },
+  "dark": {
+    "message": "अँध्यारो"
+  },
+  "darkTheme": {
+    "message": "अँध्यारो विषयवस्तु"
+  },
+  "dateAndTime": {
+    "message": "मिति र समय"
+  },
+  "dawn": {
+    "message": "बिहान"
+  },
+  "decreasePlaybackSpeed": {
+    "message": "प्लेब्याक गति घटाउनुहोस्"
+  },
+  "decreaseVolume": {
+    "message": "भोल्युम घटाउनुहोस्"
+  },
+  "deepOrange": {
+    "message": "गहिरो सुन्तला रङ्ग"
+  },
+  "deepPurple": {
+    "message": "गहिरो बैजनी"
+  },
+  "default": {
+    "message": "पूर्वनिर्धारित"
+  },
+  "default_CC": {
+    "message": "पूर्वनिर्धारित"
+  },
+  "default_theme": {
+    "message": "पूर्वनिर्धारित"
+  },
+  "defaultChannelTab": {
+    "message": "पूर्वनिर्धारित च्यानल ट्याब"
+  },
+  "defaultContentCountry": {
+    "message": "देश (भर्चुअल यात्रा)"
+  },
+  "defaultPlaybackSpeed": {
+    "message": "पूर्वनिर्धारित प्लेब्याक गति"
+  },
+  "deleteWatchedVideos": {
+    "message": "हेरिएका भिडियोहरू मेट्नुहोस्"
+  },
+  "deleteYoutubeCookies": {
+    "message": "युट्युब कुकीहरू मेट्नुहोस्"
+  },
+  "depressed": {
+    "message": "उदास"
+  },
+  "description": {
+    "message": "वर्णन"
+  },
+  "description_ext": {
+    "message": "युट्युब, सफा र स्मार्ट? सुपरचार्ज यूट्यूब! यसलाई बलियो सुविधाहरू दिनुहोस्, केवल तपाईंले चाहानु भएको भिडियोहरू फिल्टर गर्नुहोस् र तपाईंलाई मनपर्ने जस्तो देखिन्छ"
+  },
+  "desert": {
+    "message": "मरुभूमि"
+  },
+  "details": {
+    "message": "विवरणहरू"
+  },
+  "developerOptions": {
+    "message": "विकासकर्ताको विकल्पहरू"
+  },
+  "device": {
+    "message": "यन्त्र"
+  },
+  "dim": {
+    "message": "मधुरो पार्नुहोस्"
+  },
+  "disableAutoDubbing": {
+    "message": "स्वत: डबिङ अक्षम पार्नुहोस्"
+  },
+  "disabled": {
+    "message": "अक्षम पारियो"
+  },
+  "disableLikesAnimation": {
+    "message": "पुस्तकचिनो एनिमेसन अक्षम पार्नुहोस्"
+  },
+  "disableThumbnailPlayback": {
+    "message": "होभरमा भिडियो प्लेब्याक अक्षम पार्नुहोस्"
+  },
+  "dislike": {
+    "message": "मन नपराउने"
+  },
+  "dislikingAVideoAddsItToBlocklist": {
+    "message": "भिडियो मन नपराउँदा यसलाई ब्लकलिस्टमा थपिन्छ"
+  },
+  "displayDayOfTheWeak": {
+    "message": "हप्ताको दिन प्रदर्शन गर्नुहोस्"
+  },
+  "donate": {
+    "message": "दान गर्नुहोस्"
+  },
+  "doNotChange": {
+    "message": "परिवर्तन नगर्नुहोस्"
+  },
+  "download": {
+    "message": "डाउनलोड गर्नुहोस्"
+  },
+  "draggable": {
+    "message": "तान्न सकिने"
+  },
+  "dropShadow": {
+    "message": "छायाँ छोड्नुहोस्"
+  },
+  "durationWithSpeed": {
+    "message": "प्लेब्याक गतिको सन्दर्भसँग बाँकी समय देखाउनुहोस्"
+  },
+  "email": {
+    "message": "इमेल"
+  },
+  "embedded_Hide_Share": {
+    "message": "सम्मिलित लुकाउनुहोस् साझेदारी"
+  },
+  "Embedded_YouTube": {
+    "message": "सम्मिलित युट्युब"
+  },
+  "empty": {
+    "message": "खाली गर्नुहोस्"
+  },
+  "enabled": {
+    "message": "सक्षम पारियो"
+  },
+  "enabledForced": {
+    "message": "सक्षम पारियो (जबरजस्ती गरिएको)"
+  },
+  "enterPassword": {
+    "message": "कृपया तपाईंको 4-अंकको कोड प्रविष्ट गर्नुहोस्।"
+  },
+  "exact": {
+    "message": "ठीक मिति/समय"
+  },
+  "excludeShortsInPlayAll": {
+    "message": "\"सबै प्ले गर्नुहोस्\" प्रयोग गर्दा सर्टहरू हटाउनुहोस्"
+  },
+  "expanded": {
+    "message": "विस्तार गरियो"
+  },
+  "exportSettings": {
+    "message": "सेटिङ निर्यात गर्नुहोस्"
+  },
+  "extension": {
+    "message": "विस्तार"
+  },
+  "ExtraButtons": {
+    "message": "अतिरिक्त बटनहरू"
+  },
+  "extraButtonsBelowThePlayer": {
+    "message": "खेलाडीको तल अतिरिक्त बटनहरू"
+  },
+  "extraRightControlButtons": {
+    "message": "प्लेयर भित्र अतिरिक्त बटनहरू"
+  },
+  "Feature_not_yet_available": {
+    "message": "विशेषता अहिले सम्म उपलब्ध छैन"
+  },
+  "file": {
+    "message": "फाइल"
+  },
+  "filters": {
+    "message": "फिल्टरहरू"
+  },
+  "fitToWindow": {
+    "message": "पुरानो विकल्प ('सञ्झ्यालमा मिलाउनुहोस्')"
+  },
+  "flash": {
+    "message": "फ्ल्यास"
+  },
+  "font": {
+    "message": "फन्ट"
+  },
+  "fontColor": {
+    "message": "वर्णको रङ"
+  },
+  "fontFamily": {
+    "message": "फन्ट परिवार"
+  },
+  "fontOpacity": {
+    "message": "फन्ट अस्पष्टता"
+  },
+  "fontSize": {
+    "message": "फन्टको आकार"
+  },
+  "footer": {
+    "message": "फुटर"
+  },
+  "forcedPlaybackSpeed": {
+    "message": "गति हेर्ने: स्थायी गति"
+  },
+  "forcedPlaybackSpeedMusic": {
+    "message": "(संगीतको लागि पनि प्लेब्याक गति बल?)"
+  },
+  "forcedPlayVideoFromTheBeginning": {
+    "message": "सुरुदेखि भिडियो प्ले गर्न बल गर्नुहोस्"
+  },
+  "forcedTheaterMode": {
+    "message": "रङ्गमञ्च मोड जोर गर्नुहोस्"
+  },
+  "forcedVolume": {
+    "message": "भोल्युम जोर गर्नुहोस्"
+  },
+  "forceSDR": {
+    "message": "एचडीआरबाट बच्नुहोस्, एसडीआर राख्नुहोस्"
+  },
+  "foundABug": {
+    "message": "बग फेला पर्नुभयो?"
+  },
+  "fullScreenQuality": {
+    "message": "पूरा पर्दाको गुणस्तर"
+  },
+  "fullscreenReturn": {
+    "message": "पूरा पर्दा फर्काउनुहोस्"
+  },
+  "fullWindow": {
+    "message": "पूरा उचाइ"
+  },
+  "general": {
+    "message": "सामान्य"
+  },
+  "geoPreference": {
+    "message": "भू प्राथमिकताहरू"
+  },
+  "github": {
+    "message": "गिटहब"
+  },
+  "googleApiKey": {
+    "message": "गुगल एपीआई कुञ्जी"
+  },
+  "goToSearchBox": {
+    "message": "खोजी बाकसमा जानुहोस्"
+  },
+  "gpu": {
+    "message": "GPU"
+  },
+  "GPUnotindatabase": {
+    "message": "डाटाबेसमा GPU छैन"
+  },
+  "green": {
+    "message": "हरियो"
+  },
+  "grey": {
+    "message": "खैरो"
+  },
+  "halfTransparent": {
+    "message": "शक्तिहीन/अर्धपारदर्शी"
+  },
+  "Hamburger_Menu": {
+    "message": "ह्यामबर्गर मेनु"
+  },
+  "hardwareInformation": {
+    "message": "हार्डवेयर सूचना"
+  },
+  "hd": {
+    "message": "HD"
+  },
+  "hdThumbnail": {
+    "message": "HD थम्बनेल"
+  },
+  "header": {
+    "message": "हेडर"
+  },
+  "hidden": {
+    "message": "लुकेको"
+  },
+  "hiddenOnVideoPage": {
+    "message": "भिडियो पृष्ठमा लुकाइएको"
+  },
+  "hide_author_avatars": {
+    "message": "लेखक अवतार लुकाउनुहोस्"
+  },
+  "hide_labels": {
+    "message": "नामहरू लुकाउनुहोस्"
+  },
+  "Hide_Pause_Overlay": {
+    "message": "पज ओभरले लुकाउनुहोस्"
+  },
+  "Hide_Shorts_remixing_this_video": {
+    "message": "यो भिडियोलाई रिमिक्स गर्ने सर्ट्स लुकाउनुहोस्"
+  },
+  "Hide_sidebar": {
+    "message": "किनारापट्टी लुकाउनुहोस् "
+  },
+  "Hide_the_tabs_only": {
+    "message": "ट्याब मात्र लुकाउनुहोस्"
+  },
+  "Hide_YouTube_Logo": {
+    "message": "युट्युब लोगो लुकाउनुहोस्"
+  },
+  "hideAISummary": {
+    "message": "AI सारांश लुकाउनुहोस्"
+  },
+  "hideAnimatedThumbnails": {
+    "message": "एनिमेसन गरिएको थम्बनेलहरू लुकाउनुहोस्"
+  },
+  "hideAnnotations": {
+    "message": "एनोटेसन लुकाउनुहोस्"
+  },
+  "hideBannerAds": {
+    "message": "ब्यानर विज्ञापनहरू लुकाउनुहोस् (YouTube ले अस्वीकार गर्न सक्छ)"
+  },
+  "hideCards": {
+    "message": "कार्डहरू लुकाउनुहोस्"
+  },
+  "hideCategories": {
+    "message": "कोटिहरू लुकाउनुहोस्"
+  },
+  "hideCommentsCount": {
+    "message": "टिप्पणी गणना लुकाउनुहोस्"
+  },
+  "hideCountryCode": {
+    "message": "देशको सङ्केत लुकाउनुहोस्"
+  },
+  "hideDate": {
+    "message": "मिति लुकाउनुहोस्"
+  },
+  "hideDetailButton": {
+    "message": "बटनहरू (प्लेयर तल)"
+  },
+  "hideDetails": {
+    "message": "विस्तृत विवरण लुकाउनुहोस्"
+  },
+  "hideEndscreen": {
+    "message": "अन्त्यपर्दा लुकाउनुहोस्"
+  },
+  "hideFeaturedContent": {
+    "message": "चिया पारिएको सामाग्री लुकाउनुहोस्"
+  },
+  "hideFooter": {
+    "message": "फुटर लुकाउनुहोस्"
+  },
+  "hideGradientBottom": {
+    "message": "खेलाडीपट्टीको वरिपरि छायाँ लुकाउनुहोस्"
+  },
+  "hideHomePageShorts": {
+    "message": "गृह पृष्ठमा सर्ट लुकाउनुहोस्"
+  },
+  "hideIncludesPaidPromotion": {
+    "message": "\"सशुल्क प्रचार समावेश गर्दछ\" लुकाउनुहोस्"
+  },
+  "hideLogo": {
+    "message": "लोगो: लुकाउनुहोस्!"
+  },
+  "hideMore": {
+    "message": "'...' लुकाउनुहोस्"
+  },
+  "hidePlayerControlsBar": {
+    "message": "खेलाडी नियन्त्रणपट्टी लुकाउनुहोस्"
+  },
+  "hidePlayerControlsBarButtons": {
+    "message": "खेलाडी नियन्त्रण बटन लुकाउनुहोस्"
+  },
+  "hidePlayerControlsBarOptions": {
+    "message": "खेलाडी नियन्त्रण विकल्पहरू लुकाउनुहोस्"
+  },
+  "hidePlaylist": {
+    "message": "प्लेसूची लुकाउनुहोस्"
+  },
+  "hideProgressBarPreview": {
+    "message": "प्रगतिपट्टी पूर्वावलोकन लुकाउनुहोस्"
+  },
+  "hideReport": {
+    "message": "'प्रतिवेदन' लुकाउनुहोस्"
+  },
+  "hideRightButtons": {
+    "message": "दायाँ बटन लुकाउनुहोस्"
+  },
+  "hideScrollForDetails": {
+    "message": "विवरणका लागि «स्क्रोल» लुकाउनुहोस्"
+  },
+  "hideSkipOverlay": {
+    "message": "५ सेकेन्ड फड्काउने एनिमेसन लुकाउनुहोस्"
+  },
+  "hideSponsoredVideosOnHome": {
+    "message": "गृह पृष्ठमा प्रायोजित भिडियोहरू लुकाउनुहोस्"
+  },
+  "hidePauseOverlay": {
+    "message": "पज ओभरले लुकाउनुहोस्"
+  },
+  "hideThumbnailOverlay": {
+    "message": "थम्बनेलहरूमा बटन लुकाउनुहोस्"
+  },
+  "hideThumbnailDots": {
+    "message": "थम्बनेलहरूमा '⫶' (धेरै कार्यहरू) लुकाउनुहोस्"
+  },
+  "hideThumbnailIcon": {
+    "message": "थम्बनेल प्रतिमा लुकाउनुहोस्"
+  },
+  "hideThumbnails": {
+    "message": "थम्बनेलहरू लुकाउनुहोस्"
+  },
+  "hideTopLoadingBar": {
+    "message": "माथिल्लो लोडपट्टी लुकाउनुहोस्"
+  },
+  "hideVideoTitleFullScreen": {
+    "message": "पूरा पर्दामा भिडियो शीर्षक लुकाउनुहोस्"
+  },
+  "hideViewsCount": {
+    "message": "दृश्य गणना लुकाउनुहोस्"
+  },
+  "hideVoiceSearchButton": {
+    "message": "भोल्युम खोजी बटन लुकाउनुहोस्"
+  },
+  "hideWatchedVideos": {
+    "message": "हेरिएको भिडियो लुकाउनुहोस्"
+  },
+  "high": {
+    "message": "उच्च"
+  },
+  "history": {
+    "message": "इतिहास[सम्पादन गर्ने]"
+  },
+  "home": {
+    "message": "घर"
+  },
+  "homeScreen": {
+    "message": "गृह पर्दा"
+  },
+  "hover": {
+    "message": "होभर गर्नुहोस्"
+  },
+  "hoverOnVideoPage": {
+    "message": "भिडियो पृष्ठमा होभर गर्नुहोस्"
+  },
+  "howLongAgoTheVideoWasUploaded": {
+    "message": "भिडियोको उमेर देखाउनुहोस् (कति समय पहिले यो अपलोड गरिएको थियो)"
+  },
+  "icons": {
+    "message": "प्रतिमा"
+  },
+  "iconsOnly": {
+    "message": "प्रतिमा मात्र"
+  },
+  "importSettings": {
+    "message": "सेटिङ आयात गर्नुहोस्"
+  },
+  "ImprovedTube": {
+    "message": "सुधारिएको ट्युब"
+  },
+  "improvedtubeButtons": {
+    "message": "सुधारिएको ट्युब बटनहरू"
+  },
+  "improvedtubeIconOnYoutube": {
+    "message": "यूट्यूबमा सुधारिएको ट्यूब प्रतिमा"
+  },
+  "improvedtubeLanguage": {
+    "message": "सुधारिएको ट्युब"
+  },
+  "improvedTubeSidePanel": {
+    "message": "सुधारिएको ट्युब: ब्राउजर साइडप्यानल"
+  },
+  "improvedtubeVersion": {
+    "message": "सुधारिएको ट्युब संस्करण"
+  },
+  "improveLogo": {
+    "message": "लोगो: मोनोक्रोम!"
+  },
+  "increasePlaybackSpeed": {
+    "message": "प्लेब्याक गति बढाउनुहोस्"
+  },
+  "increaseVolume": {
+    "message": "भोल्युम बढाउनुहोस्"
+  },
+  "indigo": {
+    "message": "इन्डिगो"
+  },
+  "items": {
+    "message": "वस्तुहरू"
+  },
+  "join": {
+    "message": "जडान गर्नुहोस्"
+  },
+  "keyScene": {
+    "message": "⚡सबैभन्दा धेरै प्ले गरिएको दृश्यमा जानुहोस्"
+  },
+  "language": {
+    "message": "भाषा"
+  },
+  "language_closed_caption": {
+    "message": "पूर्वनिर्धारित भाषा - बन्द क्याप्सन"
+  },
+  "languages": {
+    "message": "भाषाहरू"
+  },
+  "lastWatchedFormat": {
+    "message": "समय ढाँचा"
+  },
+  "lastWatchedOverlayPosition": {
+    "message": "खप्ट्याइएको स्थिति"
+  },
+  "layerAnimationScale": {
+    "message": "तह एनिमेसन स्केल"
+  },
+  "layout": {
+    "message": "सजावट"
+  },
+  "Left_Side_Menu": {
+    "message": "बायाँ छेउको मेनु"
+  },
+  "legacyYoutube": {
+    "message": "लिगेसी यूट्यूब"
+  },
+  "library": {
+    "message": "लाइब्रेरी"
+  },
+  "light": {
+    "message": "उज्यालो"
+  },
+  "lightBlue": {
+    "message": "हल्का निलो"
+  },
+  "lightGreen": {
+    "message": "हल्का हरियो"
+  },
+  "like": {
+    "message": "जस्तै"
+  },
+  "liked": {
+    "message": "मन पराइयो"
+  },
+  "likes": {
+    "message": "मनपर्दो"
+  },
+  "lime": {
+    "message": "लाइम"
+  },
+  "limitPageWidth": {
+    "message": "पृष्ठ चौडाइ सिमित गर्नुहोस्"
+  },
+  "list": {
+    "message": "सूची"
+  },
+  "liveChat": {
+    "message": "प्रत्यक्ष कुराकानी"
+  },
+  "liveChatType": {
+    "message": "प्रत्यक्ष कुराकानी प्रकार"
+  },
+  "location": {
+    "message": "स्थान"
+  },
+  "loop": {
+    "message": "🔁 लुप"
+  },
+  "loudnessNormalization": {
+    "message": "चर्को सामान्यीकरण"
+  },
+  "low": {
+    "message": "न्यून"
+  },
+  "markWatchedVideos": {
+    "message": "मार्क हेरेका भिडियोहरू"
+  },
+  "medium": {
+    "message": "मध्यम"
+  },
+  "mixer": {
+    "message": "मिक्सर"
+  },
+  "more": {
+    "message": "थप"
+  },
+  "mostViewedChannels": {
+    "message": "सबैभन्दा धेरै हेरिएका च्यानलहरू"
+  },
+  "moveSidebarLeft": {
+    "message": "बायाँतिर!"
+  },
+  "moveThumbnailsRight": {
+    "message": "थम्बनेलहरू दायाँतिर!"
+  },
+  "My_specs": {
+    "message": "मेरो चश्माहरू"
+  },
+  "myColors": {
+    "message": "मेरो रङ"
+  },
+  "name": {
+    "message": "नाम"
+  },
+  "nativeMiniPlayer": {
+    "message": "नेटिभ मिनी प्लेयर"
+  },
+  "new": {
+    "message": "नयाँ"
+  },
+  "nextVideo": {
+    "message": "पछिल्लो भिडियो"
+  },
+  "night": {
+    "message": "राती"
+  },
+  "nightMode": {
+    "message": "रातको मोड"
+  },
+  "noActiveFeatures": {
+    "message": "सक्रिय विशेषताहरू छैन"
+  },
+  "none": {
+    "message": "कुनै पनि छैन"
+  },
+  "noOpenVideoTabs": {
+    "message": "भिडियो ट्याबहरू खोल्नु पर्दैन"
+  },
+  "normal": {
+    "message": "सामान्य"
+  },
+  "Not_optimal": {
+    "message": "इष्टतम छैन"
+  },
+  "off": {
+    "message": "बन्द"
+  },
+  "ok": {
+    "message": "ठीक छ"
+  },
+  "old": {
+    "message": "पुरानो"
+  },
+  "onAllVideos": {
+    "message": "मा"
+  },
+  "onlyActiveOnYoutube": {
+    "message": "युट्युबमा मात्र सक्रिय"
+  },
+  "onlyOnePlayerInstancePlaying": {
+    "message": "म 2nd भिडियो हेर्दै गर्दा रोक्नुहोस्"
+  },
+  "onSmallCreators": {
+    "message": "बन्द, साना च्यानलहरू बाहेक"
+  },
+  "onSubscribedChannels": {
+    "message": "बन्द, मेरो सदस्यता च्यानलहरूमा बाहेक"
+  },
+  "openNewTab": {
+    "message": "नयाँ ट्याबमा खोल्नुहोस्"
+  },
+  "openPopupPlayer": {
+    "message": "नयाँ सञ्झ्यालमा भिडियो/प्लेसूची खोल्नुहोस्"
+  },
+  "Optimal": {
+    "message": "इष्टतम"
+  },
+  "optimizeCodecForHardwareAcceleration": {
+    "message": "हार्डवेयर गतिवर्धनका लागि कोडेक अप्टिमाइज गर्नुहोस्"
+  },
+  "orange": {
+    "message": "सुन्तला रङ्ग"
+  },
+  "os": {
+    "message": "ओएस"
+  },
+  "other": {
+    "message": "अन्य"
+  },
+  "outline": {
+    "message": "रूपरेखा[सम्पादन गर्ने]"
+  },
+  "overlay": {
+    "message": "ओभरले"
+  },
+  "passwordOptions": {
+    "message": "पासवर्ड विकल्पहरू"
+  },
+  "pauseWhileIAmTypingOnYouTube": {
+    "message": "मैले युट्युबमा टाइप गर्दा पज गर्नुहोस्"
+  },
+  "pauseWhileIUnplugTheCharger": {
+    "message": "चार्जर अनप्लग गर्दा रोक्नुहोस्"
+  },
+  "permissions": {
+    "message": "अनुमतिहरू"
+  },
+  "pictureInPicture": {
+    "message": "तस्वीरमा तस्वीर"
+  },
+  "pink": {
+    "message": "गुलाबी"
+  },
+  "PipRequiresUserInteraction": {
+    "message": "PiP लाई स्रोत पृष्ठको साथ भर्खरको प्रयोगकर्ता अन्तर्क्रिया आवश्यक छ। यो क्रोम पिक्चर-इन-पिक्चर एपीआई सीमितताहरू हो र हामी यसलाई बाइपास गर्न केहि गर्न सक्दैनौं। स्वत: प्ले असक्षम र म्यानुअल प्ले नियन्त्रणको साथ उत्तम काम गर्दछ वा ट्याबहरू स्विच गर्नु अघि पृष्ठमा कतै क्लिक गर्दछ।"
+  },
+  "plain": {
+    "message": "सादा"
+  },
+  "platform": {
+    "message": "प्लेटफर्म"
+  },
+  "playAllButton": {
+    "message": "\"सबै बजाउनुहोस्\" बटन"
+  },
+  "playbackSpeed": {
+    "message": "प्लेब्याक गति"
+  },
+  "playbackSpeedButton": {
+    "message": "गति प्लेब्याक बटन"
+  },
+  "playbackSpeedHotkey": {
+    "message": "गति हटकुञ्जीहरू प्लेब्याक गर्नुहोस्"
+  },
+  "player": {
+    "message": "खेलाडी"
+  },
+  "player_auto_cinema_mode": {
+    "message": "स्वत: सिनेमा मोड"
+  },
+  "player_auto_hide_cinema_mode_when_paused": {
+    "message": "पजमा सिनेमा मोड स्वत: लुकाउनुहोस्"
+  },
+  "player_cinema_mode_button": {
+    "message": "सिनेमा मोड"
+  },
+  "player_dont_speed_education": {
+    "message": "(दुर्लभ) श्रेणीलाई गति नदिनुहोस्: शिक्षा"
+  },
+  "player_fit_to_win_button": {
+    "message": "सञ्झ्यालमा मिलाउनुहोस्"
+  },
+  "player_rewind_and_forward_buttons": {
+    "message": "बटनहरू रिवाइन्ड गर्नुहोस्/अगाडि"
+  },
+  "player_rotate_button": {
+    "message": "भिडियो घुमाउनुहोस्"
+  },
+  "playerAutoPipOutside": {
+    "message": "स्रोत ट्याब बाहिरको स्वत: पिप मात्र"
+  },
+  "playerColor": {
+    "message": "प्रगतिपट्टी रङ"
+  },
+  "playerIncreaseDecreaseSpeedButtons": {
+    "message": "गति बटनहरू बढाउनुहोस्/घटाउनुहोस्"
+  },
+  "playerPlaybackSpeedStep": {
+    "message": "गति गति चरण प्लेब्याक गर्नुहोस्"
+  },
+  "playerSize": {
+    "message": "खेलाडीको आकार"
+  },
+  "playlist": {
+    "message": "बजाउने सूची"
+  },
+  "playlists": {
+    "message": "बजाउने सूचीहरू"
+  },
+  "playPause": {
+    "message": "बजाउनुहोस् / पज गर्नुहोस्"
+  },
+  "popupAd": {
+    "message": "पप-अप विज्ञापन: लुकाउनुहोस्"
+  },
+  "popupPlayer": {
+    "message": "पपअप खेलाडी"
+  },
+  "popupWindowButtons": {
+    "message": "प्रत्येक थम्बनेलमा पपअप-प्लेयर बटन थप्नुहोस्"
+  },
+  "position": {
+    "message": "स्थिति"
+  },
+  "pressAnyKeyOrScroll": {
+    "message": "कुनै पनि कुञ्जी थिच्नुहोस् वा माउस व्हील प्रयोग गर्नुहोस्।"
+  },
+  "pressAnyKeyOrUseMouseWheel": {
+    "message": "कुनै कुञ्जी थिच्नुहोस् वा माउस चक्र प्रयोग गर्नुहोस्"
+  },
+  "preventShortVideoAutoloop": {
+    "message": "स्वत: लुपिङबाट छोटो भिडियोहरू रोक्नुहोस्"
+  },
+  "previousVideo": {
+    "message": "अघिल्लो भिडियो"
+  },
+  "primaryColor": {
+    "message": "प्राथमिक रङ"
+  },
+  "pullSyncSettings": {
+    "message": "तान्नुहोस्"
+  },
+  "purchase": {
+    "message": "खरीद गर्नुहोस्"
+  },
+  "purple": {
+    "message": "बैजनी"
+  },
+  "pushSyncSettings": {
+    "message": "धक्का दिनुहोस्"
+  },
+  "quality": {
+    "message": "गुणस्तर[सम्पादन गर्ने]"
+  },
+  "qualityWhenRunningOnBattery": {
+    "message": "ब्याट्रीमा चल्दा गुणस्तर"
+  },
+  "qualityWithoutFocus": {
+    "message": "फोकस बिनाको गुणस्तर"
+  },
+  "quickDeleteShortcut": {
+    "message": "सर्टकट बटन छिटो मेट्नुहोस्"
+  },
+  "raised": {
+    "message": "उठाइएको"
+  },
+  "ram": {
+    "message": "र्याम"
+  },
+  "rateMe": {
+    "message": "मलाई मूल्याङ्कन गर्नुहोस्"
+  },
+  "rateUs": {
+    "message": "हामीलाई मूल्याङ्कन गर्नुहोस्"
+  },
+  "red": {
+    "message": "रातो"
+  },
+  "redDislikeButton": {
+    "message": "मन नपराउँदा रातो"
+  },
+  "refreshCategories": {
+    "message": "कोटिहरू ताजा पार्नुहोस्"
+  },
+  "relatedVideos": {
+    "message": "सम्बन्धित भिडियोहरू"
+  },
+  "relative": {
+    "message": "सापेक्ष (जस्तै: ५ मिटर अघि)"
+  },
+  "remote": {
+    "message": "टिभीमा प्ले गर्नुहोस्"
+  },
+  "Remove": {
+    "message": "हटाउनुहोस्"
+  },
+  "removeBlackBars": {
+    "message": "पूरा पर्दा कालो पट्टी हटाउनुहोस्"
+  },
+  "removeContextButtons": {
+    "message": "सर्टमा विषयवस्तु बटनहरू हटाउनुहोस्"
+  },
+  "removeIcons": {
+    "message": "प्रतिमा हटाउनुहोस्"
+  },
+  "removeMemberOnly": {
+    "message": "सदस्य मात्र भिडियो हटाउनुहोस्"
+  },
+  "removeName": {
+    "message": "नाम हटाउनुहोस्"
+  },
+  "removeNames": {
+    "message": "नामहरू हटाउनुहोस्"
+  },
+  "removePlaylistParam": {
+    "message": "नयाँ ट्याबमा भिडियो खोल्दा प्लेसूची फड्काउनुहोस्"
+  },
+  "removeRelatedSearchResults": {
+    "message": "सम्बन्धित खोजी परिणामहरू हटाउनुहोस्"
+  },
+  "removeShortsReelSearchResults": {
+    "message": "खोजी परिणामबाट सर्ट्स रील हटाउनुहोस्"
+  },
+  "RemoveSubtitlesForLyrics": {
+    "message": "गीतका लागि उपशीर्षकहरू हटाउनुहोस्"
+  },
+  "repeat": {
+    "message": "दोहोर्याउनुहोस्"
+  },
+  "report": {
+    "message": "प्रतिवेदन"
+  },
+  "requirePassword": {
+    "message": "सुधारिएको ट्युब सेटिङ परिवर्तन गर्न पासवर्ड आवश्यक पर्दछ"
+  },
+  "reset": {
+    "message": "रिसेट गर्नुहोस्"
+  },
+  "resetAllSettings": {
+    "message": "सबै सेटिङ रिसेट गर्नुहोस्"
+  },
+  "resetAllShortcuts": {
+    "message": "सबै सर्टकट रिसेट गर्नुहोस्"
+  },
+  "reverse": {
+    "message": "उल्टाउनुहोस्"
+  },
+  "revertTheaterModeButtonSizes": {
+    "message": "रङ्गमञ्च मोड बटन साइज उल्टाउनुहोस्"
+  },
+  "rotate": {
+    "message": "घुमाउनुहोस्"
+  },
+  "save": {
+    "message": "बचत गर्नुहोस्"
+  },
+  "saveAs": {
+    "message": "यस रूपमा बचत गर्नुहोस्"
+  },
+  "schedule": {
+    "message": "तालिका"
+  },
+  "screen": {
+    "message": "पर्दा"
+  },
+  "screenshot": {
+    "message": "🖼️ स्क्रिनसट"
+  },
+  "scrollBar": {
+    "message": "स्क्रोल पट्टी"
+  },
+  "sd": {
+    "message": "एसडी"
+  },
+  "search": {
+    "message": "खोजी गर्नुहोस्"
+  },
+  "searchBarOnly": {
+    "message": "बार मात्र खोजी गर्नुहोस्"
+  },
+  "secondaryColor": {
+    "message": "दोस्रो रङ"
+  },
+  "seekBackward10Seconds": {
+    "message": "१० सेकेन्ड पछिल्तिर खोजी गर्नुहोस्"
+  },
+  "seekForward10Seconds": {
+    "message": "१० सेकेन्ड अगाडि खोजी गर्नुहोस्"
+  },
+  "seekNextChapter": {
+    "message": "पछिल्लो अध्याय खोज्नुहोस्"
+  },
+  "seekPreviousChapter": {
+    "message": "अघिल्लो अध्याय खोजी गर्नुहोस्"
+  },
+  "settings": {
+    "message": "सेटिङ"
+  },
+  "settingsSuccessfullyImported": {
+    "message": "सेटिङ सफलतापूर्वक आयात गरियो"
+  },
+  "share": {
+    "message": "बाँडफाँड गर्नुहोस्"
+  },
+  "shortcut_chapters": {
+    "message": "अध्यायहरू (छेउपट्टी) खुल्ला/बन्द"
+  },
+  "shortcut_screenshot": {
+    "message": "स्क्रिनसट"
+  },
+  "shortcut_transcript": {
+    "message": "ट्रान्सक्रिप्ट (किनारापट्टी) खुल्ला/बन्द"
+  },
+  "shortcuts": {
+    "message": "सर्टकटहरू"
+  },
+  "ShortsForceTheStandardPlayer": {
+    "message": "सर्टहरू: मानक प्लेयर प्रयोग गर्न बल गर्नुहोस्"
+  },
+  "showCardsOnMouseHover": {
+    "message": "माउस होभरमा तास देखाउनुहोस्"
+  },
+  "showChannelVideosCount": {
+    "message": "च्यानल भिडियो गणना देखाउनुहोस्"
+  },
+  "showExactDate": {
+    "message": "सहि मिति देखाउनुहोस्"
+  },
+  "showLastWatchedOverlay": {
+    "message": "थम्बनेलहरूमा 'अन्तिममा हेरिएको' ओभरले देखाउनुहोस्"
+  },
+  "showLess": {
+    "message": "कम देखाउनुहोस्"
+  },
+  "showMore": {
+    "message": "थप देखाउनुहोस्"
+  },
+  "showRemainingDuration": {
+    "message": "बाँकी अवधि भिडियो देखाउनुहोस्"
+  },
+  "showVersion": {
+    "message": "संस्करण देखाउनुहोस्"
+  },
+  "shuffle": {
+    "message": "फेरबदल गर्नुहोस्"
+  },
+  "sidebar": {
+    "message": "छेउपट्टी"
+  },
+  "Sidebar_simple_alternative": {
+    "message": "छेउपट्टी (सरल वैकल्पिक)"
+  },
+  "softwareInformation": {
+    "message": "सफ्टवेयर जानकारी"
+  },
+  "spacebar": {
+    "message": "स्पेसबार"
+  },
+  "squaredUserImages": {
+    "message": "वर्ग गरिएको प्रयोगकर्ता छविहरू"
+  },
+  "static": {
+    "message": "स्थिर"
+  },
+  "statsForNerds": {
+    "message": "नर्डहरूका लागि तथ्याङ्क देखाउनुहोस्"
+  },
+  "step": {
+    "message": "चरण"
+  },
+  "stickyNavigation": {
+    "message": "टाँसिने नेभिगेसन"
+  },
+  "stop": {
+    "message": "रोक्नुहोस्"
+  },
+  "style": {
+    "message": "शैली"
+  },
+  "styles": {
+    "message": "शैलीहरू"
+  },
+  "subscribe": {
+    "message": "सदस्यता लिनुहोस्"
+  },
+  "subscriptions": {
+    "message": "सदस्यताहरू"
+  },
+  "Subtitle_Capture_including_the_current_words": {
+    "message": "उपशीर्षक (हालको शब्द समावेश गर्दै)"
+  },
+  "subtitleLine": {
+    "message": "उपशीर्षक रातो रेखा लुकाउनुहोस्"
+  },
+  "subtitles": {
+    "message": "उपशीर्षकहरू"
+  },
+  "sunset": {
+    "message": "सूर्यास्त"
+  },
+  "sunsetToSunrise": {
+    "message": "सूर्यास्तदेखि सूर्योदयसम्म"
+  },
+  "systemPeferenceDark": {
+    "message": "प्रणाली प्राथमिकताहरू: अँध्यारो"
+  },
+  "systemPeferenceLight": {
+    "message": "प्रणाली प्राथमिकताहरू: प्रकाश"
+  },
+  "teal": {
+    "message": "टिल"
+  },
+  "textColor": {
+    "message": "पाठको रङ"
+  },
+  "thanks": {
+    "message": "धन्यवाद"
+  },
+  "themes": {
+    "message": "विषयवस्तुहरू"
+  },
+  "thisWillRemoveAllCookies": {
+    "message": "यसले सबै कुकीहरू हटाउनेछ ।"
+  },
+  "thisWillRemoveAllWatchedVideos": {
+    "message": "यसले हेरिएका सबै भिडियोहरु हटाउनेछ ।"
+  },
+  "thisWillRemoveAllYouTubeCookies": {
+    "message": "यसले युट्युबका सबै कुकिज हटाउनेछ"
+  },
+  "thisWillResetAllSettings": {
+    "message": "यसले सबै सेटिङ रिसेट गर्नेछ ।"
+  },
+  "thisWillResetAllShortcuts": {
+    "message": "यसले सबै सर्टकट रिसेट गर्नेछ"
+  },
+  "thumbnails": {
+    "message": "थम्बनेलहरू"
+  },
+  "thumbnailSize": {
+    "message": "थम्बनेल साइज"
+  },
+  "thumbnailsQuality": {
+    "message": "थम्बनेलहरूको गुणस्तर"
+  },
+  "timeFrom": {
+    "message": "यसबाट समय"
+  },
+  "timeTo": {
+    "message": "यसका लागि समय"
+  },
+  "To_the_side_No_page_margin": {
+    "message": "छेउमा ! (पृष्ठ सीमान्त छैन)"
+  },
+  "todayAt": {
+    "message": "आज मा"
+  },
+  "toggleAutoplay": {
+    "message": "स्वत: प्ले टगल गर्नुहोस्"
+  },
+  "toggleCards": {
+    "message": "तास टगल गर्नुहोस्"
+  },
+  "toggleControls": {
+    "message": "खेलाडी नियन्त्रण लुकाउने टगल गर्नुहोस्"
+  },
+  "topChat": {
+    "message": "माथि कुराकानी"
+  },
+  "topLeft": {
+    "message": "माथि बायाँ"
+  },
+  "topRight": {
+    "message": "माथि दायाँ"
+  },
+  "trackWatchedVideos": {
+    "message": "हेरेका भिडियोहरू ट्र्याक गर्नुहोस्"
+  },
+  "trailerAutoplay": {
+    "message": "ट्रेलर स्वत: प्ले"
+  },
+  "Transcript": {
+    "message": "ट्रान्सक्रिप्ट"
+  },
+  "translations": {
+    "message": "अनुवादहरू"
+  },
+  "transparentBackground": {
+    "message": "पारदर्शी पृष्ठभूमि"
+  },
+  "transparentBackgroundAlternative": {
+    "message": "पारदर्शी पृष्ठभूमि विकल्प"
+  },
+  "transparentColor": {
+    "message": "पारदर्शी"
+  },
+  "trending": {
+    "message": "ट्रेन्डिङ"
+  },
+  "tryToReloadThePage": {
+    "message": "पृष्ठ पुन: लोड गर्ने प्रयास गर्नुहोस्"
+  },
+  "type": {
+    "message": "प्रकार"
+  },
+  "undoTheNewSidebar": {
+    "message": "नयाँ किनारापट्टीलाई पूर्वावस्थामा फर्काउनुहोस्!"
+  },
+  "upNextAutoplay": {
+    "message": "माथि अर्को स्वत: खेल"
+  },
+  "use24HourFormat": {
+    "message": "२४ घण्टे ढाँचा प्रयोग गर्नुहोस्"
+  },
+  "version": {
+    "message": "संस्करण"
+  },
+  "video": {
+    "message": "भिडियो"
+  },
+  "videoDescriptionWillBeExpandedToGetNameOfCategory": {
+    "message": "श्रेणीको नाम प्राप्त गर्न भिडियो विवरण विस्तार गरिनेछ"
+  },
+  "videoFormats": {
+    "message": "भिडियो ढाँचाहरू"
+  },
+  "videos": {
+    "message": "भिडियोहरू"
+  },
+  "viewMode": {
+    "message": "मोड हेर्नुहोस्"
+  },
+  "volume": {
+    "message": "भोल्युम"
+  },
+  "watchedVideos": {
+    "message": "हेरेका भिडियोहरू"
+  },
+  "watchLater": {
+    "message": "पछि हेर्नुहोस्"
+  },
+  "watchTime": {
+    "message": "हेर्ने समय"
+  },
+  "whenBatteryIslowDecreaseQuality": {
+    "message": "न्यून ब्याट्री: गुणस्तर घटाउनुहोस्"
+  },
+  "whenPaused": {
+    "message": "जब पज गरिन्छ"
+  },
+  "whenTabIsChanged": {
+    "message": "जब ट्याब परिवर्तन गरिन्छ"
+  },
+  "white": {
+    "message": "सेतो"
+  },
+  "windowColor": {
+    "message": "सञ्झ्याल रङ"
+  },
+  "windowOpacity": {
+    "message": "सञ्झ्याल अस्पष्टता"
+  },
+  "with_scrollbars": {
+    "message": "स्क्रोलबारहरूको साथ?"
+  },
+  "withoutVideos": {
+    "message": "भिडियो पूर्वावलोकन बिना, 'खाली'"
+  },
+  "yellow": {
+    "message": "पहेंलो"
+  },
+  "Youtube_Search": {
+    "message": "युट्युब खोजी"
+  },
+  "youTubeButtons": {
+    "message": "युट्युब बटनहरू"
+  },
+  "youtubeHeaderLeft": {
+    "message": "युट्युब हेडर (बायाँ)"
+  },
+  "youtubeHeaderRight": {
+    "message": "युट्युब हेडर (दायाँ)"
+  },
+  "youtubeHomePage": {
+    "message": "युट्युबको गृह पृष्ठ[सम्पादन गर्ने]"
+  },
+  "youtubeLanguage": {
+    "message": "युट्युब भाषा[सम्पादन गर्ने]"
+  },
+  "youtubeLimitsVideoQualityTo1080pForH264Codec": {
+    "message": "यूट्यूबले एच.२६४ कोडेकको लागि भिडियोको गुणस्तर १०८० पीमा सीमित गर् यो"
+  },
+  "youtubesDark": {
+    "message": "युट्युबको अँध्यारो"
+  },
+  "youtubesLight": {
+    "message": "युट्युबको प्रकाश"
+  }
+}

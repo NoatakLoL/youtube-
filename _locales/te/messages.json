@@ -1,0 +1,1490 @@
+{
+    "about": {
+        "message": "గురించి"
+    },
+    "accept": {
+        "message": "అంగీకరించు"
+    },
+    "activate": {
+        "message": "సక్రియం చేయి"
+    },
+    "activateCaptions": {
+        "message": "కెప్షన్స్‌ను సక్రియం చేయి"
+    },
+    "activated": {
+        "message": "సక్రియం చేయబడింది"
+    },
+    "activatedFeatures": {
+        "message": "సక్రియం చేసిన ఫీచర్లు"
+    },
+    "activateFitToWindow": {
+        "message": "విండోకు అనుగుణంగా సెట్ చేయి"
+    },
+    "activateFullscreen": {
+        "message": "పూర్తి స్క్రీన్"
+    },
+    "activeFeatures": {
+        "message": "నా సక్రియ ఫీచర్లు"
+    },
+    "addScrollToTop": {
+        "message": "«టాప్‌కు స్క్రోల్» జోడించు"
+    },
+    "ads": {
+        "message": "వీడియో యాడ్స్"
+    },
+    "all": {
+        "message": "అన్నీ"
+    },
+    "allow": {
+        "message": "అనుమతించు"
+    },
+    "Allow_auto_generate": {
+        "message": "ఆటో జనరేషన్‌ను అనుమతించు"
+    },
+    "allow60fps": {
+        "message": "60fps అనుమతించు"
+    },
+    "allYourSettingsWillBeErasedAndCanTBeRecovered": {
+        "message": "మీ అన్ని సెట్టింగ్స్ తొలగించబడతాయి మరియు వాటిని తిరిగి పొందలేరు"
+    },
+    "allYourShortcutsWillBeErasedAndCanTBeRecovered": {
+        "message": "మీ అన్ని షార్ట్‌కట్స్ తొలగించబడతాయి మరియు వాటిని తిరిగి పొందలేరు"
+    },
+    "always": {
+        "message": "ఎల్లప్పుడూ"
+    },
+    "alwaysActive": {
+        "message": "ఎల్లప్పుడూ సక్రియం"
+    },
+    "alwaysShowProgressBar": {
+        "message": "ప్రోగ్రెస్ బార్‌ను ఎల్లప్పుడూ చూపించు"
+    },
+    "amber": {
+        "message": "అంబర్"
+    },
+    "ambientLighting": {
+        "message": "పరిసర లైటింగ్"
+    },
+    "analytics": {
+        "message": "విశ్లేషణలు"
+    },
+    "analyzer": {
+        "message": "విశ్లేషకుడు"
+    },
+    "animations": {
+        "message": "యానిమేషన్స్"
+    },
+    "appearance": {
+        "message": "కనిపింపు"
+    },
+    "areYouSureYouWantToExportTheData": {
+        "message": "మీరు ఖచ్చితంగా డేటాను ఎగుమతి చేయాలనుకుంటున్నారా?"
+    },
+    "areYouSureYouWantToImportTheData": {
+        "message": "మీరు ఖచ్చితంగా ఈ డేటాను దిగుమతి చేయాలనుకుంటున్నారా?"
+    },
+    "areYouSureYouWantToSyncTheData": {
+        "message": "మీరు ఖచ్చితంగా ప్రస్తుత సెట్టింగ్స్‌ను సింక్ చేయాలనుకుంటున్నారా?"
+    },
+    "ARROWDOWN": {
+        "message": "⇩"
+    },
+    "ARROWLEFT": {
+        "message": "⇦"
+    },
+    "ARROWRIGHT": {
+        "message": "⇨"
+    },
+    "ARROWUP": {
+        "message": "⇧"
+    },
+    "atHistory": {
+        "message": "'చరిత్ర'లో"
+    },
+    "atSubscriptions": {
+        "message": "'సబ్‌స్క్రిప్షన్స్'లో"
+    },
+    "atTrending": {
+        "message": "'ట్రెండింగ్'లో"
+    },
+    "audio": {
+        "message": "ఆడియో"
+    },
+    "audioFormats": {
+        "message": "ఆడియో ఫార్మాట్స్"
+    },
+    "auto": {
+        "message": "ఆటో"
+    },
+    "Auto_PiP_picture_in_picture": {
+        "message": "ఆటో-PiP (పిక్చర్ ఇన్ పిక్చర్)"
+    },
+    "autoFullscreen": {
+        "message": "ఆటో-పూర్తిస్క్రీన్"
+    },
+    "autopauseWhenSwitchingTabs": {
+        "message": "నేను ట్యాబ్‌లో లేనప్పుడు ఆటో-పాజ్"
+    },
+    "autoPictureInPicture": {
+        "message": "ఆటో పిక్చర్-ఇన్-పిక్చర్"
+    },
+    "autoplay": {
+        "message": "ఆటోప్లే"
+    },
+    "autoplayDisable": {
+        "message": "ఆటోప్లేను బలవంతంగా ఆఫ్ చేయి"
+    },
+    "avoidAv1": {
+        "message": "AV1ను నివారించు"
+    },
+    "avoidAv1Vp8Vp9": {
+        "message": "AV1, VP8, VP9లను నివారించు"
+    },
+    "avoidAv1Vp9": {
+        "message": "AV1, VP9లను నివారించు"
+    },
+    "avoidCpuRenderingWhenPossible": {
+        "message": "వీలైనప్పుడు CPU రెండరింగ్‌ను నివారించు"
+    },
+    "backgroundColor": {
+        "message": "బ్యాక్‌గ్రౌండ్ రంగు"
+    },
+    "backgroundOpacity": {
+        "message": "బ్యాక్‌గ్రౌండ్ అపారదర్శకత"
+    },
+    "backupAndReset": {
+        "message": "బ్యాకప్ & రీసెట్"
+    },
+    "baseOnSystemColorScheme": {
+        "message": "సిస్టమ్ కలర్ స్కీమ్ ఆధారంగా"
+    },
+    "belowPlayer": {
+        "message": "ప్లేయర్ కింద"
+    },
+    "bitness": {
+        "message": "బిట్‌నెస్"
+    },
+    "black": {
+        "message": "నలుపు"
+    },
+    "block_Codec_Alert_h264": {
+        "message": "యూట్యూబ్ వీడియోలను ప్లే చేయడానికి మీకు H.264 లేదా VP9 ఎనేబుల్ చేయాల్సి ఉంటుంది."
+    },
+    "block_Codec_Alert_VP9": {
+        "message": "యూట్యూబ్ వీడియోలను ప్లే చేయడానికి మీకు VP9 లేదా H.264 ఎనేబుల్ చేయాల్సి ఉంటుంది."
+    },
+    "blockAll": {
+        "message": "ఆఫ్ (బ్లాక్ లేదా స్కిప్)"
+    },
+    "blockAv1": {
+        "message": "AV1ను బ్లాక్ చేయి"
+    },
+    "blockH264": {
+        "message": "H.264ను బ్లాక్ చేయి"
+    },
+    "blocklist": {
+        "message": "బ్లాక్‌లిస్ట్"
+    },
+    "blockMusic": {
+        "message": "నేను సంగీతం వినుచున్నప్పుడు యాడ్స్‌ను స్కిప్ చేయి"
+    },
+    "blockVp8": {
+        "message": "VP8ను బ్లాక్ చేయి"
+    },
+    "blockVp9": {
+        "message": "VP9ను బ్లాక్ చేయి"
+    },
+    "blue": {
+        "message": "నీలం"
+    },
+    "blueGray": {
+        "message": "నీలి బూడిద"
+    },
+    "bluelight": {
+        "message": "నీలి కాంతి"
+    },
+    "brightness": {
+        "message": "ప్రకాశం"
+    },
+    "brown": {
+        "message": "గోధుమ రంగు"
+    },
+    "browser": {
+        "message": "బ్రౌజర్"
+    },
+    "browserAccountSync": {
+        "message": "సింక్ (బ్రౌజర్ ఖాతా)"
+    },
+    "browserVersion": {
+        "message": "బ్రౌజర్ వెర్షన్"
+    },
+    "bubbles": {
+        "message": "బుడగలు"
+    },
+    "bug": {
+        "message": "బగ్"
+    },
+    "buttons": {
+        "message": "బటన్లు"
+    },
+    "cancel": {
+        "message": "రద్దు చేయి"
+    },
+    "categories": {
+        "message": "వర్గాలు"
+    },
+    "changeThumbnailsPerRow": {
+        "message": "వరుసకు థంబ్‌నెయిల్స్"
+    },
+    "channel": {
+        "message": "చానెల్"
+    },
+    "channels": {
+        "message": "చానెల్స్"
+    },
+    "chapters": {
+        "message": "అధ్యాయాలు"
+    },
+    "chapterTitle": {
+        "message": "అధ్యాయ శీర్షిక"
+    },
+    "characterEdgeStyle": {
+        "message": "అక్షర అంచు శైలి"
+    },
+    "clickableLinksInDescription": {
+        "message": "వీడియో వివరణలలోని లింక్‌లను కాపీ చేయడానికి రైట్ క్లిక్ చేయండి"
+    },
+    "clip": {
+        "message": "క్లిప్"
+    },
+    "clipboard": {
+        "message": "క్లిప్‌బోర్డ్"
+    },
+    "codecH264": {
+        "message": "కోడెక్ h.264"
+    },
+    "codecs": {
+        "message": "కోడెక్స్"
+    },
+    "collapsed": {
+        "message": "కుదించబడింది"
+    },
+    "collapseOfSubscriptionSections": {
+        "message": "సబ్‌స్క్రిప్షన్ విభాగాలను మడవండి (కుదించిన అకార్డియన్)"
+    },
+    "columns": {
+        "message": "అదనపు సైడ్‌బార్ కాలమ్ (విండో తగినంత వెడల్పుగా ఉంటే, సంబంధిత వీడియోలను తరలించకుండా)"
+    },
+    "comments": {
+        "message": "వ్యాఖ్యలు"
+    },
+    "compact_spacing": {
+        "message": "కాంపాక్ట్ స్పేసింగ్"
+    },
+    "compactTheme": {
+        "message": "కాంపాక్ట్ థీమ్"
+    },
+    "confirmationBeforeClosing": {
+        "message": "మూసే ముందు నిర్ధారణ"
+    },
+    "cookies": {
+        "message": "కుకీలు"
+    },
+    "copyVideoId": {
+        "message": "📋 వీడియో IDని కాపీ చేయి"
+    },
+    "copyVideoUrl": {
+        "message": "వీడియో పూర్తి URLను కాపీ చేయి"
+    },
+    "cores": {
+        "message": "కోర్లు"
+    },
+    "cropChapterTitles": {
+        "message": "అధ్యాయ శీర్షికలను క్రాప్ చేయి"
+    },
+    "Currently_requiring_a_YouTube_API_key": {
+        "message": "(ప్రస్తుతం యూట్యూబ్-API-కీ అవసరం: )"
+    },
+    "cursorLighting": {
+        "message": "యూట్యూబ్ పేజీలను మసకగా చేయి, నేను మౌస్‌ఓవర్ చేసిన దాని తప్ప!"
+    },
+    "custom": {
+        "message": "కస్టమ్"
+    },
+    "customCss": {
+        "message": "కస్టమ్ CSS"
+    },
+    "customJs": {
+        "message": "కస్టమ్ JS"
+    },
+    "customMiniPlayer": {
+        "message": "కస్టమ్ మినీ-ప్లేయర్"
+    },
+    "cyan": {
+        "message": "సియాన్"
+    },
+    "dark": {
+        "message": "చీకటి"
+    },
+    "darkTheme": {
+        "message": "డార్క్ థీమ్"
+    },
+    "dateAndTime": {
+        "message": "తేదీ & సమయం"
+    },
+    "dawn": {
+        "message": "తెల్లవారుజాము"
+    },
+    "decreasePlaybackSpeed": {
+        "message": "ప్లేబ్యాక్ వేగాన్ని తగ్గించు"
+    },
+    "decreaseVolume": {
+        "message": "వాల్యూమ్ తగ్గించు"
+    },
+    "deepOrange": {
+        "message": "గాఢ నారింజ"
+    },
+    "deepPurple": {
+        "message": "గాఢ ఊదా"
+    },
+    "default": {
+        "message": "డిఫాల్ట్"
+    },
+    "default_CC": {
+        "message": "డిఫాల్ట్"
+    },
+    "default_theme": {
+        "message": "డిఫాల్ట్"
+    },
+    "defaultChannelTab": {
+        "message": "డిఫాల్ట్ చానెల్ ట్యాబ్"
+    },
+    "defaultContentCountry": {
+        "message": "దేశం (వర్చువల్ ట్రావెల్)"
+    },
+    "defaultPlaybackSpeed": {
+        "message": "డిఫాల్ట్ ప్లేబ్యాక్ వేగం"
+    },
+    "deleteWatchedVideos": {
+        "message": "చూసిన వీడియోలను తొలగించు"
+    },
+    "deleteYoutubeCookies": {
+        "message": "యూట్యూబ్ కుకీలను తొలగించు"
+    },
+    "depressed": {
+        "message": "దిగులుగా"
+    },
+    "description": {
+        "message": "వివరణ"
+    },
+    "description_ext": {
+        "message": "యూట్యూబ్, చక్కగా & తెలివిగా? యూట్యూబ్‌ను సూపర్‌చార్జ్ చేయండి! దీనికి బలమైన ఫీచర్లను ఇవ్వండి, మీకు కావలసిన వీడియోలను మాత్రమే ఫిల్టర్ చేయండి & మీకు నచ్చిన రూపాన్ని ఖచ్చితంగా ఇవ్వండి"
+    },
+    "desert": {
+        "message": "ఎడారి"
+    },
+    "details": {
+        "message": "వివరాలు"
+    },
+    "developerOptions": {
+        "message": "డెవలపర్ ఎంపికలు"
+    },
+    "device": {
+        "message": "పరికరం"
+    },
+    "dim": {
+        "message": "మసకబారిన"
+    },
+    "disableAutoDubbing": {
+        "message": "ఆటో డబ్బింగ్‌ను నిలిపివేయి"
+    },
+    "disabled": {
+        "message": "నిలిపివేయబడింది"
+    },
+    "disableLikesAnimation": {
+        "message": "లైక్స్ యానిమేషన్‌ను నిలిపివేయి"
+    },
+    "disableThumbnailPlayback": {
+        "message": "హోవర్‌లో వీడియో ప్లేబ్యాక్‌ను నిలిపివేయి"
+    },
+    "dislike": {
+        "message": "డిస్‌లైక్"
+    },
+    "displayDayOfTheWeak": {
+        "message": "వారంలోని రోజును ప్రదర్శించు"
+    },
+    "donate": {
+        "message": "దానం చేయి"
+    },
+    "doNotChange": {
+        "message": "మార్చవద్దు"
+    },
+    "download": {
+        "message": "డౌన్‌లోడ్"
+    },
+    "draggable": {
+        "message": "లాగగలిగే"
+    },
+    "dropShadow": {
+        "message": "డ్రాప్ షాడో"
+    },
+    "durationWithSpeed": {
+        "message": "ప్లేబ్యాక్ వేగానికి సంబంధించి మిగిలిన సమయాన్ని చూపించు"
+    },
+    "email": {
+        "message": "ఈమెయిల్"
+    },
+    "embedded_Hide_Share": {
+        "message": "ఎంబెడెడ్ షేర్‌ను దాచు"
+    },
+    "Embedded_YouTube": {
+        "message": "ఎంబెడెడ్ యూట్యూబ్"
+    },
+    "empty": {
+        "message": "ఖాళీ"
+    },
+    "enabled": {
+        "message": "ఎనేబుల్ చేయబడింది"
+    },
+    "enabledForced": {
+        "message": "ఎనేబుల్ చేయబడింది (బలవంతంగా)"
+    },
+    "enterPassword": {
+        "message": "దయచేసి మీ 4-అంకెల కోడ్‌ను నమోదు చేయండి."
+    },
+    "expanded": {
+        "message": "విస్తరించబడింది"
+    },
+    "exportSettings": {
+        "message": "సెట్టింగ్స్‌ను ఎగుమతి చేయి"
+    },
+    "extension": {
+        "message": "ఎక్స్‌టెన్షన్"
+    },
+    "ExtraButtons": {
+        "message": "అదనపు బటన్లు"
+    },
+    "extraButtonsBelowThePlayer": {
+        "message": "ప్లేయర్ కింద అదనపు బటన్లు"
+    },
+    "extraRightControlButtons": {
+        "message": "ప్లేయర్ లోపల అదనపు బటన్లు"
+    },
+    "Feature_not_yet_available": {
+        "message": "ఫీచర్ ఇంకా అందుబాటులో లేదు"
+    },
+    "file": {
+        "message": "ఫైల్"
+    },
+    "filters": {
+        "message": "ఫిల్టర్లు"
+    },
+    "fitToWindow": {
+        "message": "పాత ప్రత్యామ్నాయం ('విండోకు అనుగుణంగా')"
+    },
+    "flash": {
+        "message": "ఫ్లాష్"
+    },
+    "font": {
+        "message": "ఫాంట్"
+    },
+    "fontColor": {
+        "message": "ఫాంట్ రంగు"
+    },
+    "fontFamily": {
+        "message": "ఫాంట్ కుటుంబం"
+    },
+    "fontOpacity": {
+        "message": "ఫాంట్ అపారదర్శకత"
+    },
+    "fontSize": {
+        "message": "ఫాంట్ పరిమాణం"
+    },
+    "footer": {
+        "message": "ఫుటర్"
+    },
+    "forcedPlaybackSpeed": {
+        "message": "వేగ-వీక్షణ: శాశ్వత వేగం"
+    },
+    "forcedPlaybackSpeedMusic": {
+        "message": "(సంగీతం కోసం కూడా ప్లేబ్యాక్ వేగాన్ని బలవంతం చేయాలా?)"
+    },
+    "forcedPlayVideoFromTheBeginning": {
+        "message": "వీడియోను మొదటి నుండి ప్లే చేయమని బలవంతం చేయి"
+    },
+    "forcedTheaterMode": {
+        "message": "థియేటర్ మోడ్‌ను బలవంతం చేయి"
+    },
+    "forcedVolume": {
+        "message": "వాల్యూమ్‌ను బలవంతం చేయి"
+    },
+    "forceSDR": {
+        "message": "HDRను నివారించి, SDRను ఉంచు"
+    },
+    "foundABug": {
+        "message": "బగ్"
+    },
+    "fullWindow": {
+        "message": "పూర్తి ఎత్తు"
+    },
+    "general": {
+        "message": "సాధారణ"
+    },
+    "geoPreference": {
+        "message": "జియో ప్రాధాన్యత"
+    },
+    "github": {
+        "message": "గిట్‌హబ్"
+    },
+    "googleApiKey": {
+        "message": "గూగుల్ API కీ"
+    },
+    "goToSearchBox": {
+        "message": "శోధన బాక్స్‌కు వెళ్లు"
+    },
+    "gpu": {
+        "message": "GPU"
+    },
+    "GPUnotindatabase": {
+        "message": "GPU డేటాబేస్‌లో లేదు"
+    },
+    "green": {
+        "message": "ఆకుపచ్చ"
+    },
+    "grey": {
+        "message": "బూడిద"
+    },
+    "halfTransparent": {
+        "message": "మందమైన/అర్ధ-పారదర్శక"
+    },
+    "Hamburger_Menu": {
+        "message": "హ్యాంబర్గర్ మెను"
+    },
+    "hardwareInformation": {
+        "message": "హార్డ్‌వేర్ సమాచారం"
+    },
+    "hd": {
+        "message": "HD"
+    },
+    "hdThumbnail": {
+        "message": "HD థంబ్‌నెయిల్"
+    },
+    "header": {
+        "message": "హెడర్"
+    },
+    "hidden": {
+        "message": "దాచబడింది"
+    },
+    "hiddenOnVideoPage": {
+        "message": "వీడియో పేజీలో దాచబడింది"
+    },
+    "hide_author_avatars": {
+        "message": "రచయిత అవతార్లను దాచు"
+    },
+    "hide_labels": {
+        "message": "పేర్లను దాచు"
+    },
+    "Hide_Pause_Overlay": {
+        "message": "పాజ్ ఓవర్‌లేను దాచు"
+    },
+    "Hide_Shorts_remixing_this_video": {
+        "message": "ఈ వీడియోను రీమిక్స్ చేస్తున్న షార్ట్స్‌ను దాచు"
+    },
+    "Hide_sidebar": {
+        "message": "సైడ్‌బార్‌ను దాచు"
+    },
+    "Hide_the_tabs_only": {
+        "message": "ట్యాబ్‌లను మాత్రమే దాచు"
+    },
+    "Hide_YouTube_Logo": {
+        "message": "యూట్యూబ్ లోగోను దాచు"
+    },
+    "hideAISummary": {
+        "message": "AI సారాంశాలను దాచు"
+    },
+    "hideAnimatedThumbnails": {
+        "message": "యానిమేటెడ్ థంబ్‌నెయిల్స్‌ను దాచు"
+    },
+    "hideAnnotations": {
+        "message": "ఆనోటేషన్స్‌ను దాచు"
+    },
+    "hideBannerAds": {
+        "message": "బ్యానర్ యాడ్స్‌ను దాచు (యూట్యూబ్ నిరాకరించవచ్చు)"
+    },
+    "hideCards": {
+        "message": "కార్డ్స్‌ను దాచు"
+    },
+    "hideCategories": {
+        "message": "వర్గాలను దాచు"
+    },
+    "hideCommentsCount": {
+        "message": "వ్యాఖ్యల గణనను దాచు"
+    },
+    "hideCountryCode": {
+        "message": "దేశ కోడ్‌ను దాచు"
+    },
+    "hideDate": {
+        "message": "తేదీని దాచు"
+    },
+    "hideDetailButton": {
+        "message": "బటన్లు (ప్లేయర్ కింద)"
+    },
+    "hideDetails": {
+        "message": "వివరాలను దాచు"
+    },
+    "hideEndscreen": {
+        "message": "ఎండ్‌స్క్రీన్‌ను దాచు"
+    },
+    "hideFeaturedContent": {
+        "message": "ఫీచర్డ్ కంటెంట్‌ను దాచు"
+    },
+    "hideFooter": {
+        "message": "ఫుటర్‌ను దాచు"
+    },
+    "hideGradientBottom": {
+        "message": "ప్లేయర్-బార్ చుట్టూ షాడోను దాచు"
+    },
+    "hideHomePageShorts": {
+        "message": "హోమ్ పేజీలో షార్ట్స్‌ను దాచు"
+    },
+    "hideIncludesPaidPromotion": {
+        "message": "\"పెయిడ్ ప్రమోషన్ ఉంది\"ను దాచు"
+    },
+    "hideLogo": {
+        "message": "లోగో: దాచు!"
+    },
+    "hideMore": {
+        "message": "'...'ను దాచు"
+    },
+    "hidePlayerControlsBar": {
+        "message": "ప్లేయర్ కంట్రోల్స్ బార్‌ను దాచు"
+    },
+    "hidePlayerControlsBarButtons": {
+        "message": "ప్లేయర్ కంట్రోల్స్ బటన్లను దాచు"
+    },
+    "hidePlayerControlsBarOptions": {
+        "message": "ప్లేయర్ కంట్రోల్స్ ఎంపికలను దాచు"
+    },
+    "hidePlaylist": {
+        "message": "ప్లేలిస్ట్‌ను దాచు"
+    },
+    "hideReport": {
+        "message": "'రిపోర్ట్'ను దాచు"
+    },
+    "hideRightButtons": {
+        "message": "కుడి బటన్లను దాచు"
+    },
+    "hideScrollForDetails": {
+        "message": "«వివరాల కోసం స్క్రోల్»ను దాచు"
+    },
+    "hideSkipOverlay": {
+        "message": "5 సెకన్ల స్కిప్ యానిమేషన్‌ను దాచు"
+    },
+    "hideSponsoredVideosOnHome": {
+        "message": "హోమ్ పేజీలో స్పాన్సర్డ్ వీడియోలను దాచు"
+    },
+    "hideThumbnailDots": {
+        "message": "థంబ్‌నెయిల్స్‌లో '⫶' (మరిన్ని చర్యలు)ను దాచు"
+    },
+    "hideThumbnailIcon": {
+        "message": "థంబ్‌నెయిల్ ఐకాన్‌ను దాచు"
+    },
+    "hideThumbnailOverlay": {
+        "message": "థంబ్‌నెయిల్స్‌లో బటన్లను దాచు"
+    },
+    "hideThumbnails": {
+        "message": "థంబ్‌నెయిల్స్‌ను దాచు"
+    },
+    "hideTopLoadingBar": {
+        "message": "టాప్ లోడింగ్ బార్‌ను దాచు"
+    },
+    "hideVideoTitleFullScreen": {
+        "message": "పూర్తిస్క్రీన్‌లో వీడియో టైటిల్‌ను దాచు"
+    },
+    "hideViewsCount": {
+        "message": "వీక్షణల గణనను దాచు"
+    },
+    "hideVoiceSearchButton": {
+        "message": "వాయిస్ శోధన బటన్‌ను దాచు"
+    },
+    "hideWatchedVideos": {
+        "message": "చూసిన వీడియోలను దాచు"
+    },
+    "high": {
+        "message": "ఎక్కువ"
+    },
+    "history": {
+        "message": "చరిత్ర"
+    },
+    "home": {
+        "message": "హోమ్"
+    },
+    "homeScreen": {
+        "message": "హోమ్ స్క్రీన్"
+    },
+    "hover": {
+        "message": "హోవర్"
+    },
+    "hoverOnVideoPage": {
+        "message": "వీడియో పేజీలో హోవర్"
+    },
+    "howLongAgoTheVideoWasUploaded": {
+        "message": "వీడియో వయస్సును చూపించు (ఎంత కాలం క్రితం అప్‌లోడ్ చేసారు)"
+    },
+    "icons": {
+        "message": "ఐకాన్లు"
+    },
+    "iconsOnly": {
+        "message": "ఐకాన్ మాత్రమే"
+    },
+    "importSettings": {
+        "message": "సెట్టింగ్స్‌ను దిగుమతి చేయి"
+    },
+    "ImprovedTube": {
+        "message": "ImprovedTube"
+    },
+    "improvedtubeButtons": {
+        "message": "ImprovedTube బటన్లు"
+    },
+    "improvedtubeIconOnYoutube": {
+        "message": "యూట్యూబ్‌లో ImprovedTube ఐకాన్"
+    },
+    "improvedtubeLanguage": {
+        "message": "ImprovedTube"
+    },
+    "improvedTubeSidePanel": {
+        "message": "ImprovedTube: బ్రౌజర్ సైడ్‌పానెల్"
+    },
+    "improvedtubeVersion": {
+        "message": "ImprovedTube వెర్షన్"
+    },
+    "improveLogo": {
+        "message": "లోగో: మోనోక్రోమ్!"
+    },
+    "increasePlaybackSpeed": {
+        "message": "ప్లేబ్యాక్ వేగాన్ని పెంచు"
+    },
+    "increaseVolume": {
+        "message": "వాల్యూమ్ పెంచు"
+    },
+    "indigo": {
+        "message": "ఇండిగో"
+    },
+    "items": {
+        "message": "అంశాలు"
+    },
+    "join": {
+        "message": "చేరు"
+    },
+    "keyScene": {
+        "message": "⚡అత్యధికంగా రీప్లే చేసిన దృశ్యానికి వెళ్లు"
+    },
+    "language": {
+        "message": "భాష"
+    },
+    "language_closed_caption": {
+        "message": "భాష డిఫాల్ట్ - క్లోజ్డ్ కెప్షన్స్"
+    },
+    "languages": {
+        "message": "భాషలు"
+    },
+    "layerAnimationScale": {
+        "message": "లేయర్ యానిమేషన్ స్కేల్"
+    },
+    "layout": {
+        "message": "లేఅవుట్"
+    },
+    "Left_Side_Menu": {
+        "message": "ఎడమ వైపు మెను"
+    },
+    "legacyYoutube": {
+        "message": "లెగసీ యూట్యూబ్"
+    },
+    "library": {
+        "message": "లైబ్రరీ"
+    },
+    "light": {
+        "message": "కాంతి"
+    },
+    "lightBlue": {
+        "message": "లేత నీలం"
+    },
+    "lightGreen": {
+        "message": "లేత ఆకుపచ్చ"
+    },
+    "like": {
+        "message": "లైక్"
+    },
+    "liked": {
+        "message": "లైక్ చేయబడింది"
+    },
+    "likes": {
+        "message": "లైక్లు"
+    },
+    "lime": {
+        "message": "నిమ్మ రంగు"
+    },
+    "limitPageWidth": {
+        "message": "పేజీ వెడల్పును పరిమితం చేయి"
+    },
+    "list": {
+        "message": "జాబితా"
+    },
+    "liveChat": {
+        "message": "లైవ్ చాట్"
+    },
+    "liveChatType": {
+        "message": "లైవ్ చాట్ రకం"
+    },
+    "location": {
+        "message": "స్థానం"
+    },
+    "loop": {
+        "message": "🔁 లూప్"
+    },
+    "loudnessNormalization": {
+        "message": "లౌడ్‌నెస్ నార్మలైజేషన్"
+    },
+    "low": {
+        "message": "తక్కువ"
+    },
+    "markWatchedVideos": {
+        "message": "చూసిన వీడియోలను గుర్తించు"
+    },
+    "medium": {
+        "message": "మధ్యమ"
+    },
+    "mixer": {
+        "message": "మిక్సర్"
+    },
+    "more": {
+        "message": "మరిన్ని"
+    },
+    "mostViewedChannels": {
+        "message": "అత్యధికంగా వీక్షించిన చానెల్స్"
+    },
+    "moveSidebarLeft": {
+        "message": "ఎడమవైపుకు!"
+    },
+    "moveThumbnailsRight": {
+        "message": "థంబ్‌నెయిల్స్‌ను కుడివైపుకు!"
+    },
+    "My_specs": {
+        "message": "నా స్పెక్స్"
+    },
+    "myColors": {
+        "message": "నా రంగులు"
+    },
+    "name": {
+        "message": "పేరు"
+    },
+    "nativeMiniPlayer": {
+        "message": "నేటివ్ మినీ ప్లేయర్"
+    },
+    "new": {
+        "message": "కొత్త"
+    },
+    "nextVideo": {
+        "message": "తదుపరి వీడియో"
+    },
+    "night": {
+        "message": "రాత్రి"
+    },
+    "nightMode": {
+        "message": "నైట్ మోడ్"
+    },
+    "noActiveFeatures": {
+        "message": "సక్రియ ఫీచర్లు లేవు"
+    },
+    "none": {
+        "message": "ఏదీ లేదు"
+    },
+    "noOpenVideoTabs": {
+        "message": "తెరిచిన వీడియో ట్యాబ్‌లు లేవు"
+    },
+    "normal": {
+        "message": "సాధారణ"
+    },
+    "Not_optimal": {
+        "message": "అనుకూలమైనది కాదు"
+    },
+    "off": {
+        "message": "ఆఫ్"
+    },
+    "ok": {
+        "message": "సరే"
+    },
+    "old": {
+        "message": "పాత"
+    },
+    "onAllVideos": {
+        "message": "ఆన్"
+    },
+    "onlyActiveOnYoutube": {
+        "message": "యూట్యూబ్‌లో మాత్రమే సక్రియం"
+    },
+    "onlyOnePlayerInstancePlaying": {
+        "message": "నేను 2వ వీడియో చూస్తున్నప్పుడు పాజ్ చేయి"
+    },
+    "onSmallCreators": {
+        "message": "ఆఫ్, చిన్న చానెల్స్ తప్ప"
+    },
+    "onSubscribedChannels": {
+        "message": "ఆఫ్, నా సబ్‌స్క్రైబ్ చేసిన చానెల్స్‌లో తప్ప"
+    },
+    "openNewTab": {
+        "message": "కొత్త ట్యాబ్‌లో తెరవండి"
+    },
+    "openPopupPlayer": {
+        "message": "వీడియో/ప్లేలిస్ట్‌ను కొత్త విండోలో తెరవండి"
+    },
+    "optimizeCodecForHardwareAcceleration": {
+        "message": "హార్డ్‌వేర్ యాక్సెలరేషన్ కోసం కోడెక్‌ను ఆప్టిమైజ్ చేయి"
+    },
+    "orange": {
+        "message": "నారింజ"
+    },
+    "os": {
+        "message": "OS"
+    },
+    "other": {
+        "message": "ఇతర"
+    },
+    "outline": {
+        "message": "అవుట్‌లైన్"
+    },
+    "overlay": {
+        "message": "ఓవర్‌లే"
+    },
+    "passwordOptions": {
+        "message": "పాస్‌వర్డ్ ఎంపికలు"
+    },
+    "pauseWhileIAmTypingOnYouTube": {
+        "message": "నేను యూట్యూబ్‌లో టైప్ చేస్తున్నప్పుడు పాజ్ చేయి"
+    },
+    "pauseWhileIUnplugTheCharger": {
+        "message": "నేను చార్జర్‌ను వెలికితీసినప్పుడు పాజ్ చేయి"
+    },
+    "permissions": {
+        "message": "అనుమతులు"
+    },
+    "pictureInPicture": {
+        "message": "పిక్చర్-ఇన్-పిక్చర్"
+    },
+    "pink": {
+        "message": "గులాబీ"
+    },
+    "PipRequiresUserInteraction": {
+        "message": "PiP కోసం సోర్స్ పేజీతో ఇటీవలి వినియోగదారు పరస్పర చర్య అవసరం. ఇది Chrome Picture-in-Picture API పరిమితులు మరియు మేము దీనిని దాటవేయడానికి ఏమీ చేయలేము. ఆటోప్లే నిలిపివేయబడినప్పుడు మరియు మాన్యువల్ ప్లే నియంత్రణతో లేదా ట్యాబ్‌లను మార్చే ముందు పేజీలో ఎక్కడైనా ఉద్దేశపూర్వకంగా క్లిక్ చేయడంతో ఉత్తమంగా పనిచేస్తుంది."
+    },
+    "plain": {
+        "message": "సాధారణ"
+    },
+    "platform": {
+        "message": "ప్లాట్‌ఫామ్"
+    },
+    "playAllButton": {
+        "message": "\"అన్నీ ప్లే చేయి\"బటన్"
+    },
+    "playbackSpeed": {
+        "message": "ప్లేబ్యాక్ వేగం"
+    },
+    "player": {
+        "message": "ప్లేయర్"
+    },
+    "player_auto_cinema_mode": {
+        "message": "ఆటో సినిమా మోడ్"
+    },
+    "player_auto_hide_cinema_mode_when_paused": {
+        "message": "పాజ్‌లో ఆటో హైడ్ సినిమా మోడ్"
+    },
+    "player_cinema_mode_button": {
+        "message": "సినిమా మోడ్"
+    },
+    "player_dont_speed_education": {
+        "message": "(అరుదైన) వర్గం: విద్యను వేగవంతం చేయవద్దు"
+    },
+    "player_fit_to_win_button": {
+        "message": "విండోకు అనుగుణంగా"
+    },
+    "player_rewind_and_forward_buttons": {
+        "message": "రీవైండ్/ఫార్వర్డ్ బటన్లు"
+    },
+    "player_rotate_button": {
+        "message": "వీడియో రొటేట్ చేయి"
+    },
+    "playerAutoPipOutside": {
+        "message": "సోర్స్ ట్యాబ్ వెలుపల మాత్రమే ఆటో-PiP"
+    },
+    "playerColor": {
+        "message": "ప్రోగ్రెస్ బార్ రంగు"
+    },
+    "playerSize": {
+        "message": "ప్లేయర్ పరిమాణం"
+    },
+    "playlist": {
+        "message": "ప్లేలిస్ట్"
+    },
+    "playlists": {
+        "message": "ప్లేలిస్ట్‌లు"
+    },
+    "playPause": {
+        "message": "ప్లే / పాజ్"
+    },
+    "popupAd": {
+        "message": "పాప్-అప్ యాడ్: దాచు"
+    },
+    "popupPlayer": {
+        "message": "పాప్అప్ ప్లేయర్"
+    },
+    "popupWindowButtons": {
+        "message": "ప్రతి థంబ్‌నెయిల్‌కు పాప్అప్-ప్లేయర్-బటన్ జోడించు"
+    },
+    "position": {
+        "message": "స్థానం"
+    },
+    "pressAnyKeyOrScroll": {
+        "message": "ఏదైనా కీని నొక్కండి లేదా మౌస్ వీల్‌ను ఉపయోగించండి."
+    },
+    "pressAnyKeyOrUseMouseWheel": {
+        "message": "ఏదైనా కీని నొక్కండి లేదా మౌస్ వీల్‌ను ఉపయోగించండి"
+    },
+    "preventShortVideoAutoloop": {
+        "message": "చిన్న వీడియోలను ఆటో-లూప్ చేయడాన్ని నిరోధించు"
+    },
+    "previousVideo": {
+        "message": "మునుపటి వీడియో"
+    },
+    "primaryColor": {
+        "message": "ప్రాథమిక రంగు"
+    },
+    "pullSyncSettings": {
+        "message": "పుల్"
+    },
+    "purchase": {
+        "message": "కొనుగోలు"
+    },
+    "purple": {
+        "message": "ఊదా"
+    },
+    "pushSyncSettings": {
+        "message": "పుష్"
+    },
+    "quality": {
+        "message": "నాణ్యత"
+    },
+    "qualityWhenRunningOnBattery": {
+        "message": "బ్యాటరీతో నడుస్తున్నప్పుడు నాణ్యత"
+    },
+    "qualityWithoutFocus": {
+        "message": "ఫోకస్ లేకుండా నాణ్యత"
+    },
+    "raised": {
+        "message": "పెరిగింది"
+    },
+    "ram": {
+        "message": "RAM"
+    },
+    "rateMe": {
+        "message": "నన్ను రేట్ చేయండి"
+    },
+    "rateUs": {
+        "message": "మమ్మల్ని రేట్ చేయండి"
+    },
+    "red": {
+        "message": "ఎరుపు"
+    },
+    "redDislikeButton": {
+        "message": "డిస్‌లైక్ చేసినప్పుడు ఎరుపు"
+    },
+    "relatedVideos": {
+        "message": "సంబంధిత వీడియోలు"
+    },
+    "remote": {
+        "message": "టీవీలో ప్లే చేయి"
+    },
+    "Remove": {
+        "message": "తొలగించు"
+    },
+    "removeBlackBars": {
+        "message": "పూర్తిస్క్రీన్‌లో నల్ల బార్లను తొలగించు"
+    },
+    "removeContextButtons": {
+        "message": "షార్ట్స్‌లో కంటెక్స్ట్ బటన్లను తొలగించు"
+    },
+    "removeIcons": {
+        "message": "ఐకాన్లను తొలగించు"
+    },
+    "removeMemberOnly": {
+        "message": "మెంబర్ మాత్రమే వీడియోలను తొలగించు"
+    },
+    "removeName": {
+        "message": "పేరును తొలగించు"
+    },
+    "removeNames": {
+        "message": "పేర్లను తొలగించు"
+    },
+    "removePlaylistParam": {
+        "message": "కొత్త ట్యాబ్‌లో వీడియోలను తెరిచినప్పుడు ప్లేలిస్ట్‌ను స్కిప్ చేయి"
+    },
+    "removeRelatedSearchResults": {
+        "message": "సంబంధిత శోధన ఫలితాలను తొలగించు"
+    },
+    "removeShortsReelSearchResults": {
+        "message": "శోధన ఫలితాల నుండి షార్ట్స్ రీల్‌ను తొలగించు"
+    },
+    "RemoveSubtitlesForLyrics": {
+        "message": "లిరిక్స్ కోసం సబ్‌టైటిల్స్‌ను తొలగించు"
+    },
+    "repeat": {
+        "message": "రిపీట్"
+    },
+    "report": {
+        "message": "రిపోర్ట్"
+    },
+    "requirePassword": {
+        "message": "ImprovedTube సెట్టింగ్స్ మార్చడానికి పాస్‌వర్డ్ అవసరం"
+    },
+    "reset": {
+        "message": "రీసెట్"
+    },
+    "resetAllSettings": {
+        "message": "అన్ని సెట్టింగ్స్‌ను రీసెట్ చేయి"
+    },
+    "resetAllShortcuts": {
+        "message": "అన్ని షార్ట్‌కట్స్‌ను రీసెట్ చేయి"
+    },
+    "reverse": {
+        "message": "రివర్స్"
+    },
+    "rotate": {
+        "message": "రొటేట్"
+    },
+    "save": {
+        "message": "సేవ్"
+    },
+    "saveAs": {
+        "message": "ఇలా సేవ్ చేయి"
+    },
+    "schedule": {
+        "message": "షెడ్యూల్"
+    },
+    "screen": {
+        "message": "స్క్రీన్"
+    },
+    "screenshot": {
+        "message": "🖼️ స్క్రీన్‌షాట్"
+    },
+    "scrollBar": {
+        "message": "స్క్రోల్ బార్"
+    },
+    "sd": {
+        "message": "SD"
+    },
+    "search": {
+        "message": "శోధన"
+    },
+    "searchBarOnly": {
+        "message": "శోధన బార్ మాత్రమే"
+    },
+    "seekBackward10Seconds": {
+        "message": "10 సెకన్లు వెనక్కి వెళ్లు"
+    },
+    "seekForward10Seconds": {
+        "message": "10 సెకన్లు ముందుకు వెళ్లు"
+    },
+    "seekNextChapter": {
+        "message": "తదుపరి అధ్యాయానికి వెళ్లు"
+    },
+    "seekPreviousChapter": {
+        "message": "మునుపటి అధ్యాయానికి వెళ్లు"
+    },
+    "settings": {
+        "message": "సెట్టింగ్స్"
+    },
+    "settingsSuccessfullyImported": {
+        "message": "సెట్టింగ్స్ విజయవంతంగా దిగుమతి చేయబడ్డాయి"
+    },
+    "share": {
+        "message": "షేర్"
+    },
+    "shortcut_chapters": {
+        "message": "అధ్యాయాలు (సైడ్‌బార్) ఆన్/ఆఫ్"
+    },
+    "shortcut_screenshot": {
+        "message": "స్క్రీన్‌షాట్"
+    },
+    "shortcut_transcript": {
+        "message": "ట్రాన్స్‌క్రిప్ట్ (సైడ్‌బార్) ఆన్/ఆఫ్"
+    },
+    "shortcuts": {
+        "message": "షార్ట్‌కట్స్"
+    },
+    "ShortsForceTheStandardPlayer": {
+        "message": "షార్ట్స్: స్టాండర్డ్ ప్లేయర్‌ను బలవంతంగా ఉపయోగించు"
+    },
+    "showCardsOnMouseHover": {
+        "message": "మౌస్ హోవర్‌లో కార్డ్స్‌ను చూపించు"
+    },
+    "showChannelVideosCount": {
+        "message": "చానెల్ వీడియోల గణనను చూపించు"
+    },
+    "showExactDate": {
+        "message": "ఖచ్చితమైన తేదీని చూపించు"
+    },
+    "showLess": {
+        "message": "తక్కువ చూపించు"
+    },
+    "showMore": {
+        "message": "మరిన్ని చూపించు"
+    },
+    "showRemainingDuration": {
+        "message": "వీడియో మిగిలిన వ్యవధిని చూపించు"
+    },
+    "showVersion": {
+        "message": "వెర్షన్‌ను చూపించు"
+    },
+    "shuffle": {
+        "message": "షఫుల్"
+    },
+    "sidebar": {
+        "message": "సైడ్‌బార్"
+    },
+    "Sidebar_simple_alternative": {
+        "message": "సైడ్‌బార్ (సాధారణ ప్రత్యామ్నాయం)"
+    },
+    "softwareInformation": {
+        "message": "సాఫ్ట్‌వేర్ సమాచారం"
+    },
+    "spacebar": {
+        "message": "స్పేస్‌బార్"
+    },
+    "squaredUserImages": {
+        "message": "చతురస్రాకార వినియోగదారు చిత్రాలు"
+    },
+    "static": {
+        "message": "స్థిర"
+    },
+    "statsForNerds": {
+        "message": "నర్డ్స్ కోసం గణాంకాలను చూపించు"
+    },
+    "step": {
+        "message": "దశ"
+    },
+    "stickyNavigation": {
+        "message": "స్టికీ నావిగేషన్"
+    },
+    "stop": {
+        "message": "ఆపు"
+    },
+    "style": {
+        "message": "శైలి"
+    },
+    "styles": {
+        "message": "శైలులు"
+    },
+    "subscribe": {
+        "message": "సబ్‌స్క్రైబ్"
+    },
+    "subscriptions": {
+        "message": "సబ్‌స్క్రిప్షన్స్"
+    },
+    "Subtitle_Capture_including_the_current_words": {
+        "message": "సబ్‌టైటిల్ (ప్రస్తుత పదాలతో సహా క్యాప్చర్)"
+    },
+    "subtitleLine": {
+        "message": "సబ్‌టైటిల్ ఎరుపు గీతను దాచు"
+    },
+    "subtitles": {
+        "message": "సబ్‌టైటిల్స్"
+    },
+    "sunset": {
+        "message": "సూర్యాస్తమయం"
+    },
+    "sunsetToSunrise": {
+        "message": "సూర్యాస్తమయం నుండి సూర్యోదయం వరకు"
+    },
+    "systemPeferenceDark": {
+        "message": "సిస్టమ్ ప్రాధాన్యత: చీకటి"
+    },
+    "systemPeferenceLight": {
+        "message": "సిస్టమ్ ప్రాధాన్యత: కాంతి"
+    },
+    "teal": {
+        "message": "టీల్"
+    },
+    "textColor": {
+        "message": "టెక్స్ట్ రంగు"
+    },
+    "thanks": {
+        "message": "ధన్యవాదాలు"
+    },
+    "themes": {
+        "message": "థీమ్స్"
+    },
+    "thisWillRemoveAllCookies": {
+        "message": "ఇది అన్ని కుకీలను తొలగిస్తుంది."
+    },
+    "thisWillRemoveAllWatchedVideos": {
+        "message": "ఇది అన్ని చూసిన వీడియోలను తొలగిస్తుంది."
+    },
+    "thisWillRemoveAllYouTubeCookies": {
+        "message": "ఇది అన్ని యూట్యూబ్ కుకీలను తొలగిస్తుంది"
+    },
+    "thisWillResetAllSettings": {
+        "message": "ఇది అన్ని సెట్టింగ్స్‌ను రీసెట్ చేస్తుంది."
+    },
+    "thisWillResetAllShortcuts": {
+        "message": "ఇది అన్ని షార్ట్‌కట్స్‌ను రీసెట్ చేస్తుంది"
+    },
+    "thumbnails": {
+        "message": "థంబ్‌నెయిల్స్"
+    },
+    "thumbnailsQuality": {
+        "message": "థంబ్‌నెయిల్స్ నాణ్యత"
+    },
+    "timeFrom": {
+        "message": "సమయం నుండి"
+    },
+    "timeTo": {
+        "message": "సమయం వరకు"
+    },
+    "To_the_side_No_page_margin": {
+        "message": "పక్కకు! (పేజీ మార్జిన్ లేకుండా)"
+    },
+    "todayAt": {
+        "message": "ఈరోజు"
+    },
+    "toggleAutoplay": {
+        "message": "ఆటోప్లేను టోగుల్ చేయి"
+    },
+    "toggleCards": {
+        "message": "కార్డ్స్‌ను టోగుల్ చేయి"
+    },
+    "toggleControls": {
+        "message": "ప్లేయర్ కంట్రోల్స్ దాచడాన్ని టోగుల్ చేయి"
+    },
+    "topChat": {
+        "message": "టాప్ చాట్"
+    },
+    "trackWatchedVideos": {
+        "message": "చూసిన వీడియోలను ట్రాక్ చేయి"
+    },
+    "trailerAutoplay": {
+        "message": "ట్రెయిలర్ ఆటోప్లే"
+    },
+    "Transcript": {
+        "message": "ట్రాన్స్‌క్రిప్ట్"
+    },
+    "translations": {
+        "message": "అనువాదాలు"
+    },
+    "transparentBackground": {
+        "message": "పారదర్శక బ్యాక్‌గ్రౌండ్"
+    },
+    "transparentColor": {
+        "message": "పారదర్శక"
+    },
+    "trending": {
+        "message": "ట్రెండింగ్"
+    },
+    "tryToReloadThePage": {
+        "message": "పేజీని రీలోడ్ చేయడానికి ప్రయత్నించండి"
+    },
+    "type": {
+        "message": "రకం"
+    },
+    "undoTheNewSidebar": {
+        "message": "కొత్త సైడ్‌బార్‌ను రద్దు చేయి!"
+    },
+    "upNextAutoplay": {
+        "message": "తదుపరి ఆటోప్లే"
+    },
+    "use24HourFormat": {
+        "message": "24-గంటల ఫార్మాట్‌ను ఉపయోగించు"
+    },
+    "version": {
+        "message": "వెర్షన్"
+    },
+    "video": {
+        "message": "వీడియో"
+    },
+    "videoDescriptionWillBeExpandedToGetNameOfCategory": {
+        "message": "వర్గం పేరును పొందడానికి వీడియో వివరణ విస్తరించబడుతుంది"
+    },
+    "videoFormats": {
+        "message": "వీడియో ఫార్మాట్స్"
+    },
+    "videos": {
+        "message": "వీడియోలు"
+    },
+    "viewMode": {
+        "message": "వీక్షణ మోడ్"
+    },
+    "volume": {
+        "message": "వాల్యూమ్"
+    },
+    "watchedVideos": {
+        "message": "చూసిన వీడియోలు"
+    },
+    "watchLater": {
+        "message": "తర్వాత చూడు"
+    },
+    "watchTime": {
+        "message": "వీక్షణ సమయం"
+    },
+    "whenBatteryIslowDecreaseQuality": {
+        "message": "తక్కువ బ్యాటరీ: నాణ్యతను తగ్గించు"
+    },
+    "whenPaused": {
+        "message": "పాజ్ చేసినప్పుడు"
+    },
+    "whenTabIsChanged": {
+        "message": "ట్యాబ్ మార్చినప్పుడు"
+    },
+    "white": {
+        "message": "తెలుపు"
+    },
+    "windowColor": {
+        "message": "విండో రంగు"
+    },
+    "windowOpacity": {
+        "message": "విండో అపారదర్శకత"
+    },
+    "with_scrollbars": {
+        "message": "స్క్రోల్‌బార్లతో?"
+    },
+    "withoutVideos": {
+        "message": "'ఖాళీ', వీడియో ప్రివ్యూలు లేకుండా"
+    },
+    "yellow": {
+        "message": "పసుపు"
+    },
+    "Youtube_Search": {
+        "message": "యూట్యూబ్-శోధన"
+    },
+    "youTubeButtons": {
+        "message": "యూట్యూబ్ బటన్లు"
+    },
+    "youtubeHeaderLeft": {
+        "message": "యూట్యూబ్ హెడర్ (ఎడమ)"
+    },
+    "youtubeHeaderRight": {
+        "message": "యూట్యూబ్ హెడర్ (కుడి)"
+    },
+    "youtubeHomePage": {
+        "message": "యూట్యూబ్ హోమ్ పేజీ"
+    },
+    "youtubeLanguage": {
+        "message": "యూట్యూబ్ భాష"
+    },
+    "youtubeLimitsVideoQualityTo1080pForH264Codec": {
+        "message": "యూట్యూబ్ h.264 కోడెక్ కోసం వీడియో నాణ్యతను 1080p వరకు పరిమితం చేస్తుంది"
+    },
+    "youtubesDark": {
+        "message": "యూట్యూబ్ డార్క్"
+    },
+    "youtubesLight": {
+        "message": "యూట్యూబ్ లైట్"
+    }
+}

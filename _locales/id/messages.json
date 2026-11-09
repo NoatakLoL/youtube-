@@ -1,0 +1,1481 @@
+{
+  "about": {
+    "message": "Tentang"
+  },
+  "accept": {
+    "message": "Terima"
+  },
+  "activate": {
+    "message": "Aktifkan"
+  },
+  "activateCaptions": {
+    "message": "Aktifkan teks terjemahan"
+  },
+  "activated": {
+    "message": "Diaktifkan"
+  },
+  "activatedFeatures": {
+    "message": "Fitur yang diaktifkan"
+  },
+  "activateFitToWindow": {
+    "message": "Sesuaikan dengan jendela"
+  },
+  "activateFullscreen": {
+    "message": "Aktifkan Layar penuh"
+  },
+  "activeFeatures": {
+    "message": "Fitur yang aktif"
+  },
+  "addScrollToTop": {
+    "message": "Tambahkan «Gulir ke atas»"
+  },
+  "ads": {
+    "message": "Iklan"
+  },
+  "all": {
+    "message": "Semua"
+  },
+  "allow": {
+    "message": "Izinkan"
+  },
+  "Allow_auto_generate": {
+    "message": "Izinkan pembuatan otomatis"
+  },
+  "allow60fps": {
+    "message": "Izinkan 60fps"
+  },
+  "allYourSettingsWillBeErasedAndCanTBeRecovered": {
+    "message": "Semua pengaturan Anda akan dihapus dan tidak dapat dipulihkan"
+  },
+  "allYourShortcutsWillBeErasedAndCanTBeRecovered": {
+    "message": "Semua pintasan Anda akan dihapus dan tidak dapat dipulihkan"
+  },
+  "always": {
+    "message": "Selalu"
+  },
+  "alwaysActive": {
+    "message": "Selalu aktif"
+  },
+  "alwaysShowProgressBar": {
+    "message": "Selalu tampilkan Bilah Kemajuan"
+  },
+  "amber": {
+    "message": "Ambar"
+  },
+  "ambientLighting": {
+    "message": "Pencahayaan ambient"
+  },
+  "analytics": {
+    "message": "Analitik"
+  },
+  "analyzer": {
+    "message": "Analisis"
+  },
+  "animations": {
+    "message": "Animasi"
+  },
+  "appearance": {
+    "message": "Tampilan"
+  },
+  "areYouSureYouWantToExportTheData": {
+    "message": "Apakah Anda yakin ingin mengekspor data?"
+  },
+  "areYouSureYouWantToImportTheData": {
+    "message": "Apakah Anda yakin ingin mengimpor data ini?"
+  },
+  "areYouSureYouWantToSyncTheData": {
+    "message": "Apakah Anda yakin ingin menyinkronkan pengaturan saat ini?"
+  },
+  "ARROWDOWN": {
+    "message": "⇩"
+  },
+  "ARROWLEFT": {
+    "message": "⇦"
+  },
+  "ARROWRIGHT": {
+    "message": "⇨"
+  },
+  "ARROWUP": {
+    "message": "⇧"
+  },
+  "atHistory": {
+    "message": "di 'Riwayat'"
+  },
+  "atSubscriptions": {
+    "message": "di 'Langganan'"
+  },
+  "atTrending": {
+    "message": "di 'Trending'"
+  },
+  "audio": {
+    "message": "Audio"
+  },
+  "audioFormats": {
+    "message": "Format audio"
+  },
+  "auto": {
+    "message": "Otomatis"
+  },
+  "Auto_PiP_picture_in_picture": {
+    "message": "Auto-PiP (Picture in Picture)"
+  },
+  "autoFullscreen": {
+    "message": "Layar penuh otomatis"
+  },
+  "autopauseWhenSwitchingTabs": {
+    "message": "Jeda otomatis saat saya tidak di tab"
+  },
+  "autoPictureInPicture": {
+    "message": "Picture-In-Picture Otomatis"
+  },
+  "autoplay": {
+    "message": "Putar otomatis"
+  },
+  "autoplayDisable": {
+    "message": "Autoplay Mati"
+  },
+  "avoidAv1": {
+    "message": "Hindari AV1"
+  },
+  "avoidAv1Vp8Vp9": {
+    "message": "Hindari AV1, VP8, VP9"
+  },
+  "avoidAv1Vp9": {
+    "message": "Hindari AV1, VP9"
+  },
+  "avoidCpuRenderingWhenPossible": {
+    "message": "Hindari rendering CPU jika memungkinkan"
+  },
+  "backgroundColor": {
+    "message": "Warna Latar Belakang"
+  },
+  "backgroundOpacity": {
+    "message": "Kegelapan Latar Belakang"
+  },
+  "backupAndReset": {
+    "message": "Cadangkan & Atur Ulang"
+  },
+  "baseOnSystemColorScheme": {
+    "message": "Berdasarkan Skema Warna Sistem"
+  },
+  "belowPlayer": {
+    "message": "Di Bawah Pemutar"
+  },
+  "bitness": {
+    "message": "Bit"
+  },
+  "black": {
+    "message": "Hitam"
+  },
+  "block_Codec_Alert_h264": {
+    "message": "Anda memerlukan H.264 atau VP9 diaktifkan agar YouTube dapat memutar video."
+  },
+  "block_Codec_Alert_VP9": {
+    "message": "Anda memerlukan VP9 atau H.264 diaktifkan agar YouTube dapat memutar video."
+  },
+  "blockAll": {
+    "message": "Blokir semua"
+  },
+  "blockAv1": {
+    "message": "Blokir AV1"
+  },
+  "blockH264": {
+    "message": "Blokir H.264"
+  },
+  "blocklist": {
+    "message": "Daftar blokir"
+  },
+  "blockMusic": {
+    "message": "Blokir musik"
+  },
+  "blockVp8": {
+    "message": "Blokir VP8"
+  },
+  "blockVp9": {
+    "message": "Blokir VP9"
+  },
+  "blue": {
+    "message": "Biru"
+  },
+  "blueGray": {
+    "message": "Biru keabu-abuan"
+  },
+  "bluelight": {
+    "message": "Cahaya biru"
+  },
+  "brightness": {
+    "message": "Kecerahan"
+  },
+  "brown": {
+    "message": "Coklat"
+  },
+  "browser": {
+    "message": "Browser"
+  },
+  "browserAccountSync": {
+    "message": "Sinkronisasi Akun Browser"
+  },
+  "browserVersion": {
+    "message": "Versi Browser"
+  },
+  "bubbles": {
+    "message": "Gelembung"
+  },
+  "bug": {
+    "message": "Bug"
+  },
+  "buttons": {
+    "message": "Tombol"
+  },
+  "cancel": {
+    "message": "Batal"
+  },
+  "categories": {
+    "message": "Kategori"
+  },
+  "changeThumbnailsPerRow": {
+    "message": "Thumbnail per Baris"
+  },
+  "channel": {
+    "message": "Saluran"
+  },
+  "channels": {
+    "message": "Saluran"
+  },
+  "chapters": {
+    "message": "Bab"
+  },
+  "chapterTitle": {
+    "message": "Judul Bab"
+  },
+  "characterEdgeStyle": {
+    "message": "Gaya Tepi Karakter"
+  },
+  "clickableLinksInDescription": {
+    "message": "Klik kanan untuk menyalin tautan di deskripsi video"
+  },
+  "clip": {
+    "message": "Klip"
+  },
+  "clipboard": {
+    "message": "Papan klip"
+  },
+  "codecH264": {
+    "message": "Codec h.264"
+  },
+  "codecs": {
+    "message": "Codec"
+  },
+  "collapsed": {
+    "message": "Dilipat"
+  },
+  "collapseOfSubscriptionSections": {
+    "message": "Lipat bagian langganan"
+  },
+  "columns": {
+    "message": "Kolom"
+  },
+  "comments": {
+    "message": "Komentar"
+  },
+  "compact_spacing": {
+    "message": "Spasi Ringkas"
+  },
+  "compactTheme": {
+    "message": "Tema yang ringkas"
+  },
+  "confirmationBeforeClosing": {
+    "message": "Konfirmasi sebelum menutup"
+  },
+  "cookies": {
+    "message": "Cookie"
+  },
+  "copyVideoId": {
+    "message": "Salin ID Video"
+  },
+  "copyVideoUrl": {
+    "message": "Salin URL Video Lengkap"
+  },
+  "cores": {
+    "message": "Inti"
+  },
+  "cropChapterTitles": {
+    "message": "Potong Judul Bab"
+  },
+  "Currently_requiring_a_YouTube_API_key": {
+    "message": "(Saat ini memerlukan kunci YouTube-API: )"
+  },
+  "cursorLighting": {
+    "message": "Pengecahayaan Cursor"
+  },
+  "custom": {
+    "message": "Kustom"
+  },
+  "customCss": {
+    "message": "CSS Kustom"
+  },
+  "customJs": {
+    "message": "JS Kustom"
+  },
+  "customMiniPlayer": {
+    "message": "Mini-Pemutar Kustom"
+  },
+  "cyan": {
+    "message": "Cyan"
+  },
+  "dark": {
+    "message": "Gelap"
+  },
+  "darkTheme": {
+    "message": "Tema gelap"
+  },
+  "dateAndTime": {
+    "message": "Tanggal & waktu"
+  },
+  "dawn": {
+    "message": "Fajar"
+  },
+  "decreasePlaybackSpeed": {
+    "message": "Kurangi Kecepatan Pemutaran"
+  },
+  "decreaseVolume": {
+    "message": "Kurangi Volume"
+  },
+  "deepOrange": {
+    "message": "Oranye tua"
+  },
+  "deepPurple": {
+    "message": "Ungu tua"
+  },
+  "default": {
+    "message": "Bawaan"
+  },
+  "default_CC": {
+    "message": "bawaan"
+  },
+  "default_theme": {
+    "message": "tema bawaan"
+  },
+  "defaultChannelTab": {
+    "message": "Tab saluran bawaan"
+  },
+  "defaultContentCountry": {
+    "message": "Content Negara Bawaan"
+  },
+  "defaultPlaybackSpeed": {
+    "message": "Kecepatan Pemutaran Bawaan"
+  },
+  "deleteWatchedVideos": {
+    "message": "Hapus video yang telah ditonton"
+  },
+  "deleteYoutubeCookies": {
+    "message": "Hapus cookie YouTube"
+  },
+  "depressed": {
+    "message": "Tertekan"
+  },
+  "description": {
+    "message": "Deskripsi"
+  },
+  "description_ext": {
+    "message": "YouTube, rapi & cerdas? Tingkatkan YouTube! Berikan fitur yang kuat, filter hanya video yang Anda inginkan & tampilan yang Anda sukai"
+  },
+  "desert": {
+    "message": "Gurun"
+  },
+  "details": {
+    "message": "Detil"
+  },
+  "developerOptions": {
+    "message": "Opsi pengembangan"
+  },
+  "device": {
+    "message": "Perangkat"
+  },
+  "dim": {
+    "message": "Redup"
+  },
+  "disableAutoDubbing": {
+    "message": "Nonaktifkan dubbing otomatis"
+  },
+  "disabled": {
+    "message": "Dinonaktifkan"
+  },
+  "disableLikesAnimation": {
+    "message": "Nonaktifkan animasi suka"
+  },
+  "disableThumbnailPlayback": {
+    "message": "Nonaktifkan pemutaran video saat mengarahkan kursor"
+  },
+  "dislike": {
+    "message": "Tidak suka"
+  },
+  "displayDayOfTheWeak": {
+    "message": "Tampilkan hari dalam seminggu"
+  },
+  "donate": {
+    "message": "Donasi"
+  },
+  "doNotChange": {
+    "message": "Jangan ubah"
+  },
+  "download": {
+    "message": "Unduh"
+  },
+  "draggable": {
+    "message": "Dapat diseret"
+  },
+  "dropShadow": {
+    "message": "Bayangan jatuh"
+  },
+  "durationWithSpeed": {
+    "message": "Tampilkan waktu tersisa dengan referensi ke kecepatan pemutaran"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "embedded_Hide_Share": {
+    "message": "Sembunyikan Berbagi Tertanam"
+  },
+  "Embedded_YouTube": {
+    "message": "YouTube Tertanam"
+  },
+  "empty": {
+    "message": "Kosong"
+  },
+  "enabled": {
+    "message": "Diaktifkan"
+  },
+  "enabledForced": {
+    "message": "Diaktifkan (dipaksa)"
+  },
+  "enterPassword": {
+    "message": "Silakan masukkan kode 4-digit Anda."
+  },
+  "expanded": {
+    "message": "Diperluas"
+  },
+  "exportSettings": {
+    "message": "Ekspor pengaturan"
+  },
+  "extension": {
+    "message": "Ekstensi"
+  },
+  "ExtraButtons": {
+    "message": "Tombol tambahan"
+  },
+  "extraButtonsBelowThePlayer": {
+    "message": "Tombol tambahan di bawah pemutar"
+  },
+  "extraRightControlButtons": {
+    "message": "Tombol tambahan di dalam pemutar"
+  },
+  "Feature_not_yet_available": {
+    "message": "Fitur belum tersedia"
+  },
+  "file": {
+    "message": "File"
+  },
+  "filters": {
+    "message": "Filter"
+  },
+  "fitToWindow": {
+    "message": "Alternatif lama ('Sesuaikan dengan jendela')"
+  },
+  "flash": {
+    "message": "Flash"
+  },
+  "font": {
+    "message": "Font"
+  },
+  "fontColor": {
+    "message": "Warna font"
+  },
+  "fontFamily": {
+    "message": "Jenis font"
+  },
+  "fontOpacity": {
+    "message": "Kegelapan font"
+  },
+  "fontSize": {
+    "message": "Ukuran font"
+  },
+  "footer": {
+    "message": "Footer"
+  },
+  "forcedPlaybackSpeed": {
+    "message": "Kecepatan menonton: Kecepatan Permanen"
+  },
+  "forcedPlaybackSpeedMusic": {
+    "message": "(Paksa kecepatan pemutaran bahkan untuk musik?)"
+  },
+  "forcedPlayVideoFromTheBeginning": {
+    "message": "Paksa video untuk diputar dari awal"
+  },
+  "forcedTheaterMode": {
+    "message": "Paksa Mode Teater"
+  },
+  "forcedVolume": {
+    "message": "Paksa Volume"
+  },
+  "forceSDR": {
+    "message": "Hindari HDR, pertahankan SDR"
+  },
+  "foundABug": {
+    "message": "Menemukan bug?"
+  },
+  "fullWindow": {
+    "message": "Tinggi penuh"
+  },
+  "general": {
+    "message": "Umum"
+  },
+  "geoPreference": {
+    "message": "Preferensi Geo"
+  },
+  "github": {
+    "message": "GitHub"
+  },
+  "googleApiKey": {
+    "message": "Kunci API Google"
+  },
+  "goToSearchBox": {
+    "message": "Pergi ke kotak pencarian"
+  },
+  "gpu": {
+    "message": "GPU"
+  },
+  "GPUnotindatabase": {
+    "message": "GPU tidak ada dalam database"
+  },
+  "green": {
+    "message": "Hijau"
+  },
+  "grey": {
+    "message": "Abu-abu"
+  },
+  "halfTransparent": {
+    "message": "Redup/setengah transparan"
+  },
+  "Hamburger_Menu": {
+    "message": "Menu Hamburger"
+  },
+  "hardwareInformation": {
+    "message": "Informasi perangkat keras"
+  },
+  "hd": {
+    "message": "HD"
+  },
+  "hdThumbnail": {
+    "message": "Thumbnail HD"
+  },
+  "header": {
+    "message": "Header"
+  },
+  "hidden": {
+    "message": "Tersembunyi"
+  },
+  "hiddenOnVideoPage": {
+    "message": "Tersembunyi di halaman video"
+  },
+  "hide_author_avatars": {
+    "message": "Sembunyikan avatar penulis"
+  },
+  "hide_labels": {
+    "message": "Sembunyikan nama"
+  },
+  "Hide_Pause_Overlay": {
+    "message": "Sembunyikan Overlay Jeda"
+  },
+  "Hide_Shorts_remixing_this_video": {
+    "message": "Sembunyikan Shorts yang mem-remix video ini"
+  },
+  "Hide_sidebar": {
+    "message": "Sembunyikan sidebar"
+  },
+  "Hide_the_tabs_only": {
+    "message": "Sembunyikan tab"
+  },
+  "Hide_YouTube_Logo": {
+    "message": "Sembunyikan Logo YouTube"
+  },
+  "hideAISummary": {
+    "message": "Sembunyikan Ringkasan AI"
+  },
+  "hideAnimatedThumbnails": {
+    "message": "Sembunyikan thumbnail animasi"
+  },
+  "hideAnnotations": {
+    "message": "Sembunyikan anotasi"
+  },
+  "hideBannerAds": {
+    "message": "Sembunyikan Iklan Banner (YouTube mungkin menolak)"
+  },
+  "hideCards": {
+    "message": "Sembunyikan kartu"
+  },
+  "hideCategories": {
+    "message": "Sembunyikan kategori"
+  },
+  "hideCommentsCount": {
+    "message": "Sembunyikan jumlah komentar"
+  },
+  "hideCountryCode": {
+    "message": "Sembunyikan kode negara"
+  },
+  "hideDate": {
+    "message": "Sembunyikan tanggal"
+  },
+  "hideDetailButton": {
+    "message": "Sembunyikan tombol Detil"
+  },
+  "hideDetails": {
+    "message": "Sembunyikan detail"
+  },
+  "hideEndscreen": {
+    "message": "Sembunyikan layar akhir"
+  },
+  "hideFeaturedContent": {
+    "message": "Sembunyikan konten unggulan"
+  },
+  "hideFooter": {
+    "message": "Sembunyikan footer"
+  },
+  "hideGradientBottom": {
+    "message": "Sembunyikan tombol gradien"
+  },
+  "hideHomePageShorts": {
+    "message": "Sembunyikan Shorts di halaman beranda"
+  },
+  "hideIncludesPaidPromotion": {
+    "message": "Sembunyikan \"Termasuk Promosi Berbayar\""
+  },
+  "hideLogo": {
+    "message": "Sembunyikan Logo"
+  },
+  "hideMore": {
+    "message": "Sembunyikan '...'"
+  },
+  "hidePlayerControlsBar": {
+    "message": "Sembunyikan bilah kontrol pemutar"
+  },
+  "hidePlayerControlsBarButtons": {
+    "message": "Sembunyikan tombol kontrol pemutar"
+  },
+  "hidePlayerControlsBarOptions": {
+    "message": "Sembunyikan opsi kontrol pemutar"
+  },
+  "hidePlaylist": {
+    "message": "Sembunyikan daftar putar"
+  },
+  "hideReport": {
+    "message": "Sembunyikan 'Laporkan'"
+  },
+  "hideRightButtons": {
+    "message": "Sembunyikan tombol kanan"
+  },
+  "hideScrollForDetails": {
+    "message": "Sembunyikan «Gulir untuk detail»"
+  },
+  "hideSkipOverlay": {
+    "message": "Sembunyikan animasi lewati 5 detik"
+  },
+  "hideThumbnailDots": {
+    "message": "Sembunyikan '⫶' pada thumbnail"
+  },
+  "hideThumbnailIcon": {
+    "message": "Sembunyikan ikon thumbnail"
+  },
+  "hideThumbnailOverlay": {
+    "message": "Sembunyikan tombol pada thumbnail"
+  },
+  "hideThumbnails": {
+    "message": "Sembunyikan thumbnail"
+  },
+  "hideTopLoadingBar": {
+    "message": "Sembunyikan Bar Pemuatan Atas"
+  },
+  "hideVideoTitleFullScreen": {
+    "message": "Sembunyikan judul video di layar penuh"
+  },
+  "hideViewsCount": {
+    "message": "Sembunyikan jumlah tayangan"
+  },
+  "hideVoiceSearchButton": {
+    "message": "Sembunyikan tombol pencarian suara"
+  },
+  "hideWatchedVideos": {
+    "message": "Sembunyikan video yang telah ditonton"
+  },
+  "high": {
+    "message": "Tinggi"
+  },
+  "history": {
+    "message": "Riwayat"
+  },
+  "home": {
+    "message": "Beranda"
+  },
+  "homeScreen": {
+    "message": "Layar beranda"
+  },
+  "hover": {
+    "message": "Hover"
+  },
+  "hoverOnVideoPage": {
+    "message": "Hover di halaman video"
+  },
+  "howLongAgoTheVideoWasUploaded": {
+    "message": "Tampilkan usia video (berapa lama sejak diunggah)"
+  },
+  "icons": {
+    "message": "Ikon"
+  },
+  "iconsOnly": {
+    "message": "Hanya ikon"
+  },
+  "importSettings": {
+    "message": "Impor pengaturan"
+  },
+  "ImprovedTube": {
+    "message": "ImprovedTube"
+  },
+  "improvedtubeButtons": {
+    "message": "Tombol ImprovedTube"
+  },
+  "improvedtubeIconOnYoutube": {
+    "message": "Ikon ImprovedTube di YouTube"
+  },
+  "improvedtubeLanguage": {
+    "message": "Bahasa ImprovedTube"
+  },
+  "improvedTubeSidePanel": {
+    "message": "ImprovedTube Panel Samping"
+  },
+  "improvedtubeVersion": {
+    "message": "Versi ImprovedTube"
+  },
+  "improveLogo": {
+    "message": "improveLogo"
+  },
+  "increasePlaybackSpeed": {
+    "message": "Tingkatkan kecepatan pemutaran"
+  },
+  "increaseVolume": {
+    "message": "Tingkatkan volume"
+  },
+  "indigo": {
+    "message": "Indigo"
+  },
+  "items": {
+    "message": "barang"
+  },
+  "join": {
+    "message": "Gabung"
+  },
+  "keyScene": {
+    "message": "⚡Lompat ke Adegan yang Paling Sering Diputar Ulang"
+  },
+  "language": {
+    "message": "Bahasa"
+  },
+  "language_closed_caption": {
+    "message": "Bahasa Bawaan pada Teks Terjemahan"
+  },
+  "languages": {
+    "message": "Bahasa"
+  },
+  "layerAnimationScale": {
+    "message": "Skala animasi lapisan"
+  },
+  "layout": {
+    "message": "Tata letak"
+  },
+  "legacyYoutube": {
+    "message": "YouTube Lama"
+  },
+  "library": {
+    "message": "Perpustakaan"
+  },
+  "light": {
+    "message": "Terang"
+  },
+  "lightBlue": {
+    "message": "Biru muda"
+  },
+  "lightGreen": {
+    "message": "Hijau muda"
+  },
+  "like": {
+    "message": "Suka"
+  },
+  "liked": {
+    "message": "Disukai"
+  },
+  "likes": {
+    "message": "Suka"
+  },
+  "lime": {
+    "message": "Lime"
+  },
+  "limitPageWidth": {
+    "message": "Batasi lebar halaman"
+  },
+  "list": {
+    "message": "Daftar"
+  },
+  "liveChat": {
+    "message": "Obrolan langsung"
+  },
+  "liveChatType": {
+    "message": "Jenis obrolan langsung"
+  },
+  "location": {
+    "message": "Lokasi"
+  },
+  "loop": {
+    "message": "🔁 Ulangi"
+  },
+  "loudnessNormalization": {
+    "message": "Normalisasi kekerasan"
+  },
+  "low": {
+    "message": "Rendah"
+  },
+  "markWatchedVideos": {
+    "message": "Tandai video yang telah ditonton"
+  },
+  "medium": {
+    "message": "Sedang"
+  },
+  "mixer": {
+    "message": "Mixer"
+  },
+  "more": {
+    "message": "Lainnya"
+  },
+  "mostViewedChannels": {
+    "message": "Saluran yang paling banyak dilihat"
+  },
+  "moveSidebarLeft": {
+    "message": "Pindahkan sidebar ke kiri"
+  },
+  "moveThumbnailsRight": {
+    "message": "Pindahakan Thumbnail ke kanan!"
+  },
+  "My_specs": {
+    "message": "Spec saya"
+  },
+  "myColors": {
+    "message": "Warna saya"
+  },
+  "name": {
+    "message": "Nama"
+  },
+  "nativeMiniPlayer": {
+    "message": "Mini pemutar bawaan"
+  },
+  "new": {
+    "message": "Baru"
+  },
+  "nextVideo": {
+    "message": "Video berikutnya"
+  },
+  "night": {
+    "message": "Malam"
+  },
+  "nightMode": {
+    "message": "Mode malam"
+  },
+  "noActiveFeatures": {
+    "message": "Tidak ada fitur aktif"
+  },
+  "none": {
+    "message": "Tidak ada"
+  },
+  "noOpenVideoTabs": {
+    "message": "Tidak ada tab video terbuka"
+  },
+  "normal": {
+    "message": "Normal"
+  },
+  "Not_optimal": {
+    "message": "Tidak optimal"
+  },
+  "off": {
+    "message": "Mati"
+  },
+  "ok": {
+    "message": "Ok"
+  },
+  "old": {
+    "message": "Lama"
+  },
+  "onAllVideos": {
+    "message": "Hidupkan semua video"
+  },
+  "onlyActiveOnYoutube": {
+    "message": "Hanya aktif di YouTube"
+  },
+  "onlyOnePlayerInstancePlaying": {
+    "message": "Hanya satu instance pemain yang sedang bermain."
+  },
+  "onSmallCreators": {
+    "message": "kecuali untuk saluran kecil"
+  },
+  "onSubscribedChannels": {
+    "message": "kecuali di saluran yang saya langgani"
+  },
+  "openNewTab": {
+    "message": "Buka tab baru"
+  },
+  "openPopupPlayer": {
+    "message": "Buka video/daftar putar di jendela baru"
+  },
+  "optimizeCodecForHardwareAcceleration": {
+    "message": "Optimalkan Codec untuk akselerasi perangkat keras"
+  },
+  "orange": {
+    "message": "Oranye"
+  },
+  "os": {
+    "message": "OS"
+  },
+  "other": {
+    "message": "Lainnya"
+  },
+  "outline": {
+    "message": "Kerangka"
+  },
+  "overlay": {
+    "message": "Overlay"
+  },
+  "passwordOptions": {
+    "message": "Opsi kata sandi"
+  },
+  "pauseWhileIAmTypingOnYouTube": {
+    "message": "Jeda saat saya mengetik di YouTube"
+  },
+  "pauseWhileIUnplugTheCharger": {
+    "message": "Jeda saat saya mencabut pengisi daya"
+  },
+  "permissions": {
+    "message": "Izin"
+  },
+  "pictureInPicture": {
+    "message": "Picture-in-Picture"
+  },
+  "pink": {
+    "message": "Merah muda"
+  },
+  "PipRequiresUserInteraction": {
+    "message": "PiP memerlukan interaksi Pengguna terbaru dengan halaman sumber. Ini adalah keterbatasan API Picture-in-Picture Chrome dan kami tidak dapat melakukan apa-apa untuk melewatinya. Berfungsi paling baik dengan Autoplay dinonaktifkan dan kontrol Putar manual atau sengaja mengklik di suatu tempat pada halaman sebelum beralih Tab."
+  },
+  "plain": {
+    "message": "Biasa"
+  },
+  "platform": {
+    "message": "Platform"
+  },
+  "playAllButton": {
+    "message": "Tombol \"Putar semua\""
+  },
+  "playbackSpeed": {
+    "message": "Kecepatan pemutaran"
+  },
+  "player": {
+    "message": "Pemutar"
+  },
+  "player_auto_cinema_mode": {
+    "message": "Mode Bioskop Otomatis"
+  },
+  "player_auto_hide_cinema_mode_when_paused": {
+    "message": "Sembunyikan Mode Bioskop Otomatis Saat Dijeda"
+  },
+  "player_cinema_mode_button": {
+    "message": "Mode Bioskop"
+  },
+  "player_dont_speed_education": {
+    "message": "Jangan percepat kategori (langka): Pendidikan"
+  },
+  "player_fit_to_win_button": {
+    "message": "Sesuaikan dengan jendela"
+  },
+  "player_rewind_and_forward_buttons": {
+    "message": "Tombol mundur/maju"
+  },
+  "player_rotate_button": {
+    "message": "Putar video"
+  },
+  "playerAutoPipOutside": {
+    "message": "Auto-PiP hanya di luar Tab sumber"
+  },
+  "playerColor": {
+    "message": "Warna pemutar"
+  },
+  "playerSize": {
+    "message": "Ukuran pemutar"
+  },
+  "playlist": {
+    "message": "Daftar putar"
+  },
+  "playlists": {
+    "message": "Daftar putar"
+  },
+  "playPause": {
+    "message": "Putar / Jeda"
+  },
+  "popupAd": {
+    "message": "Sembunyikan Iklan pop-up"
+  },
+  "popupPlayer": {
+    "message": "Pemutar pop-up"
+  },
+  "popupWindowButtons": {
+    "message": "Tambahkan tombol pemutar pop-up ke setiap thumbnail"
+  },
+  "position": {
+    "message": "Posisi"
+  },
+  "pressAnyKeyOrScroll": {
+    "message": "Tekan tombol apa saja atau gunakan roda mouse."
+  },
+  "pressAnyKeyOrUseMouseWheel": {
+    "message": "Tekan tombol apa saja atau gunakan roda mouse"
+  },
+  "preventShortVideoAutoloop": {
+    "message": "Cegah video pendek dari berputar secara otomatis"
+  },
+  "previousVideo": {
+    "message": "Video sebelumnya"
+  },
+  "primaryColor": {
+    "message": "Warna utama"
+  },
+  "pullSyncSettings": {
+    "message": "Tarik"
+  },
+  "purchase": {
+    "message": "Beli"
+  },
+  "purple": {
+    "message": "Ungu"
+  },
+  "pushSyncSettings": {
+    "message": "Dorong"
+  },
+  "quality": {
+    "message": "Kualitas"
+  },
+  "qualityWhenRunningOnBattery": {
+    "message": "Kualitas, saat menggunakan baterai"
+  },
+  "qualityWithoutFocus": {
+    "message": "Kualitas tanpa fokus"
+  },
+  "raised": {
+    "message": "Dinaikkan"
+  },
+  "ram": {
+    "message": "RAM"
+  },
+  "rateMe": {
+    "message": "Beri nilai saya"
+  },
+  "rateUs": {
+    "message": "Beri nilai kami"
+  },
+  "red": {
+    "message": "Merah"
+  },
+  "redDislikeButton": {
+    "message": "Merah saat tidak disukai"
+  },
+  "relatedVideos": {
+    "message": "Video terkait"
+  },
+  "remote": {
+    "message": "Putar di TV"
+  },
+  "Remove": {
+    "message": "Hapus"
+  },
+  "removeBlackBars": {
+    "message": "Hapus garis hitam saat layar penuh"
+  },
+  "removeContextButtons": {
+    "message": "Hapus tombol konteks pada shorts"
+  },
+  "removeIcons": {
+    "message": "Hapus ikon"
+  },
+  "removeMemberOnly": {
+    "message": "Hapus video khusus anggota"
+  },
+  "removeName": {
+    "message": "Hapus nama"
+  },
+  "removeNames": {
+    "message": "Hapus nama"
+  },
+  "removePlaylistParam": {
+    "message": "Lewati daftar putar saat membuka video di tab baru"
+  },
+  "removeRelatedSearchResults": {
+    "message": "Hapus hasil pencarian terkait"
+  },
+  "removeShortsReelSearchResults": {
+    "message": "Hapus Shorts reel dari hasil pencarian"
+  },
+  "RemoveSubtitlesForLyrics": {
+    "message": "Hapus subtitle untuk lirik"
+  },
+  "repeat": {
+    "message": "Ulangi"
+  },
+  "report": {
+    "message": "Laporan"
+  },
+  "requirePassword": {
+    "message": "Memerlukan kata sandi untuk mengubah pengaturan ImprovedTube"
+  },
+  "reset": {
+    "message": "Atur ulang"
+  },
+  "resetAllSettings": {
+    "message": "Atur ulang semua pengaturan"
+  },
+  "resetAllShortcuts": {
+    "message": "Atur ulang semua pintasan"
+  },
+  "reverse": {
+    "message": "Balik"
+  },
+  "rotate": {
+    "message": "Putar"
+  },
+  "save": {
+    "message": "Simpan"
+  },
+  "saveAs": {
+    "message": "Simpan sebagai"
+  },
+  "schedule": {
+    "message": "Jadwal"
+  },
+  "screen": {
+    "message": "Layar"
+  },
+  "screenshot": {
+    "message": "🖼️ Tangkapan layar"
+  },
+  "scrollBar": {
+    "message": "Bilah gulir"
+  },
+  "sd": {
+    "message": "SD"
+  },
+  "search": {
+    "message": "Cari"
+  },
+  "searchBarOnly": {
+    "message": "Hanya bilah pencarian"
+  },
+  "seekBackward10Seconds": {
+    "message": "Lompat mundur 10 detik"
+  },
+  "seekForward10Seconds": {
+    "message": "Lompat maju 10 detik"
+  },
+  "seekNextChapter": {
+    "message": "Lompat ke Bab Berikutnya"
+  },
+  "seekPreviousChapter": {
+    "message": "Lompat ke Bab Sebelumnya"
+  },
+  "settings": {
+    "message": "Pengaturan"
+  },
+  "settingsSuccessfullyImported": {
+    "message": "Pengaturan berhasil diimpor"
+  },
+  "share": {
+    "message": "Bagikan"
+  },
+  "shortcut_chapters": {
+    "message": "Bab (Sidebar) Hidup/Mati"
+  },
+  "shortcut_screenshot": {
+    "message": "Tangkapan layar"
+  },
+  "shortcut_transcript": {
+    "message": "Transkrip (Sidebar) Hidup/Mati"
+  },
+  "shortcuts": {
+    "message": "Pintasan"
+  },
+  "ShortsForceTheStandardPlayer": {
+    "message": "Shorts: Paksa menggunakan pemutar standar"
+  },
+  "showCardsOnMouseHover": {
+    "message": "Tampilkan kartu saat mengarahkan kursor"
+  },
+  "showChannelVideosCount": {
+    "message": "Tampilkan jumlah video saluran"
+  },
+  "showExactDate": {
+    "message": "Tampilkan Tanggal Pasti"
+  },
+  "showLess": {
+    "message": "Tampilkan lebih sedikit"
+  },
+  "showMore": {
+    "message": "Tampilkan lebih banyak"
+  },
+  "showRemainingDuration": {
+    "message": "Tampilkan durasi sisa video"
+  },
+  "showVersion": {
+    "message": "Tampilkan versi"
+  },
+  "shuffle": {
+    "message": "Acak"
+  },
+  "sidebar": {
+    "message": "Sidebar"
+  },
+  "Sidebar_simple_alternative": {
+    "message": "Sidebar (alternatif sederhana)"
+  },
+  "softwareInformation": {
+    "message": "Informasi perangkat lunak"
+  },
+  "spacebar": {
+    "message": "Spacebar"
+  },
+  "squaredUserImages": {
+    "message": "Gambar pengguna persegi"
+  },
+  "static": {
+    "message": "Statis"
+  },
+  "statsForNerds": {
+    "message": "Tampilkan Statistik untuk Nerd"
+  },
+  "step": {
+    "message": "Langkah"
+  },
+  "stop": {
+    "message": "Berhenti"
+  },
+  "style": {
+    "message": "Gaya"
+  },
+  "styles": {
+    "message": "Gaya"
+  },
+  "subscribe": {
+    "message": "Langganan"
+  },
+  "subscriptions": {
+    "message": "Langganan"
+  },
+  "Subtitle_Capture_including_the_current_words": {
+    "message": "Subtitle (Tangkap termasuk kata-kata saat ini)"
+  },
+  "subtitleLine": {
+    "message": "Sembunyikan garis merah subtitle"
+  },
+  "subtitles": {
+    "message": "Subjudul"
+  },
+  "sunset": {
+    "message": "Matahari terbenam"
+  },
+  "sunsetToSunrise": {
+    "message": "Matahari terbenam ke matahari terbit"
+  },
+  "systemPeferenceDark": {
+    "message": "Preferensi sistem: gelap"
+  },
+  "systemPeferenceLight": {
+    "message": "Preferensi sistem: terang"
+  },
+  "teal": {
+    "message": "Teal"
+  },
+  "textColor": {
+    "message": "Warna teks"
+  },
+  "thanks": {
+    "message": "Terima kasih"
+  },
+  "themes": {
+    "message": "Tema"
+  },
+  "thisWillRemoveAllCookies": {
+    "message": "Ini akan menghapus semua cookie."
+  },
+  "thisWillRemoveAllWatchedVideos": {
+    "message": "Ini akan menghapus semua video yang telah ditonton."
+  },
+  "thisWillRemoveAllYouTubeCookies": {
+    "message": "Ini akan menghapus semua cookie YouTube"
+  },
+  "thisWillResetAllSettings": {
+    "message": "Ini akan mengatur ulang semua pengaturan."
+  },
+  "thisWillResetAllShortcuts": {
+    "message": "Ini akan mengatur ulang semua pintasan"
+  },
+  "thumbnails": {
+    "message": "Thumbnail"
+  },
+  "thumbnailsQuality": {
+    "message": "Kualitas Thumbnail"
+  },
+  "timeFrom": {
+    "message": "Waktu dari"
+  },
+  "timeTo": {
+    "message": "Waktu ke"
+  },
+  "To_the_side_No_page_margin": {
+    "message": "Ke samping! (Tanpa margin halaman)"
+  },
+  "todayAt": {
+    "message": "Hari ini pukul"
+  },
+  "toggleAutoplay": {
+    "message": "nyalakan autoplay"
+  },
+  "toggleCards": {
+    "message": "nyalakan kartu"
+  },
+  "toggleControls": {
+    "message": "Alihkan Penyembunyian Kontrol Pemutar"
+  },
+  "topChat": {
+    "message": "Obrolan teratas"
+  },
+  "trackWatchedVideos": {
+    "message": "Lacak video yang telah ditonton"
+  },
+  "trailerAutoplay": {
+    "message": "Trailer autoplay"
+  },
+  "Transcript": {
+    "message": "Transkrip"
+  },
+  "translations": {
+    "message": "Terjemahan"
+  },
+  "transparentBackground": {
+    "message": "Latar belakang transparan"
+  },
+  "transparentColor": {
+    "message": "Transparan"
+  },
+  "trending": {
+    "message": "Trending"
+  },
+  "tryToReloadThePage": {
+    "message": "Coba muat ulang halaman"
+  },
+  "type": {
+    "message": "Jenis"
+  },
+  "undoTheNewSidebar": {
+    "message": "Batalkan sidebar baru"
+  },
+  "upNextAutoplay": {
+    "message": "Putar otomatis berikutnya"
+  },
+  "use24HourFormat": {
+    "message": "Gunakan format 24 jam"
+  },
+  "version": {
+    "message": "Versi"
+  },
+  "video": {
+    "message": "Video"
+  },
+  "videoDescriptionWillBeExpandedToGetNameOfCategory": {
+    "message": "Deskripsi video akan diperluas untuk mendapatkan nama kategori"
+  },
+  "videoFormats": {
+    "message": "Format video"
+  },
+  "videos": {
+    "message": "Video"
+  },
+  "viewMode": {
+    "message": "Mode tampilan"
+  },
+  "volume": {
+    "message": "Volume"
+  },
+  "watchedVideos": {
+    "message": "Video yang telah ditonton"
+  },
+  "watchLater": {
+    "message": "Tonton nanti"
+  },
+  "watchTime": {
+    "message": "Waktu tonton"
+  },
+  "whenBatteryIslowDecreaseQuality": {
+    "message": "Ketika baterai rendah Turunkan kualitas"
+  },
+  "whenPaused": {
+    "message": "Saat dijeda"
+  },
+  "whenTabIsChanged": {
+    "message": "Saat tab diubah"
+  },
+  "white": {
+    "message": "Putih"
+  },
+  "windowColor": {
+    "message": "Warna jendela"
+  },
+  "windowOpacity": {
+    "message": "Kegelapan jendela"
+  },
+  "with_scrollbars": {
+    "message": "dengan bilah gulir?"
+  },
+  "withoutVideos": {
+    "message": "'Kosong', tanpa pratinjau video"
+  },
+  "yellow": {
+    "message": "Kuning"
+  },
+  "Youtube_Search": {
+    "message": "Pencarian YouTube"
+  },
+  "youTubeButtons": {
+    "message": "Tombol YouTube"
+  },
+  "youtubeHeaderLeft": {
+    "message": "Header YouTube (kiri)"
+  },
+  "youtubeHeaderRight": {
+    "message": "Header YouTube (kanan)"
+  },
+  "youtubeHomePage": {
+    "message": "Halaman beranda YouTube"
+  },
+  "youtubeLanguage": {
+    "message": "Bahasa YouTube"
+  },
+  "youtubeLimitsVideoQualityTo1080pForH264Codec": {
+    "message": "YouTube membatasi kualitas video ke 1080p untuk codec h.264"
+  },
+  "youtubesDark": {
+    "message": "YouTube Gelap"
+  },
+  "youtubesLight": {
+    "message": "Cahaya YouTube"
+  }
+}
