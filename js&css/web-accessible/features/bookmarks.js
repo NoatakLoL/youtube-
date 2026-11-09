@@ -85,11 +85,16 @@
 		}));
 		render();
 		app.YTPlus.actions = app.YTPlus.actions || {};
-		app.YTPlus.actions.bookmark = () => {
+		const bookmarkAction = () => {
 			panel.hidden = false;
 			panel.querySelector('input[name="note"]').focus();
 		};
-		return () => { panel.remove(); button.remove(); };
+		app.YTPlus.actions.bookmark = bookmarkAction;
+		return () => {
+			if (app.YTPlus.actions.bookmark === bookmarkAction) delete app.YTPlus.actions.bookmark;
+			panel.remove();
+			button.remove();
+		};
 	}
 	return { init, toMarkdown };
 });

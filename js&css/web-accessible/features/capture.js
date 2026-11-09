@@ -50,7 +50,10 @@
 		button.addEventListener('click', run);
 		app.YTPlus.actions = app.YTPlus.actions || {};
 		app.YTPlus.actions.capture = run;
-		return () => button.remove();
+		return () => {
+			if (app.YTPlus.actions.capture === run) delete app.YTPlus.actions.capture;
+			button.remove();
+		};
 	}
 	return { init, captureFrame, safeFilename };
 });

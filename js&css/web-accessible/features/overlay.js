@@ -40,8 +40,10 @@
 		video.addEventListener('webkitpresentationmodechanged', syncPiP);
 		syncPiP();
 		app.YTPlus.actions = app.YTPlus.actions || {};
-		app.YTPlus.actions.toggleOverlay = () => { overlay.hidden = !overlay.hidden; };
+		const toggleOverlay = () => { overlay.hidden = !overlay.hidden; };
+		app.YTPlus.actions.toggleOverlay = toggleOverlay;
 		return () => {
+			if (app.YTPlus.actions.toggleOverlay === toggleOverlay) delete app.YTPlus.actions.toggleOverlay;
 			video.removeEventListener('enterpictureinpicture', syncPiP);
 			video.removeEventListener('leavepictureinpicture', syncPiP);
 			video.removeEventListener('webkitpresentationmodechanged', syncPiP);

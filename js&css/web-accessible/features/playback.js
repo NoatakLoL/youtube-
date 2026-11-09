@@ -48,10 +48,18 @@
 		controls.insertBefore(group, controls.firstChild);
 		applyPitch(video, app.storage.ytplus_pitch_correction === true);
 		app.YTPlus.actions = app.YTPlus.actions || {};
-		app.YTPlus.actions.speedUp = () => change(step());
-		app.YTPlus.actions.speedDown = () => change(-step());
-		app.YTPlus.actions.resetSpeed = () => { video.playbackRate = 1; readout.textContent = '1.00×'; };
-		return () => group.remove();
+		const speedUp = () => change(step());
+		const speedDown = () => change(-step());
+		const resetSpeed = () => { video.playbackRate = 1; readout.textContent = '1.00×'; };
+		app.YTPlus.actions.speedUp = speedUp;
+		app.YTPlus.actions.speedDown = speedDown;
+		app.YTPlus.actions.resetSpeed = resetSpeed;
+		return () => {
+			if (app.YTPlus.actions.speedUp === speedUp) delete app.YTPlus.actions.speedUp;
+			if (app.YTPlus.actions.speedDown === speedDown) delete app.YTPlus.actions.speedDown;
+			if (app.YTPlus.actions.resetSpeed === resetSpeed) delete app.YTPlus.actions.resetSpeed;
+			group.remove();
+		};
 	}
 	return { init, applyPitch };
 });
