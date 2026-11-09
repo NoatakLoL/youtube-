@@ -29,7 +29,7 @@
 			speedDown: actions.speedDown, toggleAudio: actions.toggleAudio, toggleOverlay: actions.toggleOverlay,
 			togglePiP: () => {
 				if (!app.stateCoordinator) return;
-				if (document.pictureInPictureElement) app.stateCoordinator.exitPiP();
+				if (app.stateCoordinator.pip === 'active') app.stateCoordinator.exitPiP();
 				else app.stateCoordinator.requestPiP();
 			}
 		};

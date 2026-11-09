@@ -131,6 +131,12 @@
 			if (this.video) {
 				this.playback = this.video.ended ? 'ended' : this.video.paused ? 'paused' : 'playing';
 				const attachedVideo = this.video;
+				const onWebKitPresentationModeChanged = () => {
+					this.pip = attachedVideo.webkitPresentationMode === 'picture-in-picture' ? 'active' : 'inactive';
+					this.transition = 'idle';
+				};
+				attachedVideo.addEventListener('webkitpresentationmodechanged', onWebKitPresentationModeChanged);
+				this.videoCleanup.push(() => attachedVideo.removeEventListener('webkitpresentationmodechanged', onWebKitPresentationModeChanged));
 				const events = {
 					loadstart: 'unstarted', waiting: 'buffering', stalled: 'buffering',
 					playing: 'playing', play: 'playing', pause: 'paused', ended: 'ended',
@@ -173,6 +179,9 @@
 			this.videoSource = '';
 			return previousVideo;
 		}
+		_isPiPActive(video) {
+			return Boolean(video && (this.document.pictureInPictureElement === video || video.webkitPresentationMode === 'picture-in-picture'));
+		}
 		_setPlayback(state) { if (PLAYBACK_STATES.has(state)) this.playback = state; }
 		setFocus(focused) {
 			const next = Boolean(focused);
@@ -203,18 +212,24 @@
 				if (autoPause && this.wasPlayingBeforeBlur && !video.paused) { this.transition = 'pausing'; this._pause(video); }
 				return;
 			}
-			if (autoPip && pipOutside && this.document.pictureInPictureElement === video) await this.exitPiP();
+			if (autoPip && pipOutside && this._isPiPActive(video)) await this.exitPiP();
 			if (epoch !== this.transitionEpoch) return;
 			if (autoPause && this.wasPlayingBeforeBlur && video.paused && !video.ended) { this.transition = 'resuming'; this._play(video); }
 			this.wasPlayingBeforeBlur = false;
 		}
 		async requestPiP(epoch = this.transitionEpoch) {
 			const video = this.video || this.getVideo();
-			if (!video || !this.document.pictureInPictureEnabled || typeof video.requestPictureInPicture !== 'function') return false;
-			if (this.document.pictureInPictureElement === video || this.transition === 'entering-pip') return true;
+			if (!video) return false;
+			const standardSupported = this.document.pictureInPictureEnabled && typeof video.requestPictureInPicture === 'function';
+			const webkitSupported = typeof video.webkitSupportsPresentationMode === 'function'
+				&& video.webkitSupportsPresentationMode('picture-in-picture')
+				&& typeof video.webkitSetPresentationMode === 'function';
+			if (!standardSupported && !webkitSupported) return false;
+			if (this._isPiPActive(video) || this.transition === 'entering-pip') return true;
 			this.transition = 'entering-pip';
 			try {
-				await video.requestPictureInPicture();
+				if (standardSupported) await video.requestPictureInPicture();
+				else video.webkitSetPresentationMode('picture-in-picture');
 				this.pip = 'active';
 				if (epoch !== this.transitionEpoch && this.focus && this.getSettings().player_autoPip_outside === true) await this.exitPiP();
 				if (this.transition === 'entering-pip') this.transition = 'idle';
@@ -222,11 +237,15 @@
 			} catch (error) { this.pip = 'inactive'; this.transition = 'idle'; this._report(error); return false; }
 		}
 		async exitPiP() {
-			if (!this.document.pictureInPictureElement || typeof this.document.exitPictureInPicture !== 'function') return false;
 			if (this.transition === 'exiting-pip') return true;
+			const video = this.document.pictureInPictureElement || this.video || this.getVideo();
+			const standardActive = Boolean(this.document.pictureInPictureElement && typeof this.document.exitPictureInPicture === 'function');
+			const webkitActive = Boolean(video && video.webkitPresentationMode === 'picture-in-picture' && typeof video.webkitSetPresentationMode === 'function');
+			if (!standardActive && !webkitActive) return false;
 			this.transition = 'exiting-pip';
 			try {
-				await this.document.exitPictureInPicture();
+				if (standardActive) await this.document.exitPictureInPicture();
+				else video.webkitSetPresentationMode('inline');
 				this.pip = 'inactive';
 				this.transition = 'idle';
 				return true;

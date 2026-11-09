@@ -57,3 +57,19 @@ test('a reused video element with a new source aborts stale video work', () => {
 	expect(fixture.coordinator.videoSignal.aborted).toBe(false);
 	fixture.coordinator.dispose();
 });
+
+test('uses WebKit presentation mode when standard PiP APIs are unavailable', async () => {
+	const fixture = setup();
+	fixture.document.pictureInPictureEnabled = false;
+	const video = fixture.video;
+	video.webkitPresentationMode = 'inline';
+	video.webkitSupportsPresentationMode = jest.fn(() => true);
+	video.webkitSetPresentationMode = jest.fn(mode => { video.webkitPresentationMode = mode; });
+	expect(await fixture.coordinator.requestPiP()).toBe(true);
+	expect(video.webkitSetPresentationMode).toHaveBeenCalledWith('picture-in-picture');
+	expect(fixture.coordinator.pip).toBe('active');
+	expect(await fixture.coordinator.exitPiP()).toBe(true);
+	expect(video.webkitSetPresentationMode).toHaveBeenLastCalledWith('inline');
+	expect(fixture.coordinator.pip).toBe('inactive');
+	fixture.coordinator.dispose();
+});

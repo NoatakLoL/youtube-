@@ -32,15 +32,19 @@
 		overlay.appendChild(dock);
 		player.appendChild(overlay);
 		const getPiPElement = () => document['pictureInPictureElement'];
-		const syncPiP = () => { overlay.hidden = getPiPElement() === video; };
+		const syncPiP = () => {
+			overlay.hidden = getPiPElement() === video || video.webkitPresentationMode === 'picture-in-picture';
+		};
 		video.addEventListener('enterpictureinpicture', syncPiP);
 		video.addEventListener('leavepictureinpicture', syncPiP);
+		video.addEventListener('webkitpresentationmodechanged', syncPiP);
 		syncPiP();
 		app.YTPlus.actions = app.YTPlus.actions || {};
 		app.YTPlus.actions.toggleOverlay = () => { overlay.hidden = !overlay.hidden; };
 		return () => {
 			video.removeEventListener('enterpictureinpicture', syncPiP);
 			video.removeEventListener('leavepictureinpicture', syncPiP);
+			video.removeEventListener('webkitpresentationmodechanged', syncPiP);
 			overlay.remove();
 		};
 	}
