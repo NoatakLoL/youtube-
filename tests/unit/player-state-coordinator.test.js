@@ -116,3 +116,12 @@ test('yt-navigate-start aborts stale work immediately', () => {
 	expect(fixture.coordinator.routeSignal.aborted).toBe(false);
 	fixture.coordinator.dispose();
 });
+
+test('tracks user-initiated standard Picture-in-Picture events from the video element', () => {
+	const fixture = setup();
+	fixture.video.emit('enterpictureinpicture');
+	expect(fixture.coordinator.pip).toBe('active');
+	fixture.video.emit('leavepictureinpicture');
+	expect(fixture.coordinator.pip).toBe('inactive');
+	fixture.coordinator.dispose();
+});

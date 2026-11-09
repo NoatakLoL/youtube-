@@ -138,6 +138,12 @@
 				};
 				attachedVideo.addEventListener('webkitpresentationmodechanged', onWebKitPresentationModeChanged);
 				this.videoCleanup.push(() => attachedVideo.removeEventListener('webkitpresentationmodechanged', onWebKitPresentationModeChanged));
+				const onEnterPiP = () => { this.pip = 'active'; this.transition = 'idle'; };
+				const onLeavePiP = () => { this.pip = 'inactive'; this.transition = 'idle'; };
+				attachedVideo.addEventListener('enterpictureinpicture', onEnterPiP);
+				attachedVideo.addEventListener('leavepictureinpicture', onLeavePiP);
+				this.videoCleanup.push(() => attachedVideo.removeEventListener('enterpictureinpicture', onEnterPiP));
+				this.videoCleanup.push(() => attachedVideo.removeEventListener('leavepictureinpicture', onLeavePiP));
 				const events = {
 					loadstart: 'unstarted', waiting: 'buffering', stalled: 'buffering',
 					playing: 'playing', play: 'playing', pause: 'paused', ended: 'ended',
