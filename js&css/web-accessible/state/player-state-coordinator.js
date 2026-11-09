@@ -145,8 +145,11 @@
 						}
 						this._setPlayback(typeof state === 'function' ? state() : state);
 					};
-					try { attachedVideo.addEventListener(type, listener, this.videoController ? { signal: this.videoController.signal } : false); }
-					catch (_) { attachedVideo.addEventListener(type, listener); }
+					try {
+						attachedVideo.addEventListener(type, listener, this.videoController ? { signal: this.videoController.signal } : false);
+					} catch (_) {
+						attachedVideo.addEventListener(type, listener);
+					}
 					this.videoCleanup.push(() => attachedVideo.removeEventListener(type, listener));
 				});
 			}
@@ -222,12 +225,25 @@
 			if (!this.document.pictureInPictureElement || typeof this.document.exitPictureInPicture !== 'function') return false;
 			if (this.transition === 'exiting-pip') return true;
 			this.transition = 'exiting-pip';
-			try { await this.document.exitPictureInPicture(); this.pip = 'inactive'; this.transition = 'idle'; return true; }
-			catch (error) { this.transition = 'idle'; this._report(error); return false; }
+			try {
+				await this.document.exitPictureInPicture();
+				this.pip = 'inactive';
+				this.transition = 'idle';
+				return true;
+			} catch (error) {
+				this.transition = 'idle';
+				this._report(error);
+				return false;
+			}
 		}
 		_pause(video) {
-			try { const player = this.getPlayer(); if (player?.pauseVideo) player.pauseVideo(); else video.pause(); }
-			catch (error) { this._report(error); }
+			try {
+				const player = this.getPlayer();
+				if (player?.pauseVideo) player.pauseVideo();
+				else video.pause();
+			} catch (error) {
+				this._report(error);
+			}
 			this.transition = 'idle';
 		}
 		_play(video) {

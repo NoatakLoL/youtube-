@@ -63,7 +63,7 @@
 			: [m, String(s).padStart(2, '0')].join(':');
 	}
 	function escapeMarkdown(value) {
-		return String(value === undefined || value === null ? '' : value).replace(/[\\*_{}\[\]()#+\-.!|>]/g, '\\$&').replace(/\r?\n/g, ' ');
+		return String(value === undefined || value === null ? '' : value).replace(/[\\*_{}\x5B\x5D()#+\-.!|>]/g, '\\return String(value === undefined || value === null ? '' : value).replace(/[\\*_{}\[\]()#+\-.!|>]/g, '\\$&').replace(/\r?\n/g, ' ');').replace(/\r?\n/g, ' ');
 	}
 	function notify(message, kind = 'info') {
 		if (typeof document === 'undefined') return;
